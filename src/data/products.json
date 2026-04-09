@@ -115,7 +115,7 @@
   },
   "6": {
     "sort": 2,
-    "displayName": "船身",
+    "displayName": "船尾",
     "class": 2,
     "className": "甲鱉級",
     "recipe": {
@@ -211,7 +211,7 @@
   },
   "10": {
     "sort": 2,
-    "displayName": "船體",
+    "displayName": "船尾",
     "class": 3,
     "className": "鬚鯨級",
     "recipe": {
@@ -585,7 +585,7 @@
   },
   "26": {
     "sort": 2,
-    "displayName": "船身",
+    "displayName": "船尾",
     "class": 7,
     "className": "甲鱉改級",
     "part": {
@@ -688,7 +688,7 @@
   },
   "30": {
     "sort": 2,
-    "displayName": "船體",
+    "displayName": "船尾",
     "class": 8,
     "className": "鬚鯨改級",
     "part": {
