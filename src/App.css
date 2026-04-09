@@ -1,7 +1,14 @@
 .app {
   width: 100%;
+  min-height: 100dvh;
   box-sizing: border-box;
   padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1401px) {
+    height: 100dvh;
+  }
 }
 
 .app h1 {
@@ -11,6 +18,23 @@
 }
 
 /* 分頁列 */
+.tab-content {
+  flex: 1;
+
+  @media (min-width: 1401px) {
+    min-height: 0;
+  }
+}
+
+.app-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 4px 0 0;
+  font-size: 12px;
+  opacity: 1;
+}
+
 .tab-bar {
   display: flex;
   gap: 4px;

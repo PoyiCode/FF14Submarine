@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getProductMaterials, products, basicMaterials, recipes } from '../data'
+import { getProductMaterials, getProductParts, products, basicMaterials, recipes, submarineParts } from '../data'
 import './Calculator.css'
 
 // ── Cookie 工具 ───────────────────────────────────────────
@@ -25,12 +25,21 @@ function loadJson<T>(key: string, fallback: T): T {
 
 // ── 計算函式 ────────────────────────────────────────────
 
+function getItemRecipe(item: string): Record<string, number> | null {
+  if (submarineParts[item]) return submarineParts[item].recipe
+  if (recipes[item]) return recipes[item].recipe
+  return null
+}
+
 function resolveToRaw(item: string, qty: number, acc: Record<string, number>): void {
   if (basicMaterials.has(item)) {
     acc[item] = (acc[item] ?? 0) + qty
-  } else if (recipes[item]) {
-    for (const [mat, amount] of Object.entries(recipes[item].materials)) {
-      resolveToRaw(mat, amount * qty, acc)
+  } else {
+    const recipe = getItemRecipe(item)
+    if (recipe) {
+      for (const [mat, amount] of Object.entries(recipe)) {
+        resolveToRaw(mat, amount * qty, acc)
+      }
     }
   }
 }
@@ -49,12 +58,19 @@ function computeRequiredSemi(selected: Set<string>): Record<string, number> {
   const acc: Record<string, number> = {}
   function resolve(item: string, qty: number) {
     if (basicMaterials.has(item)) return
-    if (recipes[item]) {
+    const recipe = getItemRecipe(item)
+    if (recipe) {
       acc[item] = (acc[item] ?? 0) + qty
-      for (const [mat, amount] of Object.entries(recipes[item].materials)) resolve(mat, amount * qty)
+      for (const [mat, amount] of Object.entries(recipe)) resolve(mat, amount * qty)
     }
   }
   for (const name of selected) {
+    for (const [partName, qty] of Object.entries(getProductParts(name))) {
+      if (submarineParts[partName]) {
+        acc[partName] = (acc[partName] ?? 0) + qty
+        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty)
+      }
+    }
     for (const [mat, qty] of Object.entries(getProductMaterials(name))) resolve(mat, qty)
   }
   return acc
@@ -65,7 +81,7 @@ function getDirectRequiredSemi(selected: Set<string>): Set<string> {
   const direct = new Set<string>()
   for (const name of selected) {
     for (const mat of Object.keys(getProductMaterials(name))) {
-      if (!basicMaterials.has(mat) && recipes[mat]) direct.add(mat)
+      if (!basicMaterials.has(mat) && getItemRecipe(mat)) direct.add(mat)
     }
   }
   return direct
@@ -87,7 +103,8 @@ function computeEquivalent(
   return acc
 }
 
-function getRelevantItems(selected: Set<string>): { semi: string[]; raw: string[] } {
+function getRelevantItems(selected: Set<string>): { parts: string[]; semi: string[]; raw: string[] } {
+  const parts = new Set<string>()
   const semi = new Set<string>()
   const raw = new Set<string>()
   function traverse(item: string) {
@@ -95,13 +112,20 @@ function getRelevantItems(selected: Set<string>): { semi: string[]; raw: string[
       raw.add(item)
     } else if (recipes[item]) {
       semi.add(item)
-      for (const mat of Object.keys(recipes[item].materials)) traverse(mat)
+      for (const mat of Object.keys(recipes[item].recipe)) traverse(mat)
     }
   }
   for (const name of selected) {
+    for (const partName of Object.keys(getProductParts(name))) {
+      if (submarineParts[partName]) {
+        parts.add(partName)
+        for (const mat of Object.keys(submarineParts[partName].recipe)) traverse(mat)
+      }
+    }
     for (const mat of Object.keys(getProductMaterials(name))) traverse(mat)
   }
   return {
+    parts: Object.keys(submarineParts).filter((n) => parts.has(n)),
     semi: Object.keys(recipes).filter((n) => semi.has(n)),
     raw: [...basicMaterials].filter((n) => raw.has(n)),
   }
@@ -109,7 +133,7 @@ function getRelevantItems(selected: Set<string>): { semi: string[]; raw: string[
 
 // ── 靜態資料 ────────────────────────────────────────────
 
-const allSemiNames = Object.keys(recipes)
+const allSemiNames = [...Object.keys(submarineParts), ...Object.keys(recipes)]
 const allRawNames = [...basicMaterials]
 
 function getClass(key: string): string {
@@ -162,7 +186,7 @@ export default function Calculator() {
     if (e.key === '.' || e.key === ',') e.preventDefault()
   }
 
-  const { semi: relevantSemi, raw: relevantRaw } = getRelevantItems(selected)
+  const { parts: relevantParts, semi: relevantSemi, raw: relevantRaw } = getRelevantItems(selected)
   const required = computeRequired(selected)
   const requiredSemi = computeRequiredSemi(selected)
   const directSemi = getDirectRequiredSemi(selected)
@@ -172,9 +196,11 @@ export default function Calculator() {
   return (
     <div className="calc-layout">
 
-      {/* 第一欄：目標成品 */}
+      {/* 第一欄：成品 */}
       <section className="panel">
-        <h2>目標成品</h2>
+        <h2>成品</h2>
+
+        <button className="clear-btn" onClick={() => setSelected(new Set())} disabled={!hasTarget}>清空</button>
 
         {/* 依艦級分組顯示部位按鈕 */}
         <div className="product-groups">
@@ -185,9 +211,8 @@ export default function Calculator() {
                 {productsByClass[cls].map((name) => (
                   <button
                     key={name}
-                    className="product-add-btn"
-                    onClick={() => addProduct(name)}
-                    disabled={selected.has(name)}
+                    className={`product-add-btn${selected.has(name) ? ' selected' : ''}`}
+                    onClick={() => selected.has(name) ? removeProduct(name) : addProduct(name)}
                   >
                     {products[name].displayName}
                   </button>
@@ -221,8 +246,58 @@ export default function Calculator() {
         <h2>當前庫存</h2>
 
         {hasTarget ? (
-          <div className="inventory-grid">
+          <>
+            {/* 潛水艇骨架 */}
+            {(() => {
+              const items = relevantParts
+              if (items.length === 0) return null
+              return (
+                <div className="submarine-parts">
+                  <table className="semi-table">
+                    <thead>
+                      <tr>
+                        <th>潛水艇骨架</th>
+                        <th>數量</th>
+                        <th>目標</th>
+                        <th>剩餘</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {items.map((name) => {
+                        const target = requiredSemi[name] ?? 0
+                        const have = semiInventory[name] ?? 0
+                        const remaining = Math.max(0, target - have)
+                        const done = have >= target
+                        return (
+                          <tr key={name} className={done ? 'row-done' : ''}>
+                            <td className="semi-name">{name}</td>
+                            <td>
+                              <input
+                                type="number"
+                                min={0}
+                                max={9999}
+                                step={1}
+                                value={have === 0 ? '' : have}
+                                placeholder="0"
+                                onChange={(e) => handleInventory(setSemiInventory, name, e.target.value)}
+                                onKeyDown={blockDecimal}
+                                className="qty-input"
+                              />
+                            </td>
+                            <td className="num">{target}</td>
+                            <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
+                              {done ? '✓' : remaining}
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              )
+            })()}
 
+            <div className="inventory-grid">
             {[2, 1].map((lv) => {
               const items = relevantSemi.filter((n) => recipes[n].level === lv)
               if (items.length === 0) return null
@@ -271,7 +346,7 @@ export default function Calculator() {
                     </tbody>
                   </table>
                   {hasIndirect && (
-                    <p className="semi-footnote">*：過渡半成品，非直接素材，不計入 等價基礎素材-目標</p>
+                    <p className="semi-footnote">*：過度半成品，不計入"等價基礎素材-目標"的數量</p>
                   )}
                 </div>
               )
@@ -305,9 +380,11 @@ export default function Calculator() {
               </tbody>
             </table>
 
-          </div>
+            </div>
+
+          </>
         ) : (
-          <p className="empty-hint">請先選擇目標成品</p>
+          <p className="empty-hint">請先選擇成品</p>
         )}
       </section>
 
@@ -348,7 +425,7 @@ export default function Calculator() {
             </tbody>
           </table>
         ) : (
-          <p className="empty-hint">請先選擇目標成品</p>
+          <p className="empty-hint">請先選擇成品</p>
         )}
       </section>
 

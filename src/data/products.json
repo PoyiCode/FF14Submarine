@@ -1,10 +1,10 @@
 {
-  "鯊魚級船體": {
+  "1": {
     "sort": 1,
     "displayName": "船體",
-    "class": "1",
+    "class": 1,
     "className": "鯊魚級",
-    "materials": {
+    "recipe": {
       "鈷鐵錠": 36,
       "綠金錠": 18,
       "玫瑰金錠": 21,
@@ -17,14 +17,18 @@
       "鬼膠": 18,
       "清漆": 18,
       "黑鐵釘": 18
-    }
+    },
+    "itemLevel": 115,
+    "chineseTraditional": "鯊魚級船體",
+    "id": 1,
+    "english": "Shark-class Pressure Hull"
   },
-  "鯊魚級船尾": {
+  "2": {
     "sort": 2,
     "displayName": "船尾",
-    "class": "1",
+    "class": 1,
     "className": "鯊魚級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 54,
       "鈷鐵錠": 78,
       "玄鋼錠": 9,
@@ -34,14 +38,18 @@
       "白鋼連接板": 30,
       "鈷鐵連接板": 24,
       "古神木材": 9
-    }
+    },
+    "itemLevel": 115,
+    "chineseTraditional": "鯊魚級船尾",
+    "id": 2,
+    "english": "Shark-class Stern"
   },
-  "鯊魚級船首": {
+  "3": {
     "sort": 3,
     "displayName": "船首",
-    "class": "1",
+    "class": 1,
     "className": "鯊魚級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 30,
       "鈷鐵錠": 18,
       "玄鋼錠": 12,
@@ -50,15 +58,19 @@
       "秘銀鉚釘": 30,
       "白鋼連接板": 30,
       "鈷鐵連接板": 30,
-      "古神木材": 9      
-    }
+      "古神木材": 9
+    },
+    "itemLevel": 115,
+    "chineseTraditional": "鯊魚級船首",
+    "id": 3,
+    "english": "Shark-class Bow"
   },
-  "鯊魚級艦橋": {
+  "4": {
     "sort": 4,
     "displayName": "艦橋",
-    "class": "1",
+    "class": 1,
     "className": "鯊魚級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 21,
       "鈷鐵錠": 18,
       "玄鋼錠": 24,
@@ -69,14 +81,18 @@
       "鈷鐵鉚釘": 21,
       "硬化雲杉木材": 12,
       "黑鐵釘": 21
-    }
+    },
+    "itemLevel": 115,
+    "chineseTraditional": "鯊魚級艦橋",
+    "id": 4,
+    "english": "Shark-class Bridge"
   },
-  "甲鱉級船體": {
+  "5": {
     "sort": 1,
     "displayName": "船體",
-    "class": "2",
+    "class": 2,
     "className": "甲鱉級",
-    "materials": {
+    "recipe": {
       "鈷鐵錠": 24,
       "綠金錠": 24,
       "白鋼板": 24,
@@ -91,14 +107,18 @@
       "古神木材": 24,
       "致遠帆布": 9,
       "加隆德鋼": 9
-    }
+    },
+    "itemLevel": 125,
+    "chineseTraditional": "甲鱉級船體",
+    "id": 5,
+    "english": "Unkiu-class Pressure Hull"
   },
-  "甲鱉級船尾": {
+  "6": {
     "sort": 2,
     "displayName": "船身",
-    "class": "2",
+    "class": 2,
     "className": "甲鱉級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 24,
       "鈷鐵錠": 24,
       "玄鋼錠": 9,
@@ -111,14 +131,18 @@
       "鎢鋼錠": 18,
       "靈銀錠": 18,
       "加隆德鋼": 9
-    }
+    },
+    "itemLevel": 125,
+    "chineseTraditional": "甲鱉級船尾",
+    "id": 6,
+    "english": "Unkiu-class Stern"
   },
-  "甲鱉級船首": {
+  "7": {
     "sort": 3,
     "displayName": "船首",
-    "class": "2",
+    "class": 2,
     "className": "甲鱉級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 30,
       "玄鋼錠": 20,
       "秘銀錠": 30,
@@ -132,14 +156,18 @@
       "鈷鐵連接板": 30,
       "靈銀錠": 18,
       "加隆德鋼": 9
-    }
+    },
+    "itemLevel": 125,
+    "chineseTraditional": "甲鱉級船首",
+    "id": 7,
+    "english": "Unkiu-class Bow"
   },
-  "甲鱉級艦橋": {
+  "8": {
     "sort": 4,
     "displayName": "艦橋",
-    "class": "2",
+    "class": 2,
     "className": "甲鱉級",
-    "materials": {
+    "recipe": {
       "白鋼錠": 21,
       "鈷鐵錠": 21,
       "玄鋼錠": 18,
@@ -151,6 +179,785 @@
       "致遠帆布": 9,
       "飛龍革": 18,
       "加隆德鋼": 9
-    }
+    },
+    "itemLevel": 125,
+    "chineseTraditional": "甲鱉級艦橋",
+    "id": 8,
+    "english": "Unkiu-class Bridge"
+  },
+  "9": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 3,
+    "className": "鬚鯨級",
+    "recipe": {
+      "玫瑰金錠": 24,
+      "鈷鐵板": 24,
+      "鈷鐵鉚釘": 54,
+      "胡桃木材": 24,
+      "雲杉木材": 24,
+      "黑膠": 12,
+      "清漆": 30,
+      "黑鐵釘": 24,
+      "靈銀錠": 18,
+      "聖雪松材": 12,
+      "蒼天石": 9,
+      "加隆德鋼": 9
+    },
+    "itemLevel": 0,
+    "chineseTraditional": "鬚鯨級船體",
+    "id": 9,
+    "english": "Whale-class Pressure Hull"
+  },
+  "10": {
+    "sort": 2,
+    "displayName": "船體",
+    "class": 3,
+    "className": "鬚鯨級",
+    "recipe": {
+      "白鋼錠": 30,
+      "玄鋼錠": 30,
+      "玄鋼塊": 30,
+      "白鋼鉚釘": 30,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 12,
+      "秘銀鉚釘": 30,
+      "白鋼釘": 30,
+      "古神木材": 12,
+      "靈銀錠": 12,
+      "蒼天石": 9,
+      "加隆德鋼": 9
+    },
+    "itemLevel": 133,
+    "chineseTraditional": "鬚鯨級船尾",
+    "id": 10,
+    "english": "Whale-class Stern"
+  },
+  "11": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 3,
+    "className": "鬚鯨級",
+    "recipe": {
+      "白鋼錠": 30,
+      "玄鋼錠": 12,
+      "玫瑰金錠": 12,
+      "白鋼鉚釘": 30,
+      "玄鋼鉚釘": 30,
+      "鈷鐵連接板": 60,
+      "靈銀錠": 12,
+      "聖雪松材": 12,
+      "蒼天石": 9,
+      "加隆德鋼": 9
+    },
+    "itemLevel": 133,
+    "chineseTraditional": "鬚鯨級船首",
+    "id": 11,
+    "english": "Whale-class Bow"
+  },
+  "12": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 3,
+    "className": "鬚鯨級",
+    "recipe": {
+      "白鋼錠": 30,
+      "玄鋼錠": 12,
+      "玫瑰金錠": 12,
+      "白鋼鉚釘": 60,
+      "鈷鐵鉚釘": 18,
+      "鈷鐵連接板": 60,
+      "靈銀錠": 18,
+      "聖雪松材": 12,
+      "蒼天石": 9,
+      "加隆德鋼": 9
+    },
+    "itemLevel": 133,
+    "chineseTraditional": "鬚鯨級艦橋",
+    "id": 12,
+    "english": "Whale-class Bridge"
+  },
+  "13": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 4,
+    "className": "腔棘魚級",
+    "recipe": {
+      "鈷鐵板": 18,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 30,
+      "黑膠": 12,
+      "鈷鐵連接板": 30,
+      "靈銀錠": 48,
+      "硬銀塊": 18,
+      "皇金塊": 18,
+      "白鈦錠": 30,
+      "暗栗木木材": 30,
+      "加隆德鋼": 9
+    },
+    "itemLevel": 145,
+    "chineseTraditional": "腔棘魚級船體",
+    "id": 13,
+    "english": "Coelacanth-class Pressure Hull"
+  },
+  "14": {
+    "sort": 2,
+    "displayName": "船尾",
+    "class": 4,
+    "className": "腔棘魚級",
+    "recipe": {
+      "黃金錠": 15,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 60,
+      "鈷鐵連接板": 30,
+      "靈銀錠": 48,
+      "硬銀塊": 30,
+      "皇金塊": 30,
+      "白鈦錠": 30,
+      "蒼天石": 9
+    },
+    "itemLevel": 145,
+    "chineseTraditional": "腔棘魚級船尾",
+    "id": 14,
+    "english": "Coelacanth-class Stern"
+  },
+  "15": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 4,
+    "className": "腔棘魚級",
+    "recipe": {
+      "玫瑰金塊": 30,
+      "鈷鐵板": 18,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 36,
+      "黃玉": 6,
+      "鈷鐵連接板": 30,
+      "白金塊": 12,
+      "鐵刀木木材": 9,
+      "白鈦錠": 30,
+      "水淙石": 12
+    },
+    "itemLevel": 145,
+    "chineseTraditional": "腔棘魚級船首",
+    "id": 15,
+    "english": "Coelacanth-class Bow"
+  },
+  "16": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 4,
+    "className": "腔棘魚級",
+    "recipe": {
+      "玫瑰金塊": 30,
+      "鈷鐵板": 18,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 36,
+      "黃玉": 6,
+      "鈷鐵連接板": 30,
+      "白金塊": 12,
+      "鐵刀木木材": 9,
+      "靈銀錠": 48,
+      "白鈦錠": 30,
+      "水淙石": 12
+    },
+    "itemLevel": 145,
+    "chineseTraditional": "腔棘魚級艦橋",
+    "id": 16,
+    "english": "Coelacanth-class Bridge"
+  },
+  "17": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 5,
+    "className": "希爾德拉級",
+    "recipe": {
+      "玄鋼板": 9,
+      "玄鋼鉚釘": 15,
+      "黑膠": 12,
+      "靈銀錠": 30,
+      "硬銀塊": 18,
+      "皇金塊": 18,
+      "堅鋼鉚釘": 15,
+      "暗栗木木材": 30,
+      "樺木木材": 21,
+      "鐵刀木角材": 6,
+      "超硬加隆德鋼": 6,
+      "鐵紋鋼": 9
+    },
+    "itemLevel": 150,
+    "chineseTraditional": "希爾德拉級船體",
+    "id": 17,
+    "english": "Syldra-class Pressure Hull"
+  },
+  "18": {
+    "sort": 2,
+    "displayName": "船尾",
+    "class": 5,
+    "className": "希爾德拉級",
+    "recipe": {
+      "玄鋼塊": 30,
+      "鈷鐵鉚釘": 21,
+      "玄鋼鉚釘": 15,
+      "鎢鋼錠": 9,
+      "靈銀錠": 30,
+      "硬銀塊": 18,
+      "皇金塊": 15,
+      "白鈦錠": 30,
+      "堅鋼塊": 15,
+      "樺木木材": 30,
+      "鐵刀木角材": 6,
+      "鐵紋鋼": 9
+    },
+    "itemLevel": 150,
+    "chineseTraditional": "希爾德拉級船尾",
+    "id": 18,
+    "english": "Syldra-class Stern"
+  },
+  "19": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 5,
+    "className": "希爾德拉級",
+    "recipe": {
+      "玄鋼錠": 15,
+      "玄鋼板": 9,
+      "玄鋼鉚釘": 30,
+      "鈷鐵連接板": 30,
+      "靈銀錠": 60,
+      "硬銀塊": 18,
+      "皇金塊": 15,
+      "堅鋼塊": 15,
+      "堅鋼鉚釘": 15,
+      "鐵紋鋼": 9
+    },
+    "itemLevel": 150,
+    "chineseTraditional": "希爾德拉級船首",
+    "id": 19,
+    "english": "Syldra-class Bow"
+  },
+  "20": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 5,
+    "className": "希爾德拉級",
+    "recipe": {
+      "黃金錠": 15,
+      "玄鋼板": 9,
+      "鈷鐵鉚釘": 30,
+      "玄鋼鉚釘": 15,
+      "靈銀錠": 30,
+      "皇金塊": 60,
+      "白鈦錠": 30,
+      "堅鋼鉚釘": 15,
+      "樺木木材": 15,
+      "鐵刀木角材": 6,
+      "鐵紋鋼": 9
+    },
+    "itemLevel": 150,
+    "chineseTraditional": "希爾德拉級艦橋",
+    "id": 20,
+    "english": "Syldra-class Bridge"
+  },
+  "21": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 6,
+    "className": "鯊魚改級",
+    "part": {
+      "鯊魚級船體骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "白鋼鉚釘": 24,
+      "秘銀板": 18,
+      "玫瑰金錠": 24,
+      "黑膠": 18,
+      "純鈦板": 9,
+      "白金錠": 24,
+      "清漆": 30,
+      "薔薇輝石": 15,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鯊魚改級船體",
+    "id": 21,
+    "english": "Modified Shark-class Pressure Hull"
+  },
+  "22": {
+    "sort": 2,
+    "displayName": "船尾",
+    "class": 6,
+    "className": "鯊魚改級",
+    "part": {
+      "鯊魚級船尾骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鎢鋼錠": 9,
+      "白鋼連接板": 30,
+      "白鈦錠": 60,
+      "純鈦板": 9,
+      "光銀錠": 30,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鯊魚改級船尾",
+    "id": 22,
+    "english": "Modified Shark-class Stern"
+  },
+  "23": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 6,
+    "className": "鯊魚改級",
+    "part": {
+      "鯊魚級船首骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "白鋼連接板": 30,
+      "鎢鋼錠": 12,
+      "純鈦板": 9,
+      "光銀錠": 30,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鯊魚改級船首",
+    "id": 23,
+    "english": "Modified Shark-class Bow"
+  },
+  "24": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 6,
+    "className": "鯊魚改級",
+    "part": {
+      "鯊魚級艦橋骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鈷鐵錠": 21,
+      "鎢鋼錠": 24,
+      "玄鋼鉚釘": 21,
+      "純鈦板": 9,
+      "玫瑰金錠": 21,
+      "薔薇輝石": 6,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鯊魚改級艦橋",
+    "id": 24,
+    "english": "Modified Shark-class Bridge"
+  },
+  "25": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 7,
+    "className": "甲鱉改級",
+    "part": {
+      "甲鱉級船體骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "白鋼鉚釘": 24,
+      "鈷鐵板": 24,
+      "玫瑰金錠": 24,
+      "純鈦板": 9,
+      "玄鋼鉚釘": 24,
+      "迦迦納怪鳥革": 24,
+      "致遠帆布": 9,
+      "翼膠": 12,
+      "薔薇輝石": 15,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "甲鱉改級船體",
+    "id": 25,
+    "english": "Modified Unkiu-class Pressure Hull"
+  },
+  "26": {
+    "sort": 2,
+    "displayName": "船身",
+    "class": 7,
+    "className": "甲鱉改級",
+    "part": {
+      "甲鱉級船尾骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 12,
+      "鈷鐵連接板": 30,
+      "鎢鋼錠": 9,
+      "純鈦板": 9,
+      "皇金錠": 18,
+      "黃金錠": 30,
+      "強化玻璃板": 30,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "甲鱉改級船尾",
+    "id": 26,
+    "english": "Modified Unkiu-class Stern"
+  },
+  "27": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 7,
+    "className": "甲鱉改級",
+    "part": {
+      "甲鱉級船首骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 18,
+      "白鋼連接板": 30,
+      "鎢鋼錠": 12,
+      "純鈦板": 9,
+      "黃金錠": 30,
+      "白金錠": 18,
+      "強化玻璃板": 30,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "甲鱉改級船首",
+    "id": 27,
+    "english": "Modified Unkiu-class Bow"
+  },
+  "28": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 7,
+    "className": "甲鱉改級",
+    "part": {
+      "甲鱉級艦橋骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "秘銀鉚釘": 21,
+      "白鈦錠": 21,
+      "靈銀鉚釘": 18,
+      "純鈦板": 9,
+      "巨龍革": 18,
+      "致遠帆布": 9,
+      "薔薇輝石": 6,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "甲鱉改級艦橋",
+    "id": 28,
+    "english": "Modified Unkiu-class Bridge"
+  },
+  "29": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 8,
+    "className": "鬚鯨改級",
+    "part": {
+      "須鯨級船體骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "山毛櫸木材": 12,
+      "玄鋼鉚釘": 24,
+      "白金錠": 24,
+      "翼膠": 12,
+      "純鈦板": 9,
+      "光銀錠": 18,
+      "清漆": 30,
+      "薔薇輝石": 15,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鬚鯨改級船體",
+    "id": 29,
+    "english": "Modified Whale-class Pressure Hull"
+  },
+  "30": {
+    "sort": 2,
+    "displayName": "船體",
+    "class": 8,
+    "className": "鬚鯨改級",
+    "part": {
+      "須鯨級船尾骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鈷鐵錠": 30,
+      "秘銀鉚釘": 30,
+      "鎢鋼錠": 9,
+      "純鈦板": 9,
+      "靈銀鉚釘": 15,
+      "光銀錠": 12,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 133,
+    "chineseTraditional": "鬚鯨改級船尾",
+    "id": 30,
+    "english": "Modified Whale-class Stern"
+  },
+  "31": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 8,
+    "className": "鬚鯨改級",
+    "part": {
+      "須鯨級船首骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 18,
+      "鈷鐵連接板": 30,
+      "鎢鋼錠": 12,
+      "純鈦板": 9,
+      "靈銀鉚釘": 30,
+      "白金錠": 18,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 133,
+    "chineseTraditional": "鬚鯨改級船首",
+    "id": 31,
+    "english": "Modified Whale-class Bow"
+  },
+  "32": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 8,
+    "className": "鬚鯨改級",
+    "part": {
+      "須鯨級艦橋骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 18,
+      "鈷鐵連接板": 30,
+      "鎢鋼錠": 24,
+      "純鈦板": 9,
+      "玄鋼鉚釘": 21,
+      "白金錠": 12,
+      "薔薇輝石": 6,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "鬚鯨改級艦橋",
+    "id": 32,
+    "english": "Modified Whale-class Bridge"
+  },
+  "33": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 9,
+    "className": "腔棘魚改級",
+    "part": {
+      "腔棘魚級船體骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "靈銀鉚釘": 30,
+      "光銀錠": 18,
+      "翼膠": 12,
+      "純鈦板": 9,
+      "白銅塊": 18,
+      "皇金塊": 18,
+      "薔薇輝石": 15,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "腔棘魚改級船體",
+    "id": 33,
+    "english": "Modified Coelacanth-class Pressure Hull"
+  },
+  "34": {
+    "sort": 2,
+    "displayName": "船尾",
+    "class": 9,
+    "className": "腔棘魚改級",
+    "part": {
+      "腔棘魚級船尾骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 12,
+      "白銅塊": 18,
+      "純鈦板": 9,
+      "鉬鋼錠": 30,
+      "皇金塊": 30,
+      "荒神鋼錠": 15,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "腔棘魚改級船尾",
+    "id": 34,
+    "english": "Modified Coelacanth-class Stern"
+  },
+  "35": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 9,
+    "className": "腔棘魚改級",
+    "part": {
+      "腔棘魚級船首骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鉬鋼錠": 30,
+      "靈銀鉚釘": 60,
+      "純鈦板": 9,
+      "鎢鋼錠": 12,
+      "鐵刀木木材": 9,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "腔棘魚改級船首",
+    "id": 35,
+    "english": "Modified Coelacanth-class Bow"
+  },
+  "36": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 9,
+    "className": "腔棘魚改級",
+    "part": {
+      "腔棘魚級艦橋骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鐵刀木木材": 9,
+      "光銀錠": 18,
+      "靈銀鉚釘": 36,
+      "純鈦板": 9,
+      "鉬鋼錠": 30,
+      "鋰輝石": 6,
+      "薔薇輝石": 6,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "腔棘魚改級艦橋",
+    "id": 36,
+    "english": "Modified Coelacanth-class Bridge"
+  },
+  "37": {
+    "sort": 1,
+    "displayName": "船體",
+    "class": 10,
+    "className": "希爾德拉改級",
+    "part": {
+      "希爾德拉級船體骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "光銀錠": 18,
+      "祝聖栗木木材": 30,
+      "翼膠": 12,
+      "純鈦板": 9,
+      "靈銀鉚釘": 30,
+      "鐵刀木角材": 6,
+      "薔薇輝石": 15,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "希爾德拉改級船體",
+    "id": 37,
+    "english": "Modified Syldra-class Pressure Hull"
+  },
+  "38": {
+    "sort": 2,
+    "displayName": "船尾",
+    "class": 10,
+    "className": "希爾德拉改級",
+    "part": {
+      "希爾德拉級船尾骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "皇金錠": 18,
+      "靈銀鉚釘": 15,
+      "白銅塊": 18,
+      "純鈦板": 9,
+      "堅鋼塊": 15,
+      "鐵刀木角材": 6,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "希爾德拉改級船尾",
+    "id": 38,
+    "english": "Modified Syldra-class Stern"
+  },
+  "39": {
+    "sort": 3,
+    "displayName": "船首",
+    "class": 10,
+    "className": "希爾德拉改級",
+    "part": {
+      "希爾德拉級船首骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鎢鋼錠": 12,
+      "光銀錠": 18,
+      "白銅塊": 18,
+      "純鈦板": 9,
+      "堅鋼塊": 15,
+      "堅鋼鉚釘": 15,
+      "薔薇輝石": 12,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "希爾德拉改級船首",
+    "id": 39,
+    "english": "Modified Syldra-class Bow"
+  },
+  "40": {
+    "sort": 4,
+    "displayName": "艦橋",
+    "class": 10,
+    "className": "希爾德拉改級",
+    "part": {
+      "希爾德拉級艦橋骨架": 1
+    },
+    "recipe": {
+      "超硬加隆德鋼": 9,
+      "柳杉木材": 9,
+      "鎢鋼方板": 9,
+      "鉬鋼錠": 30,
+      "靈銀鉚釘": 15,
+      "純鈦板": 9,
+      "鐵刀木角材": 6,
+      "堅鋼鉚釘": 15,
+      "薔薇輝石": 6,
+      "硬銀附魔墨水": 18
+    },
+    "itemLevel": 180,
+    "chineseTraditional": "希爾德拉改級艦橋",
+    "id": 40,
+    "english": "Modified Syldra-class Bridge"
   }
 }

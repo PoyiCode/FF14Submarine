@@ -1,110 +1,997 @@
 {
-  "火之碎晶": { "category": "水晶", "itemLevel": 1 },
-  "冰之碎晶": { "category": "水晶", "itemLevel": 1 },
-  "風之碎晶": { "category": "水晶", "itemLevel": 1 },
-  "水之碎晶": { "category": "水晶", "itemLevel": 1 },
-  "火之水晶": { "category": "水晶", "itemLevel": 25 },
-  "冰之水晶": { "category": "水晶", "itemLevel": 25 },
-  "風之水晶": { "category": "水晶", "itemLevel": 25 },
-  "土之水晶": { "category": "水晶", "itemLevel": 25 },
-  "雷之水晶": { "category": "水晶", "itemLevel": 25 },
-  "水之水晶": { "category": "水晶", "itemLevel": 25 },
-  "火之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "冰之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "風之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "土之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "雷之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "水之晶簇": { "category": "水晶", "itemLevel": 50 },
-  "銅礦": { "category": "石材", "itemLevel": 1 },
-  "鐵礦": { "category": "石材", "itemLevel": 13 },
-  "銀礦": { "category": "石材", "itemLevel": 23 },
-  "秘銀礦": { "category": "石材", "itemLevel": 34 },
-  "綠金礦": { "category": "石材", "itemLevel": 42 },
-  "鈷鐵礦": { "category": "石材", "itemLevel": 43 },
-  "金礦": { "category": "石材", "itemLevel": 55 },
-  "玄鐵礦": { "category": "石材", "itemLevel": 55 },
-  "石蜥蜴的蛋": { "category": "石材", "itemLevel": 40 },
-  "琥珀原石": { "category": "石材", "itemLevel": 40 },
-  "斑銅礦": { "category": "石材", "itemLevel": 70 },
-  "鎢鐵礦": { "category": "石材", "itemLevel": 70 },
-  "自然金": { "category": "石材", "itemLevel": 70 },
-  "沉積岩磨刀石": { "category": "石材", "itemLevel": 70 },
-  "黃玉原石": { "category": "石材", "itemLevel": 70 },
-  "白金礦": { "category": "石材", "itemLevel": 80 },
-  "白鎢礦": { "category": "石材", "itemLevel": 90 },
-  "金剛砂": { "category": "石材", "itemLevel": 90 },
-  "藍鐵礦": { "category": "石材", "itemLevel": 125 },
-  "靈銀沙": { "category": "石材", "itemLevel": 115 },
-  "靈銀礦": { "category": "石材", "itemLevel": 130 },
-  "水淙石原石": { "category": "石材", "itemLevel": 130 },
-  "蒼天石原石": { "category": "石材", "itemLevel": 133 },
-  "白鈦礦": { "category": "石材", "itemLevel": 136 },
-  "硬銀沙": { "category": "石材", "itemLevel": 136 },
-  "精鋼礦": { "category": "石材", "itemLevel": 148 },
-  "王金沙": { "category": "石材", "itemLevel": 148 },
-  "硬銀礦": { "category": "石材", "itemLevel": 142 },
-  "白雲母": { "category": "石材", "itemLevel": 142 },
-  "王金礦": { "category": "石材", "itemLevel": 160 },
-  "青紫石英": { "category": "石材", "itemLevel": 160 },
-  "星砂礫": { "category": "石材", "itemLevel": 160 },
-  "鐵紋礦石": { "category": "石材", "itemLevel": 180 },
-  "閃鋅礦": { "category": "石材", "itemLevel": 180 },
-  "光銀礦": { "category": "石材", "itemLevel": 210 },
-  "菱鋅礦": { "category": "石材", "itemLevel": 210 },
-  "魔銅沙": { "category": "石材", "itemLevel": 255 },
-  "鋰輝石原石": { "category": "石材", "itemLevel": 255 },
-  "矽岩": { "category": "石材", "itemLevel": 260 },
-  "輝鉬礦": { "category": "石材", "itemLevel": 285 },
-  "薔薇輝石原礦": { "category": "石材", "itemLevel": 290 },
-  "純鈦礦": { "category": "石材", "itemLevel": 300 },
-  "聖蜥蜴的粗皮": { "category": "皮革", "itemLevel": 55 },
-  "飛龍的粗皮": { "category": "皮革", "itemLevel": 130 },
-  "巨龍的粗皮": { "category": "皮革", "itemLevel": 142 },
-  "迦迦納怪鳥的粗皮": { "category": "皮革", "itemLevel": 255 },
-  "亞麻": { "category": "布料", "itemLevel": 32 },
-  "紅摩可草": { "category": "布料", "itemLevel": 130 },
-  "碳纖維": { "category": "布料", "itemLevel": 180 },
-  "玻璃纖維": { "category": "布料", "itemLevel": 180 },
-  "胡桃原木": { "category": "木材", "itemLevel": 25 },
-  "橡木原木": { "category": "木材", "itemLevel": 32 },
-  "雲杉原木": { "category": "木材", "itemLevel": 55 },
-  "矽化木": { "category": "木材", "itemLevel": 90 },
-  "雪松原木": { "category": "木材", "itemLevel": 115 },
-  "鐵刀木": { "category": "木材", "itemLevel": 139 },
-  "暗栗木原木": { "category": "木材", "itemLevel": 136 },
-  "樺木原木": { "category": "木材", "itemLevel": 148 },
-  "山毛櫸原木": { "category": "木材", "itemLevel": 255 },
-  "柳杉原木": { "category": "木材", "itemLevel": 300 },
-  "山羊角": { "category": "骨材", "itemLevel": 25 },
-  "岩鹽": { "category": "煉金原料", "itemLevel": 1 },
-  "發泡水": { "category": "煉金原料", "itemLevel": 11 },
-  "泡鹼": { "category": "煉金原料", "itemLevel": 25 },
-  "矽砂": { "category": "煉金原料", "itemLevel": 25 },
-  "炸彈的灰": { "category": "煉金原料", "itemLevel": 26 },
-  "黑明礬": { "category": "煉金原料", "itemLevel": 37 },
-  "榴彈怪的灰": { "category": "煉金原料", "itemLevel": 40 },
-  "布丁的肉": { "category": "煉金原料", "itemLevel": 40 },
-  "惡精靈的翅膀": { "category": "煉金原料", "itemLevel": 43 },
-  "焦炭": { "category": "煉金原料", "itemLevel": 70 },
-  "灰汁": { "category": "煉金原料", "itemLevel": 70 },
-  "樹汁塊": { "category": "煉金原料", "itemLevel": 70 },
-  "緋紅樹汁": { "category": "煉金原料", "itemLevel": 70 },
-  "阿拉基克細沙": { "category": "煉金原料", "itemLevel": 90 },
-  "阿拉基克樹液": { "category": "煉金原料", "itemLevel": 110 },
-  "明膠怪的肉": { "category": "煉金原料", "itemLevel": 120 },
-  "熊脂": { "category": "煉金原料", "itemLevel": 125 },
-  "德拉瓦尼亞天然水": { "category": "煉金原料", "itemLevel": 130 },
-  "雙足飛龍的翼膜": { "category": "煉金原料", "itemLevel": 130 },
-  "德拉瓦尼亞槲寄生": { "category": "煉金原料", "itemLevel": 133 },
-  "阿巴拉提亞天然水": { "category": "煉金原料", "itemLevel": 142 },
-  "阿巴拉提亞槲寄生": { "category": "煉金原料", "itemLevel": 142 },
-  "長頸駝的唾液": { "category": "煉金原料", "itemLevel": 139 },
-  "曉光靈沙": { "category": "煉金原料", "itemLevel": 150 },
-  "星極花": { "category": "煉金原料", "itemLevel": 160 },
-  "拉吉克硬化觸媒": { "category": "煉金原料", "itemLevel": 180 },
-  "基爾巴尼亞明礬": { "category": "煉金原料", "itemLevel": 255 },
-  "松節油": { "category": "染料", "itemLevel": 1 },
-  "庫爾扎斯茶葉": { "category": "食材", "itemLevel": 125 },
-  "荒神靈銀": { "category": "金屬", "itemLevel": 210 },
-  "荒神合金": { "category": "金屬", "itemLevel": 210 }
+  "1": {
+    "id": 1,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "火之碎晶",
+    "english": "Fire Shard",
+    "chineseSimplified": "火之碎晶",
+    "japanese": "ファイアシャード"
+  },
+  "2": {
+    "id": 2,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "冰之碎晶",
+    "english": "Ice Shard",
+    "chineseSimplified": "冰之碎晶",
+    "japanese": "アイスシャード"
+  },
+  "3": {
+    "id": 3,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "風之碎晶",
+    "english": "Wind Shard",
+    "chineseSimplified": "风之碎晶",
+    "japanese": "ウィンドシャード"
+  },
+  "4": {
+    "id": 4,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "水之碎晶",
+    "english": "Water Shard",
+    "chineseSimplified": "水之碎晶",
+    "japanese": "ウォーターシャード"
+  },
+  "5": {
+    "id": 5,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "火之水晶",
+    "english": "Fire Crystal",
+    "chineseSimplified": "火之水晶",
+    "japanese": "ファイアクリスタル"
+  },
+  "6": {
+    "id": 6,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "冰之水晶",
+    "english": "Ice Crystal",
+    "chineseSimplified": "冰之水晶",
+    "japanese": "アイスクリスタル"
+  },
+  "7": {
+    "id": 7,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "風之水晶",
+    "english": "Wind Crystal",
+    "chineseSimplified": "风之水晶",
+    "japanese": "ウィンドクリスタル"
+  },
+  "8": {
+    "id": 8,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "土之水晶",
+    "english": "Earth Crystal",
+    "chineseSimplified": "土之水晶",
+    "japanese": "アースクリスタル"
+  },
+  "9": {
+    "id": 9,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "雷之水晶",
+    "english": "Lightning Crystal",
+    "chineseSimplified": "雷之水晶",
+    "japanese": "ライトニングクリスタル"
+  },
+  "10": {
+    "id": 10,
+    "category": "水晶",
+    "itemLevel": 25,
+    "chineseTraditional": "水之水晶",
+    "english": "Water Crystal",
+    "chineseSimplified": "水之水晶",
+    "japanese": "ウォータークリスタル"
+  },
+  "11": {
+    "id": 11,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "火之晶簇",
+    "english": "Fire Cluster",
+    "chineseSimplified": "火之晶簇",
+    "japanese": "ファイアクラスター"
+  },
+  "12": {
+    "id": 12,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "冰之晶簇",
+    "english": "Ice Cluster",
+    "chineseSimplified": "冰之晶簇",
+    "japanese": "アイスクラスター"
+  },
+  "13": {
+    "id": 13,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "風之晶簇",
+    "english": "Wind Cluster",
+    "chineseSimplified": "风之晶簇",
+    "japanese": "ウィンドクラスター"
+  },
+  "14": {
+    "id": 14,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "土之晶簇",
+    "english": "Earth Cluster",
+    "chineseSimplified": "土之晶簇",
+    "japanese": "アースクラスター"
+  },
+  "15": {
+    "id": 15,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "雷之晶簇",
+    "english": "Lightning Cluster",
+    "chineseSimplified": "雷之晶簇",
+    "japanese": "ライトニングクラスター"
+  },
+  "16": {
+    "id": 16,
+    "category": "水晶",
+    "itemLevel": 50,
+    "chineseTraditional": "水之晶簇",
+    "english": "Water Cluster",
+    "chineseSimplified": "水之晶簇",
+    "japanese": "ウォータークラスター"
+  },
+  "17": {
+    "id": 17,
+    "category": "石材",
+    "itemLevel": 1,
+    "chineseTraditional": "銅礦",
+    "english": "Copper Ore",
+    "chineseSimplified": "铜矿",
+    "japanese": "銅鉱"
+  },
+  "18": {
+    "id": 18,
+    "category": "石材",
+    "itemLevel": 13,
+    "chineseTraditional": "鐵礦",
+    "english": "Iron Ore",
+    "chineseSimplified": "铁矿",
+    "japanese": "鉄鉱"
+  },
+  "19": {
+    "id": 19,
+    "category": "石材",
+    "itemLevel": 23,
+    "chineseTraditional": "銀礦",
+    "english": "Silver Ore",
+    "chineseSimplified": "银矿",
+    "japanese": "銀鉱"
+  },
+  "20": {
+    "id": 20,
+    "category": "石材",
+    "itemLevel": 34,
+    "chineseTraditional": "秘銀礦",
+    "english": "Mythril Ore",
+    "chineseSimplified": "秘银矿",
+    "japanese": "霊銀鉱"
+  },
+  "21": {
+    "id": 21,
+    "category": "石材",
+    "itemLevel": 40,
+    "chineseTraditional": "石蜥蜴的蛋",
+    "english": "Basilisk Egg",
+    "chineseSimplified": "石蜥蜴的蛋",
+    "japanese": "バジリスクの卵"
+  },
+  "22": {
+    "id": 22,
+    "category": "石材",
+    "itemLevel": 40,
+    "chineseTraditional": "琥珀原石",
+    "english": "Raw Amber",
+    "chineseSimplified": "琥珀原石",
+    "japanese": "アンバー原石"
+  },
+  "23": {
+    "id": 23,
+    "category": "石材",
+    "itemLevel": 42,
+    "chineseTraditional": "綠金礦",
+    "english": "Electrum Ore",
+    "chineseSimplified": "绿金矿",
+    "japanese": "青金鉱"
+  },
+  "24": {
+    "id": 24,
+    "category": "石材",
+    "itemLevel": 43,
+    "chineseTraditional": "鈷鐵礦",
+    "english": "Cobalt Ore",
+    "chineseSimplified": "钴铁矿",
+    "japanese": "鏡鉄鉱"
+  },
+  "25": {
+    "id": 25,
+    "category": "石材",
+    "itemLevel": 55,
+    "chineseTraditional": "金礦",
+    "english": "Gold Ore",
+    "chineseSimplified": "金矿",
+    "japanese": "金鉱"
+  },
+  "26": {
+    "id": 26,
+    "category": "石材",
+    "itemLevel": 55,
+    "chineseTraditional": "玄鐵礦",
+    "english": "Darksteel Ore",
+    "chineseSimplified": "玄铁矿",
+    "japanese": "闇鉄鉱"
+  },
+  "27": {
+    "id": 27,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "斑銅礦",
+    "english": "Peacock Ore",
+    "chineseSimplified": "斑铜矿",
+    "japanese": "斑銅鉱"
+  },
+  "28": {
+    "id": 28,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "鎢鐵礦",
+    "english": "Ferberite",
+    "chineseSimplified": "钨铁矿",
+    "japanese": "鉄重石"
+  },
+  "29": {
+    "id": 29,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "自然金",
+    "english": "Native Gold",
+    "chineseSimplified": "自然金",
+    "japanese": "自然金"
+  },
+  "30": {
+    "id": 30,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "沉積岩磨刀石",
+    "english": "Aqueous Whetstone",
+    "chineseSimplified": "沉积岩磨刀石",
+    "japanese": "水成岩砥石"
+  },
+  "31": {
+    "id": 31,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "黃玉原石",
+    "english": "Raw Topaz",
+    "chineseSimplified": "黄玉原石",
+    "japanese": "トパーズ原石"
+  },
+  "32": {
+    "id": 32,
+    "category": "石材",
+    "itemLevel": 80,
+    "chineseTraditional": "白金礦",
+    "english": "Platinum Ore",
+    "chineseSimplified": "白金矿",
+    "japanese": "白金鉱"
+  },
+  "33": {
+    "id": 33,
+    "category": "石材",
+    "itemLevel": 90,
+    "chineseTraditional": "白鎢礦",
+    "english": "Scheelite",
+    "chineseSimplified": "白钨矿",
+    "japanese": "灰重石"
+  },
+  "34": {
+    "id": 34,
+    "category": "石材",
+    "itemLevel": 90,
+    "chineseTraditional": "金剛砂",
+    "english": "Emery",
+    "chineseSimplified": "金刚砂",
+    "japanese": "金剛砂"
+  },
+  "35": {
+    "id": 35,
+    "category": "石材",
+    "itemLevel": 115,
+    "chineseTraditional": "靈銀沙",
+    "english": "Mythrite Sand",
+    "chineseSimplified": "灵银沙",
+    "japanese": "精霊銀砂"
+  },
+  "36": {
+    "id": 36,
+    "category": "石材",
+    "itemLevel": 125,
+    "chineseTraditional": "藍鐵礦",
+    "english": "Vivianite",
+    "chineseSimplified": "蓝铁矿",
+    "japanese": "藍鉄鉱"
+  },
+  "37": {
+    "id": 37,
+    "category": "石材",
+    "itemLevel": 130,
+    "chineseTraditional": "靈銀礦",
+    "english": "Mythrite Ore",
+    "chineseSimplified": "灵银矿",
+    "japanese": "精霊銀鉱"
+  },
+  "38": {
+    "id": 38,
+    "category": "石材",
+    "itemLevel": 130,
+    "chineseTraditional": "水淙石原石",
+    "english": "Raw Larimar",
+    "chineseSimplified": "水淙石原石",
+    "japanese": "ラリマール原石"
+  },
+  "39": {
+    "id": 39,
+    "category": "石材",
+    "itemLevel": 133,
+    "chineseTraditional": "蒼天石原石",
+    "english": "Raw Celestine",
+    "chineseSimplified": "苍天石原石",
+    "japanese": "天青石"
+  },
+  "40": {
+    "id": 40,
+    "category": "石材",
+    "itemLevel": 136,
+    "chineseTraditional": "白鈦礦",
+    "english": "Titanium Ore",
+    "chineseSimplified": "白钛矿",
+    "japanese": "チタン鉱"
+  },
+  "41": {
+    "id": 41,
+    "category": "石材",
+    "itemLevel": 136,
+    "chineseTraditional": "硬銀沙",
+    "english": "Hardsilver Sand",
+    "chineseSimplified": "硬银沙",
+    "japanese": "硬銀砂"
+  },
+  "42": {
+    "id": 42,
+    "category": "石材",
+    "itemLevel": 142,
+    "chineseTraditional": "硬銀礦",
+    "english": "Hardsilver Ore",
+    "chineseSimplified": "硬银矿",
+    "japanese": "硬銀鉱"
+  },
+  "43": {
+    "id": 43,
+    "category": "石材",
+    "itemLevel": 142,
+    "chineseTraditional": "白雲母",
+    "english": "Cloud Mica",
+    "chineseSimplified": "白云母",
+    "japanese": "白雲母"
+  },
+  "44": {
+    "id": 44,
+    "category": "石材",
+    "itemLevel": 160,
+    "chineseTraditional": "青紫石英",
+    "english": "Violet Quartz",
+    "chineseSimplified": "青紫石英",
+    "japanese": "バイオレットクォーツ"
+  },
+  "45": {
+    "id": 45,
+    "category": "石材",
+    "itemLevel": 160,
+    "chineseTraditional": "星砂礫",
+    "english": "Astral Moraine",
+    "chineseSimplified": "星砂砾",
+    "japanese": "アストラルグラベル"
+  },
+  "46": {
+    "id": 46,
+    "category": "石材",
+    "itemLevel": 180,
+    "chineseTraditional": "鐵紋礦石",
+    "english": "Kamacite Ore",
+    "chineseSimplified": "铁纹矿石",
+    "japanese": "カマサイト鉱石"
+  },
+  "47": {
+    "id": 47,
+    "category": "石材",
+    "itemLevel": 180,
+    "chineseTraditional": "閃鋅礦",
+    "english": "Sphalerite",
+    "chineseSimplified": "闪锌矿",
+    "japanese": "閃亜鉛鉱"
+  },
+  "48": {
+    "id": 48,
+    "category": "石材",
+    "itemLevel": 210,
+    "chineseTraditional": "光銀礦",
+    "english": "Lumythrite Ore",
+    "chineseSimplified": "光银矿",
+    "japanese": "光霊銀鉱"
+  },
+  "49": {
+    "id": 49,
+    "category": "石材",
+    "itemLevel": 210,
+    "chineseTraditional": "菱鋅礦",
+    "english": "Smithsonite Ore",
+    "chineseSimplified": "菱锌矿",
+    "japanese": "菱亜鉛鉱"
+  },
+  "50": {
+    "id": 50,
+    "category": "石材",
+    "itemLevel": 255,
+    "chineseTraditional": "魔銅沙",
+    "english": "Koppranickel Sand",
+    "chineseSimplified": "魔铜沙",
+    "japanese": "魔銅砂"
+  },
+  "51": {
+    "id": 51,
+    "category": "石材",
+    "itemLevel": 255,
+    "chineseTraditional": "鋰輝石原石",
+    "english": "Raw Triphane",
+    "chineseSimplified": "锂辉石原石",
+    "japanese": "トリフェーン原石"
+  },
+  "52": {
+    "id": 52,
+    "category": "石材",
+    "itemLevel": 260,
+    "chineseTraditional": "矽岩",
+    "english": "Silica"
+  },
+  "53": {
+    "id": 53,
+    "category": "石材",
+    "itemLevel": 285,
+    "chineseTraditional": "輝鉬礦",
+    "english": "Molybdenum Ore",
+    "chineseSimplified": "辉钼矿",
+    "japanese": "輝水鉛鉱"
+  },
+  "54": {
+    "id": 54,
+    "category": "石材",
+    "itemLevel": 290,
+    "chineseTraditional": "薔薇輝石原石",
+    "english": "Raw Rhodonite",
+    "chineseSimplified": "蔷薇辉石原石",
+    "japanese": "ロードナイト原石"
+  },
+  "55": {
+    "id": 55,
+    "category": "石材",
+    "itemLevel": 300,
+    "chineseTraditional": "純鈦礦",
+    "english": "Pure Titanium Ore",
+    "chineseSimplified": "纯钛矿",
+    "japanese": "ピュアチタン鉱"
+  },
+  "56": {
+    "id": 56,
+    "category": "金屬",
+    "itemLevel": 210,
+    "chineseTraditional": "荒神靈銀",
+    "english": "Eikon Mythrite",
+    "chineseSimplified": "荒神灵银",
+    "japanese": "イコンミスライト"
+  },
+  "57": {
+    "id": 57,
+    "category": "金屬",
+    "itemLevel": 210,
+    "chineseTraditional": "荒神合金",
+    "english": "Eikon Metal",
+    "chineseSimplified": "荒神合金",
+    "japanese": "イコンメタ��"
+  },
+  "58": {
+    "id": 58,
+    "category": "木材",
+    "itemLevel": 25,
+    "chineseTraditional": "胡桃原木",
+    "english": "Walnut Log",
+    "chineseSimplified": "胡桃原木",
+    "japanese": "ウォルナット原木"
+  },
+  "59": {
+    "id": 59,
+    "category": "木材",
+    "itemLevel": 32,
+    "chineseTraditional": "橡木原木",
+    "english": "Oak Log",
+    "chineseSimplified": "橡木原木",
+    "japanese": "オーク原木"
+  },
+  "60": {
+    "id": 60,
+    "category": "木材",
+    "itemLevel": 55,
+    "chineseTraditional": "雲杉原木",
+    "english": "Spruce Log",
+    "chineseSimplified": "云杉原木",
+    "japanese": "スプルース原木"
+  },
+  "61": {
+    "id": 61,
+    "category": "木材",
+    "itemLevel": 90,
+    "chineseTraditional": "矽化木",
+    "english": "Petrified Log",
+    "chineseSimplified": "硅化木",
+    "japanese": "珪化木"
+  },
+  "62": {
+    "id": 62,
+    "category": "木材",
+    "itemLevel": 115,
+    "chineseTraditional": "雪松原木",
+    "english": "Cedar Log",
+    "chineseSimplified": "雪松原木",
+    "japanese": "シーダー原木"
+  },
+  "63": {
+    "id": 63,
+    "category": "木材",
+    "itemLevel": 136,
+    "chineseTraditional": "暗栗木原木",
+    "english": "Dark Chestnut Log",
+    "chineseSimplified": "暗栗木原木",
+    "japanese": "ダークチェスナット原木"
+  },
+  "64": {
+    "id": 64,
+    "category": "木材",
+    "itemLevel": 139,
+    "chineseTraditional": "鐵刀木",
+    "english": "Cassia Log",
+    "chineseSimplified": "铁刀木",
+    "japanese": "鉄刀木"
+  },
+  "65": {
+    "id": 65,
+    "category": "木材",
+    "itemLevel": 148,
+    "chineseTraditional": "樺木原木",
+    "english": "Birch Log",
+    "chineseSimplified": "桦木原木",
+    "japanese": "バーチ原木"
+  },
+  "66": {
+    "id": 66,
+    "category": "木材",
+    "itemLevel": 255,
+    "chineseTraditional": "山毛櫸原木",
+    "english": "Beech Log",
+    "chineseSimplified": "山毛榉原木",
+    "japanese": "ビーチ原木"
+  },
+  "67": {
+    "id": 67,
+    "category": "木材",
+    "itemLevel": 300,
+    "chineseTraditional": "柳杉原木",
+    "english": "Cryptomeria Log",
+    "chineseSimplified": "柳杉原木",
+    "japanese": "クリプトメリア原木"
+  },
+  "68": {
+    "id": 68,
+    "category": "布料",
+    "itemLevel": 32,
+    "chineseTraditional": "亞麻",
+    "english": "Flax",
+    "chineseSimplified": "亚麻",
+    "japanese": "亜麻"
+  },
+  "69": {
+    "id": 69,
+    "category": "布料",
+    "itemLevel": 130,
+    "chineseTraditional": "紅摩可草",
+    "english": "Red Moko Grass",
+    "chineseSimplified": "红莫柯草",
+    "japanese": "赤モコ草"
+  },
+  "70": {
+    "id": 70,
+    "category": "布料",
+    "itemLevel": 180,
+    "chineseTraditional": "碳纖維",
+    "english": "Carbon Fiber",
+    "chineseSimplified": "碳纤维",
+    "japanese": "カーボンファイバー"
+  },
+  "71": {
+    "id": 71,
+    "category": "布料",
+    "itemLevel": 180,
+    "chineseTraditional": "玻璃纖維",
+    "english": "Glass Fiber",
+    "chineseSimplified": "玻璃纤维",
+    "japanese": "グラスファイバー"
+  },
+  "72": {
+    "id": 72,
+    "category": "皮革",
+    "itemLevel": 55,
+    "chineseTraditional": "聖蜥蜴的粗皮",
+    "english": "Uraeus Skin",
+    "chineseSimplified": "圣蜥蜴的粗皮",
+    "japanese": "ウラエウスの粗皮"
+  },
+  "73": {
+    "id": 73,
+    "category": "皮革",
+    "itemLevel": 130,
+    "chineseTraditional": "飛龍的粗皮",
+    "english": "Wyvern Skin",
+    "chineseSimplified": "飞龙的粗皮",
+    "japanese": "ワイバーンの粗皮"
+  },
+  "74": {
+    "id": 74,
+    "category": "皮革",
+    "itemLevel": 142,
+    "chineseTraditional": "巨龍的粗皮",
+    "english": "Dragon Skin",
+    "chineseSimplified": "巨龙的粗皮",
+    "japanese": "ドラゴンの粗皮"
+  },
+  "75": {
+    "id": 75,
+    "category": "皮革",
+    "itemLevel": 255,
+    "chineseTraditional": "迦迦納怪鳥的粗皮",
+    "english": "Gagana Skin",
+    "chineseSimplified": "迦迦纳怪鸟的粗皮",
+    "japanese": "ガガナの粗皮"
+  },
+  "76": {
+    "id": 76,
+    "category": "骨材",
+    "itemLevel": 25,
+    "chineseTraditional": "山羊角",
+    "english": "Aldgoat Horn",
+    "chineseSimplified": "山羊角",
+    "japanese": "アルドゴートの角"
+  },
+  "77": {
+    "id": 77,
+    "category": "鍊金原料",
+    "itemLevel": 1,
+    "chineseTraditional": "岩鹽",
+    "english": "Rock Salt",
+    "chineseSimplified": "岩盐",
+    "japanese": "岩塩"
+  },
+  "78": {
+    "id": 78,
+    "category": "鍊金原料",
+    "itemLevel": 11,
+    "chineseTraditional": "發泡水",
+    "english": "Effervescent Water",
+    "chineseSimplified": "发泡水",
+    "japanese": "ソーダ水"
+  },
+  "79": {
+    "id": 79,
+    "category": "鍊金原料",
+    "itemLevel": 25,
+    "chineseTraditional": "泡鹼",
+    "english": "Natron",
+    "chineseSimplified": "泡碱",
+    "japanese": "重曹"
+  },
+  "80": {
+    "id": 80,
+    "category": "鍊金原料",
+    "itemLevel": 25,
+    "chineseTraditional": "矽砂",
+    "english": "Silica Sand"
+  },
+  "81": {
+    "id": 81,
+    "category": "鍊金原料",
+    "itemLevel": 26,
+    "chineseTraditional": "炸彈的灰",
+    "english": "Bomb Ash",
+    "chineseSimplified": "爆弹怪的灰",
+    "japanese": "ボムの灰"
+  },
+  "82": {
+    "id": 82,
+    "category": "鍊金原料",
+    "itemLevel": 37,
+    "chineseTraditional": "黑明礬",
+    "english": "Black Alumen",
+    "chineseSimplified": "黑明矾",
+    "japanese": "ブラックアルメン"
+  },
+  "83": {
+    "id": 83,
+    "category": "鍊金原料",
+    "itemLevel": 40,
+    "chineseTraditional": "榴彈怪的灰",
+    "english": "Grenade Ash",
+    "chineseSimplified": "榴弹怪的灰",
+    "japanese": "グレネードの灰"
+  },
+  "84": {
+    "id": 84,
+    "category": "鍊金原料",
+    "itemLevel": 40,
+    "chineseTraditional": "布丁的肉",
+    "english": "Pudding Flesh",
+    "chineseSimplified": "软糊怪的肉",
+    "japanese": "プリンの肉"
+  },
+  "85": {
+    "id": 85,
+    "category": "鍊金原料",
+    "itemLevel": 43,
+    "chineseTraditional": "惡精靈的翅膀",
+    "english": "Ahriman Wing",
+    "chineseSimplified": "冥鬼的翅膀",
+    "japanese": "アーリマンの翼"
+  },
+  "86": {
+    "id": 86,
+    "category": "鍊金原料",
+    "itemLevel": 70,
+    "chineseTraditional": "焦炭",
+    "english": "Coke",
+    "chineseSimplified": "焦炭",
+    "japanese": "コークス"
+  },
+  "87": {
+    "id": 87,
+    "category": "鍊金原料",
+    "itemLevel": 70,
+    "chineseTraditional": "灰汁",
+    "english": "Potash",
+    "chineseSimplified": "灰汁",
+    "japanese": "灰汁"
+  },
+  "88": {
+    "id": 88,
+    "category": "鍊金原料",
+    "itemLevel": 70,
+    "chineseTraditional": "樹汁塊",
+    "english": "Hardened Sap",
+    "chineseSimplified": "树汁块",
+    "japanese": "樹液塊"
+  },
+  "89": {
+    "id": 89,
+    "category": "鍊金原料",
+    "itemLevel": 70,
+    "chineseTraditional": "緋紅樹汁",
+    "english": "Scarlet Sap",
+    "chineseSimplified": "绯红树汁",
+    "japanese": "緋樹液"
+  },
+  "90": {
+    "id": 90,
+    "category": "鍊金原料",
+    "itemLevel": 90,
+    "chineseTraditional": "拉吉克靈砂",
+    "english": "Raziqsand",
+    "chineseSimplified": "拉吉克灵砂",
+    "japanese": "アブダルラジクの霊砂"
+  },
+  "91": {
+    "id": 91,
+    "category": "鍊金原料",
+    "itemLevel": 110,
+    "chineseTraditional": "拉吉克靈藥",
+    "english": "Raziqsap",
+    "chineseSimplified": "拉吉克灵药",
+    "japanese": "アブダルラジクの霊薬"
+  },
+  "92": {
+    "id": 92,
+    "category": "鍊金原料",
+    "itemLevel": 120,
+    "chineseTraditional": "明膠怪的肉",
+    "english": "Gelato Flesh",
+    "chineseSimplified": "明胶怪的肉",
+    "japanese": "ジェラートの肉"
+  },
+  "93": {
+    "id": 93,
+    "category": "鍊金原料",
+    "itemLevel": 125,
+    "chineseTraditional": "熊脂",
+    "english": "Bear Fat",
+    "chineseSimplified": "熊脂",
+    "japanese": "熊脂"
+  },
+  "94": {
+    "id": 94,
+    "category": "鍊金原料",
+    "itemLevel": 130,
+    "chineseTraditional": "德拉瓦尼亞天然水",
+    "english": "Dravanian Spring Water",
+    "chineseSimplified": "龙堡天然水",
+    "japanese": "ドラヴァニア天然水"
+  },
+  "95": {
+    "id": 95,
+    "category": "鍊金原料",
+    "itemLevel": 130,
+    "chineseTraditional": "雙足飛龍的翼膜",
+    "english": "Wyvern Wing",
+    "chineseSimplified": "双足飞龙的翼膜",
+    "japanese": "ワイバーンの翼膜"
+  },
+  "96": {
+    "id": 96,
+    "category": "鍊金原料",
+    "itemLevel": 130,
+    "chineseTraditional": "紅莫柯草",
+    "english": "Red Moko Grass",
+    "chineseSimplified": "红莫柯草",
+    "japanese": "赤モコ草"
+  },
+  "97": {
+    "id": 97,
+    "category": "鍊金原料",
+    "itemLevel": 133,
+    "chineseTraditional": "德拉瓦尼亞槲寄生",
+    "english": "Dravanian Mistletoe",
+    "chineseSimplified": "龙堡槲寄生",
+    "japanese": "ドラヴァニアミスルトゥ"
+  },
+  "98": {
+    "id": 98,
+    "category": "鍊金原料",
+    "itemLevel": 139,
+    "chineseTraditional": "長頸駝的唾液",
+    "english": "Dhalmel Saliva",
+    "chineseSimplified": "长颈驼的唾液",
+    "japanese": "ダルメルの唾液"
+  },
+  "99": {
+    "id": 99,
+    "category": "鍊金原料",
+    "itemLevel": 142,
+    "chineseTraditional": "阿巴拉提亞天然水",
+    "english": "Abalathian Spring Water",
+    "chineseSimplified": "阿巴拉提亚天然水",
+    "japanese": "アバラシア天然水"
+  },
+  "100": {
+    "id": 100,
+    "category": "鍊金原料",
+    "itemLevel": 142,
+    "chineseTraditional": "阿巴拉提亞槲寄生",
+    "english": "Abalathian Mistletoe",
+    "chineseSimplified": "阿巴拉提亚槲寄生",
+    "japanese": "アバラシアミスルトゥ"
+  },
+  "101": {
+    "id": 101,
+    "category": "鍊金原料",
+    "itemLevel": 148,
+    "chineseTraditional": "皇金沙",
+    "english": "Aurum Regis Sand",
+    "chineseSimplified": "皇金沙",
+    "japanese": "皇金砂"
+  },
+  "102": {
+    "id": 102,
+    "category": "鍊金原料",
+    "itemLevel": 148,
+    "chineseTraditional": "堅鋼礦",
+    "english": "Adamantite Ore",
+    "chineseSimplified": "精金矿",
+    "japanese": "アダマン鉱"
+  },
+  "103": {
+    "id": 103,
+    "category": "鍊金原料",
+    "itemLevel": 150,
+    "chineseTraditional": "曉光靈沙",
+    "english": "Dawnborne Aethersand",
+    "chineseSimplified": "晓光灵砂",
+    "japanese": "暁光の霊砂"
+  },
+  "104": {
+    "id": 104,
+    "category": "鍊金原料",
+    "itemLevel": 150,
+    "chineseTraditional": "曉光靈砂",
+    "english": "Dawnborne Aethersand",
+    "chineseSimplified": "晓光灵砂",
+    "japanese": "暁光の霊砂"
+  },
+  "105": {
+    "id": 105,
+    "category": "鍊金原料",
+    "itemLevel": 160,
+    "chineseTraditional": "星極花",
+    "english": "Seventh Heaven",
+    "chineseSimplified": "星极花",
+    "japanese": "アストラルフラワー"
+  },
+  "106": {
+    "id": 106,
+    "category": "鍊金原料",
+    "itemLevel": 160,
+    "chineseTraditional": "皇金礦",
+    "english": "Aurum Regis Ore",
+    "chineseSimplified": "皇金矿",
+    "japanese": "皇金鉱"
+  },
+  "107": {
+    "id": 107,
+    "category": "鍊金原料",
+    "itemLevel": 160,
+    "chineseTraditional": "星極油",
+    "english": "Astral Oil",
+    "chineseSimplified": "星极油",
+    "japanese": "アストラルオイル"
+  },
+  "108": {
+    "id": 108,
+    "category": "鍊金原料",
+    "itemLevel": 180,
+    "chineseTraditional": "拉吉克硬化觸媒",
+    "english": "Raziqcoat",
+    "chineseSimplified": "拉吉克硬化触媒",
+    "japanese": "アブダルラジクの硬化触媒"
+  },
+  "109": {
+    "id": 109,
+    "category": "鍊金原料",
+    "itemLevel": 255,
+    "chineseTraditional": "基拉巴尼亞明礬",
+    "english": "Gyr Abanian Alumen",
+    "chineseSimplified": "基拉巴尼亚明矾",
+    "japanese": "ギラバニアアルメン"
+  },
+  "110": {
+    "id": 110,
+    "category": "染料",
+    "itemLevel": 1,
+    "chineseTraditional": "松節油",
+    "english": "Terebinth",
+    "chineseSimplified": "松节油",
+    "japanese": "テレビン油"
+  },
+  "111": {
+    "id": 111,
+    "category": "食材",
+    "itemLevel": 125,
+    "chineseTraditional": "庫爾札斯茶葉",
+    "english": "Coerthan Tea Leaves",
+    "chineseSimplified": "库尔札斯茶叶",
+    "japanese": "クルザス茶葉"
+  }
 }

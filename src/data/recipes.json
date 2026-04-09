@@ -1,879 +1,1234 @@
 {
-  "黑鐵錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "鐵礦": 3 },
-    "job": "鍛造師"
-  },
-  "白鋼鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "白鋼錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "スチールリベット",
-    "English": "Steel Rivets",
-    "ChineseSimplified": "白钢铆钉"
-  },
-  "白鋼錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "炸彈的灰": 1, "鐵礦": 2 },
-    "job": "鍛造師",
-    "Japanese": "スチールインゴット",
-    "English": "Steel Ingot",
-    "ChineseSimplified": "白钢锭"
-  },
-  "胡桃木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "胡桃原木": 3 },
-    "job": "木工師",
-    "Japanese": "ウォールナット材",
-    "English": "Walnut Lumber",
-    "ChineseSimplified": "胡桃木材"
-  },
-  "鈷鐵錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "鈷鐵礦": 2, "鐵礦": 1 },
-    "job": "鍛造師",
-    "Japanese": "コバルトインゴット",
-    "English": "Cobalt Ingot",
-    "ChineseSimplified": "钴铁锭"
-  },
-  "玄鋼錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "玄鋼塊": 2, "焦炭": 9 },
-    "job": "鍛造師",
-    "Japanese": "ダークスチールインゴット",
-    "English": "Darksteel Ingot",
-    "ChineseSimplified": "玄钢锭"
-  },
-  "玄鋼塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "玄鐵礦": 3 },
-    "job": "鍛造師",
-    "Japanese": "ダークスチールナゲット",
-    "English": "Darksteel Nugget",
-    "ChineseSimplified": "玄钢锭"
-  },
-  "白銀錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "銀礦": 3 },
-    "job": "金工師",
-    "Japanese": "シルバーインゴット",
-    "English": "Silver Ingot",
-    "ChineseSimplified": "白银锭"
-  },
-  "秘銀錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "秘銀礦": 3 },
-    "job": "鍛造師",
-    "Japanese": "ミスリルインゴット",
-    "English": "Mythril Ingot",
-    "ChineseSimplified": "秘银锭"
-  },
-  "綠金錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "綠金礦": 4 },
-    "job": "金工師",
-    "Japanese": "エレクトラムインゴット",
-    "English": "Electrum Ingot",
-    "ChineseSimplified": "绿金锭"
-  },
-  "玫瑰金錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "玫瑰金塊": 2, "斑銅礦": 9 },
-    "job": "金工師",
-    "Japanese": "ローズゴールドインゴット",
-    "English": "Rose Gold Ingot",
-    "ChineseSimplified": "玫瑰金锭"
-  },
-  "玫瑰金塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "金礦": 3, "銅礦": 1 },
-    "job": "金工師",
-    "Japanese": "ローズゴールドナゲット",
-    "English": "Rose Gold Nugget",
-    "ChineseSimplified": "玫瑰金块"
-  },
-  "黃金錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "拉吉克靈砂": 1, "自然金": 1, "金礦": 1 },
-    "job": "金工師",
-    "Japanese": "ゴールドインゴット",
-    "English": "Gold Ingot",
-    "ChineseSimplified": "黄金锭"
-  },
-  "白鋼板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "白鋼錠": 2 },
-    "job": "甲冑師",
-    "Japanese": "スチールプレート",
-    "English": "Steel Plate",
-    "ChineseSimplified": "白钢板"
-  },
-  "鈷鐵板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "鈷鐵錠": 2 },
-    "job": "甲冑師",
-    "Japanese": "コバルトプレート",
-    "English": "Cobalt Plate",
-    "ChineseSimplified": "钴铁板"
-  },
-  "玄鋼板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "玄鋼塊": 2 },
-    "job": "甲冑師",
-    "Japanese": "ダークスチールプレート",
-    "English": "Darksteel Plate",
-    "ChineseSimplified": "玄钢锭"
-  },
-  "秘銀板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "秘銀錠": 2 },
-    "job": "甲冑師",
-    "Japanese": "ミスリルプレート",
-    "English": "Mythril Plate",
-    "ChineseSimplified": "秘银板"
-  },
-  "黑鐵鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "黑鐵錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "アイアンリベット",
-    "English": "Iron Rivets",
-    "ChineseSimplified": "黑铁铆钉"
-  },
-  "鈷鐵鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "鈷鐵錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "コバルトリベット",
-    "English": "Cobalt Rivets",
-    "ChineseSimplified": "钴铁铆钉"
-  },
-  "玄鋼鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "玄鋼塊": 1 },
-    "job": "鍛造師",
-    "Japanese": "ダークスチールリベット",
-    "English": "Darksteel Rivets",
-    "ChineseSimplified": "玄钢铆钉"
-  },
-  "秘銀鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "秘銀錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "ミスリルリベット",
-    "English": "Mythril Rivets",
-    "ChineseSimplified": "秘银铆钉"
-  },
-  "黃玉": {
+  "1": {
+    "id": 1,
     "level": 1,
     "category": "石材",
-    "materials": { "金剛砂": 1, "黃玉原石": 1 },
+    "recipe": {
+      "石蜥蜴的蛋": 1
+    },
     "job": "金工師",
-    "Japanese": "トパーズ",
-    "English": "Topaz",
-    "ChineseSimplified": "黄玉"
+    "itemLevel": 40,
+    "japanese": "卵砥石",
+    "english": "Basilisk Whetstone",
+    "chineseSimplified": "蛋壳磨刀石",
+    "chineseTraditional": "蛋殼磨刀石"
   },
-  "聖蜥蜴革": {
+  "2": {
+    "id": 2,
     "level": 1,
-    "category": "皮革",
-    "materials": { "聖蜥蜴的粗皮": 1, "黑明礬": 1 },
-    "job": "皮革師",
-    "Japanese": "ウラエウスレザー",
-    "English": "Uraeus Leather",
-    "ChineseSimplified": "圣蜥蜴革"
-  },
-  "雪松木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "雪松原木": 5 },
-    "job": "木工師",
-    "Japanese": "シーダー材",
-    "English": "Cedar Lumber",
-    "ChineseSimplified": "雪松木材"
-  },
-  "橡木木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "橡木原木": 3 },
-    "job": "木工師",
-    "Japanese": "オーク材",
-    "English": "Oak Lumber",
-    "ChineseSimplified": "橡木木材"
-  },
-  "雲杉木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "雲杉原木": 3 },
-    "job": "木工師",
-    "Japanese": "スプルース材",
-    "English": "Spruce Lumber",
-    "ChineseSimplified": "云杉木材"
-  },
-  "硬化雲杉木材": {
-    "level": 2,
-    "category": "木材",
-    "materials": { "雲杉木材": 2, "樹汁塊": 9 },
-    "job": "木工師",
-    "Japanese": "硬化スプルース材",
-    "English": "Treated Spruce Lumber",
-    "ChineseSimplified": "硬化云杉木材"
-  },
-  "鬼膠": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "山羊角": 2 },
-    "job": "煉金術師",
-    "Japanese": "鬼にかわ",
-    "English": "Horn Glue",
-    "ChineseSimplified": "鬼胶"
-  },
-  "黑膠": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "明膠怪的肉": 3, "布丁的肉": 2 },
-    "job": "煉金術師",
-    "Japanese": "黒にかわ",
-    "English": "Void Glue",
-    "ChineseSimplified": "虚胶"
-  },
-  "翼膠": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "雙足飛龍的翼膜": 3, "惡精靈的翅膀": 2, "長頸駝的唾液": 1 },
-    "job": "煉金術師",
-    "Japanese": "笑いにかわ",
-    "English": "Wing Glue",
-    "ChineseSimplified": "翼胶"
-  },
-  "玻璃板": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "矽砂": 1, "泡鹼":1 },
-    "job": "煉金術師",
-    "Japanese": "ガラス板",
-    "English": "Clear Glass Lens",
-    "ChineseSimplified": "玻璃板"
-  },
-  "亞麻油": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "亞麻": 2 },
-    "job": "煉金術師",
-    "Japanese": "リンシードオイル",
-    "English": "Linseed Oil",
-    "ChineseSimplified": "亚麻油"
-  },
-  "清漆": {
-    "level": 2,
-    "category": "煉金原料",
-    "materials": { "琥珀原石": 2, "亞麻油": 1, "松節油": 1 },
-    "job": "煉金術師",
-    "Japanese": "ワニス",
-    "English": "Varnish",
-    "ChineseSimplified": "清漆"
-  },
-  "黑鐵釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "黑鐵錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "アイアンネイル",
-    "English": "Iron Nails",
-    "ChineseSimplified": "黑铁钉"
-  },
-  "白鋼釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "白鋼錠": 1 },
-    "job": "鍛造師",
-    "Japanese": "スチールネイル",
-    "English": "Steel Nails",
-    "ChineseSimplified": "白钢钉"
-  },
-  "白鋼連接板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "白鋼錠": 1 },
-    "job": "甲冑師",
-    "Japanese": "スチールフィッチング",
-    "English": "Steel Joint Plate",
-    "ChineseSimplified": "白钢连接板"
-  },
-  "鈷鐵連接板": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "鈷鐵錠": 1 },
-    "job": "甲冑師",
-    "Japanese": "コバルトフィッチング",
-    "English": "Cobalt Joint Plate",
-    "ChineseSimplified": "钴铁连接板"
-  },
-  "古神木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "矽化木": 1, "緋紅樹汁": 1 },
-    "job": "木工師",
-    "Japanese": "神代木",
-    "English": "Ancient Lumber",
-    "ChineseSimplified": "古树木材"
-  },
-  "鎢鋼錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "白鎢礦": 1, "鎢鐵礦": 1, "鈷鐵礦": 1},
-    "job": "鍛造師",
-    "Japanese": "ウォルフラムインゴット",
-    "English": "Wolfram Ingot",
-    "ChineseSimplified": "钨铁锭"
-  },
-  "鎢鋼方板": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "白鎢礦": 1, "鎢鐵礦": 1, "鈷鐵礦": 1},
-    "job": "甲冑師",
-    "Japanese": "ウォルフラムプレートレット",
-    "English": "Wolfram Square",
-    "ChineseSimplified": "钨铁方板"
-  },
-  "白金塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "白金礦": 3 },
+    "category": "石材",
+    "recipe": {
+      "金剛砂": 1,
+      "黃玉原石": 1
+    },
     "job": "金工師",
-    "Japanese": "プラチナナゲット",
-    "English": "Platinum Nugget",
-    "ChineseSimplified": "白金块"
+    "itemLevel": 90,
+    "japanese": "トパーズ",
+    "english": "Topaz",
+    "chineseSimplified": "黄玉",
+    "chineseTraditional": "黃玉"
   },
-  "白金錠": {
+  "3": {
+    "id": 3,
+    "level": 2,
+    "category": "石材",
+    "recipe": {
+      "水淙石原石": 3,
+      "蛋殼磨刀石": 1
+    },
+    "job": "金工師",
+    "itemLevel": 130,
+    "japanese": "ラリマール",
+    "english": "Larimar",
+    "chineseSimplified": "水淙石",
+    "chineseTraditional": "水淙石"
+  },
+  "4": {
+    "id": 4,
+    "level": 1,
+    "category": "石材",
+    "recipe": {
+      "蒼天石原石": 3,
+      "沉積岩磨刀石": 9
+    },
+    "job": "金工師",
+    "itemLevel": 133,
+    "japanese": "セレスタイン",
+    "english": "Celestine",
+    "chineseSimplified": "苍天石",
+    "chineseTraditional": "蒼天石"
+  },
+  "5": {
+    "id": 5,
+    "level": 1,
+    "category": "石材",
+    "recipe": {
+      "白鈦礦": 5,
+      "鐵礦": 1,
+      "榴彈怪的灰": 1
+    },
+    "job": "金工師",
+    "itemLevel": 136,
+    "japanese": "チタンナゲット",
+    "english": "Titanium Nugget",
+    "chineseSimplified": "白钛块",
+    "chineseTraditional": "白鈦塊"
+  },
+  "6": {
+    "id": 6,
+    "level": 1,
+    "category": "石材",
+    "recipe": {
+      "鋰輝石原石": 3,
+      "矽岩": 1
+    },
+    "job": "金工師",
+    "itemLevel": 255,
+    "japanese": "トリフェーン",
+    "english": "Triphane",
+    "chineseSimplified": "锂辉石",
+    "chineseTraditional": "鋰輝石"
+  },
+  "7": {
+    "id": 7,
+    "level": 1,
+    "category": "石材",
+    "recipe": {
+      "薔薇輝石原石": 3,
+      "矽岩": 1
+    },
+    "job": "金工師",
+    "itemLevel": 290,
+    "japanese": "ロードナイト",
+    "english": "Rhodonite",
+    "chineseSimplified": "玫瑰辉石",
+    "chineseTraditional": "薔薇輝石"
+  },
+  "8": {
+    "id": 8,
     "level": 1,
     "category": "金屬",
-    "materials": { "白金礦": 2, "拉吉克靈藥": 9 },
-    "job": "金工師",
-    "Japanese": "プラチナインゴット",
-    "English": "Platinum Ingot",
-    "ChineseSimplified": "白金锭"
+    "recipe": {
+      "鐵礦": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 14,
+    "japanese": "アイアンインゴット",
+    "english": "Iron Ingot",
+    "chineseSimplified": "黑铁锭",
+    "chineseTraditional": "黑鐵錠"
   },
-  "致遠帆布": {
+  "9": {
+    "id": 9,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "黑鐵錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 14,
+    "japanese": "アイアンリベット",
+    "english": "Iron Rivets",
+    "chineseSimplified": "黑铁铆钉",
+    "chineseTraditional": "黑鐵鉚釘"
+  },
+  "10": {
+    "id": 10,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "黑鐵錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 15,
+    "japanese": "アイアンネイル",
+    "english": "Iron Nails",
+    "chineseSimplified": "黑铁钉",
+    "chineseTraditional": "黑鐵釘"
+  },
+  "11": {
+    "id": 11,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "銀礦": 3
+    },
+    "job": "金工師",
+    "itemLevel": 23,
+    "japanese": "シルバーインゴット",
+    "english": "Silver Ingot",
+    "chineseSimplified": "白银锭",
+    "chineseTraditional": "白銀錠"
+  },
+  "12": {
+    "id": 12,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "炸彈的灰": 1,
+      "鐵礦": 2
+    },
+    "job": "鍛造師",
+    "itemLevel": 26,
+    "japanese": "スチールインゴット",
+    "english": "Steel Ingot",
+    "chineseSimplified": "白钢锭",
+    "chineseTraditional": "白鋼錠"
+  },
+  "13": {
+    "id": 13,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白鋼錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 27,
+    "japanese": "スチールリベット",
+    "english": "Steel Rivets",
+    "chineseSimplified": "白钢铆钉",
+    "chineseTraditional": "白鋼鉚釘"
+  },
+  "14": {
+    "id": 14,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白鋼錠": 2
+    },
+    "job": "甲冑師",
+    "itemLevel": 27,
+    "japanese": "スチールプレート",
+    "english": "Steel Plate",
+    "chineseSimplified": "白钢板",
+    "chineseTraditional": "白鋼板"
+  },
+  "15": {
+    "id": 15,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白鋼錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 30,
+    "japanese": "スチールネイル",
+    "english": "Steel Nails",
+    "chineseSimplified": "白钢钉",
+    "chineseTraditional": "白鋼釘"
+  },
+  "16": {
+    "id": 16,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白鋼錠": 1
+    },
+    "job": "甲冑師",
+    "itemLevel": 30,
+    "japanese": "スチールフィッチング",
+    "english": "Steel Joint Plate",
+    "chineseSimplified": "白钢连接板",
+    "chineseTraditional": "白鋼連接板"
+  },
+  "17": {
+    "id": 17,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "秘銀礦": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 34,
+    "japanese": "ミスリルインゴット",
+    "english": "Mythril Ingot",
+    "chineseSimplified": "秘银锭",
+    "chineseTraditional": "秘銀錠"
+  },
+  "18": {
+    "id": 18,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "秘銀錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 35,
+    "japanese": "ミスリルリベット",
+    "english": "Mythril Rivets",
+    "chineseSimplified": "秘银铆钉",
+    "chineseTraditional": "秘銀鉚釘"
+  },
+  "19": {
+    "id": 19,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "綠金礦": 4
+    },
+    "job": "金工師",
+    "itemLevel": 40,
+    "japanese": "エレクトラムインゴット",
+    "english": "Electrum Ingot",
+    "chineseSimplified": "绿金锭",
+    "chineseTraditional": "綠金錠"
+  },
+  "20": {
+    "id": 20,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "秘銀錠": 2
+    },
+    "job": "甲冑師",
+    "itemLevel": 40,
+    "japanese": "ミスリルプレート",
+    "english": "Mythril Plate",
+    "chineseSimplified": "秘银板",
+    "chineseTraditional": "秘銀板"
+  },
+  "21": {
+    "id": 21,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "鈷鐵礦": 2,
+      "鐵礦": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 43,
+    "japanese": "コバルトインゴット",
+    "english": "Cobalt Ingot",
+    "chineseSimplified": "钴铁锭",
+    "chineseTraditional": "鈷鐵錠"
+  },
+  "22": {
+    "id": 22,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "鈷鐵錠": 2
+    },
+    "job": "甲冑師",
+    "itemLevel": 44,
+    "japanese": "コバルトプレート",
+    "english": "Cobalt Plate",
+    "chineseSimplified": "钴铁板",
+    "chineseTraditional": "鈷鐵板"
+  },
+  "23": {
+    "id": 23,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "鈷鐵錠": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 45,
+    "japanese": "コバルトリベット",
+    "english": "Cobalt Rivets",
+    "chineseSimplified": "钴铁铆钉",
+    "chineseTraditional": "鈷鐵鉚釘"
+  },
+  "24": {
+    "id": 24,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "鈷鐵錠": 1
+    },
+    "job": "甲冑師",
+    "itemLevel": 45,
+    "japanese": "コバルトフィッチング",
+    "english": "Cobalt Joint Plate",
+    "chineseSimplified": "钴铁连接板",
+    "chineseTraditional": "鈷鐵連接板"
+  },
+  "25": {
+    "id": 25,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "玄鐵礦": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 55,
+    "japanese": "ダークスチールナゲット",
+    "english": "Darksteel Nugget",
+    "chineseSimplified": "玄钢锭",
+    "chineseTraditional": "玄鋼塊"
+  },
+  "26": {
+    "id": 26,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "金礦": 3,
+      "銅礦": 1
+    },
+    "job": "金工師",
+    "itemLevel": 55,
+    "japanese": "ローズゴールドナゲット",
+    "english": "Rose Gold Nugget",
+    "chineseSimplified": "玫瑰金块",
+    "chineseTraditional": "玫瑰金塊"
+  },
+  "27": {
+    "id": 27,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "玄鋼塊": 2
+    },
+    "job": "甲冑師",
+    "itemLevel": 55,
+    "japanese": "ダークスチールプレート",
+    "english": "Darksteel Plate",
+    "chineseSimplified": "玄钢锭",
+    "chineseTraditional": "玄鋼板"
+  },
+  "28": {
+    "id": 28,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "玄鋼塊": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 55,
+    "japanese": "ダークスチールリベット",
+    "english": "Darksteel Rivets",
+    "chineseSimplified": "玄钢铆钉",
+    "chineseTraditional": "玄鋼鉚釘"
+  },
+  "29": {
+    "id": 29,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "玄鋼塊": 2,
+      "焦炭": 9
+    },
+    "job": "鍛造師",
+    "itemLevel": 70,
+    "japanese": "ダークスチールインゴット",
+    "english": "Darksteel Ingot",
+    "chineseSimplified": "玄钢锭",
+    "chineseTraditional": "玄鋼錠"
+  },
+  "30": {
+    "id": 30,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "玫瑰金塊": 2,
+      "斑銅礦": 9
+    },
+    "job": "金工師",
+    "itemLevel": 70,
+    "japanese": "ローズゴールドインゴット",
+    "english": "Rose Gold Ingot",
+    "chineseSimplified": "玫瑰金锭",
+    "chineseTraditional": "玫瑰金錠"
+  },
+  "31": {
+    "id": 31,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "拉吉克靈砂": 1,
+      "自然金": 1,
+      "金礦": 1
+    },
+    "job": "金工師",
+    "itemLevel": 90,
+    "japanese": "ゴールドインゴット",
+    "english": "Gold Ingot",
+    "chineseSimplified": "黄金锭",
+    "chineseTraditional": "黃金錠"
+  },
+  "32": {
+    "id": 32,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "白鎢礦": 1,
+      "鎢鐵礦": 1,
+      "鈷鐵礦": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 90,
+    "japanese": "ウォルフラムインゴット",
+    "english": "Wolfram Ingot",
+    "chineseSimplified": "钨铁锭",
+    "chineseTraditional": "鎢鋼錠"
+  },
+  "33": {
+    "id": 33,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "白鎢礦": 1,
+      "鎢鐵礦": 1,
+      "鈷鐵礦": 1
+    },
+    "job": "甲冑師",
+    "itemLevel": 90,
+    "japanese": "ウォルフラムプレートレット",
+    "english": "Wolfram Square",
+    "chineseSimplified": "钨铁方板",
+    "chineseTraditional": "鎢鋼方板"
+  },
+  "34": {
+    "id": 34,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "白金礦": 3
+    },
+    "job": "金工師",
+    "itemLevel": 90,
+    "japanese": "プラチナナゲット",
+    "english": "Platinum Nugget",
+    "chineseSimplified": "白金块",
+    "chineseTraditional": "白金塊"
+  },
+  "35": {
+    "id": 35,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "白金礦": 2,
+      "拉吉克靈藥": 9
+    },
+    "job": "金工師",
+    "itemLevel": 110,
+    "japanese": "プラチナインゴット",
+    "english": "Platinum Ingot",
+    "chineseSimplified": "白金锭",
+    "chineseTraditional": "白金錠"
+  },
+  "36": {
+    "id": 36,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "靈銀沙": 5,
+      "秘銀礦": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 120,
+    "japanese": "ミスライトナゲット",
+    "english": "Mythrite Nugget",
+    "chineseSimplified": "灵银块",
+    "chineseTraditional": "靈銀塊"
+  },
+  "37": {
+    "id": 37,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "靈銀塊": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 125,
+    "japanese": "ミスライトリベット",
+    "english": "Mythrite Rivets",
+    "chineseSimplified": "精灵银铆钉",
+    "chineseTraditional": "靈銀鉚釘"
+  },
+  "38": {
+    "id": 38,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "藍鐵礦": 3,
+      "焦炭": 9,
+      "鈷鐵礦": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 125,
+    "japanese": "ガーロンド鋼",
+    "english": "Garlond Steel",
+    "chineseSimplified": "加隆德钢",
+    "chineseTraditional": "加隆德鋼"
+  },
+  "39": {
+    "id": 39,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "靈銀礦": 4,
+      "靈銀塊": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 130,
+    "japanese": "ミスライトインゴット",
+    "english": "Mythrite Ingot",
+    "chineseSimplified": "灵银锭",
+    "chineseTraditional": "靈銀錠"
+  },
+  "40": {
+    "id": 40,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "硬銀沙": 5,
+      "銀礦": 1
+    },
+    "job": "金工師",
+    "itemLevel": 136,
+    "japanese": "ハードシルバーナゲット",
+    "english": "Hardsilver Nugget",
+    "chineseSimplified": "硬银块",
+    "chineseTraditional": "硬銀塊"
+  },
+  "41": {
+    "id": 41,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "硬銀礦": 4,
+      "硬銀塊": 1
+    },
+    "job": "金工師",
+    "itemLevel": 142,
+    "japanese": "ハードシルバーインゴット",
+    "english": "Hardsilver Ingot",
+    "chineseSimplified": "硬银锭",
+    "chineseTraditional": "硬銀錠"
+  },
+  "42": {
+    "id": 42,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "炸彈的灰": 1,
+      "鐵礦": 2
+    },
+    "job": "鍛造師",
+    "itemLevel": 142,
+    "japanese": "スチールインゴット",
+    "english": "Steel Ingot",
+    "chineseSimplified": "白钢锭",
+    "chineseTraditional": "白鋼錠"
+  },
+  "43": {
+    "id": 43,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白雲母": 4,
+      "白鈦塊": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 142,
+    "japanese": "チタンインゴット",
+    "english": "Titanium Ingot",
+    "chineseSimplified": "白钛锭",
+    "chineseTraditional": "白鈦錠"
+  },
+  "44": {
+    "id": 44,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "皇金沙": 5,
+      "金礦": 1
+    },
+    "job": "金工師",
+    "itemLevel": 148,
+    "japanese": "オーラムレギスナゲット",
+    "english": "Aurum Regis Nugget",
+    "chineseSimplified": "皇金块",
+    "chineseTraditional": "皇金塊"
+  },
+  "45": {
+    "id": 45,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "堅鋼礦": 5,
+      "玄鐵礦": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 148,
+    "japanese": "アダマンナゲット",
+    "english": "Adamantite Nugget",
+    "chineseSimplified": "精金块",
+    "chineseTraditional": "堅鋼塊"
+  },
+  "46": {
+    "id": 46,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "堅鋼塊": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 150,
+    "japanese": "アダマンリベット",
+    "english": "Adamantite Rivets",
+    "chineseSimplified": "精金铆钉",
+    "chineseTraditional": "堅鋼鉚釘"
+  },
+  "47": {
+    "id": 47,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "藍鐵礦": 3,
+      "閃鋅礦": 2,
+      "鈷鐵礦": 2,
+      "焦炭": 9
+    },
+    "job": "鍛造師",
+    "itemLevel": 160,
+    "japanese": "超硬ガーロンド鋼",
+    "english": "Galvanized Garlond Steel",
+    "chineseSimplified": "超硬加隆德钢",
+    "chineseTraditional": "超硬加隆德鋼"
+  },
+  "48": {
+    "id": 48,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "皇金礦": 2,
+      "皇金塊": 1,
+      "青紫石英": 1,
+      "拉吉克硬化觸媒": 5
+    },
+    "job": "金工師",
+    "itemLevel": 180,
+    "japanese": "オーラムレギスインゴット",
+    "english": "Aurum Regis Ingot",
+    "chineseSimplified": "皇金锭",
+    "chineseTraditional": "皇金錠"
+  },
+  "49": {
+    "id": 49,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "鐵紋礦石": 3,
+      "焦炭": 9,
+      "鈷鐵礦": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 180,
+    "japanese": "カマサイト鋼",
+    "english": "Kamacite",
+    "chineseSimplified": "铜纹钢",
+    "chineseTraditional": "鐵紋鋼"
+  },
+  "50": {
+    "id": 50,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "荒神靈銀": 2,
+      "光銀礦": 3,
+      "靈銀礦": 2
+    },
+    "job": "鍛造師",
+    "itemLevel": 210,
+    "japanese": "ハイミスライトインゴット",
+    "english": "High Mythrite Ingot",
+    "chineseSimplified": "光银锭",
+    "chineseTraditional": "光銀錠"
+  },
+  "51": {
+    "id": 51,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "荒神合金": 2,
+      "菱鋅礦": 3,
+      "鐵礦": 3
+    },
+    "job": "金工師",
+    "itemLevel": 210,
+    "japanese": "イコンアイアンインゴット",
+    "english": "Eikon Iron Ingot",
+    "chineseSimplified": "荒神钢锭",
+    "chineseTraditional": "荒神鋼錠"
+  },
+  "52": {
+    "id": 52,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "魔銅沙": 4,
+      "銅礦": 1
+    },
+    "job": "金工師",
+    "itemLevel": 255,
+    "japanese": "キュプロニッケルナゲット",
+    "english": "Koppranickel Nugget",
+    "chineseSimplified": "白铜块",
+    "chineseTraditional": "白銅塊"
+  },
+  "53": {
+    "id": 53,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "輝鉬礦": 4,
+      "鈷鐵礦": 1
+    },
+    "job": "鍛造師",
+    "itemLevel": 285,
+    "japanese": "モリブデンインゴット",
+    "english": "Molybdenum Ingot",
+    "chineseSimplified": "钼钢锭",
+    "chineseTraditional": "鉬鋼錠"
+  },
+  "54": {
+    "id": 54,
+    "level": 1,
+    "category": "金屬",
+    "recipe": {
+      "純鈦礦": 3,
+      "焦炭": 9
+    },
+    "job": "鍛造師",
+    "itemLevel": 300,
+    "japanese": "ピュアチタンプレート",
+    "english": "Pure Titanium Plate",
+    "chineseSimplified": "纯钛板",
+    "chineseTraditional": "純鈦板"
+  },
+  "55": {
+    "id": 55,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "胡桃原木": 3
+    },
+    "job": "木工師",
+    "itemLevel": 25,
+    "japanese": "ウォールナット材",
+    "english": "Walnut Lumber",
+    "chineseSimplified": "胡桃木材",
+    "chineseTraditional": "胡桃木材"
+  },
+  "56": {
+    "id": 56,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "橡木原木": 3
+    },
+    "job": "木工師",
+    "itemLevel": 33,
+    "japanese": "オーク材",
+    "english": "Oak Lumber",
+    "chineseSimplified": "橡木木材",
+    "chineseTraditional": "橡木木材"
+  },
+  "57": {
+    "id": 57,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "雲杉原木": 3
+    },
+    "job": "木工師",
+    "itemLevel": 55,
+    "japanese": "スプルース材",
+    "english": "Spruce Lumber",
+    "chineseSimplified": "云杉木材",
+    "chineseTraditional": "雲杉木材"
+  },
+  "58": {
+    "id": 58,
+    "level": 2,
+    "category": "木材",
+    "recipe": {
+      "雲杉木材": 2,
+      "樹汁塊": 9
+    },
+    "job": "木工師",
+    "itemLevel": 70,
+    "japanese": "硬化スプルース材",
+    "english": "Treated Spruce Lumber",
+    "chineseSimplified": "硬化云杉木材",
+    "chineseTraditional": "硬化雲杉木材"
+  },
+  "59": {
+    "id": 59,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "矽化木": 1,
+      "緋紅樹汁": 1
+    },
+    "job": "木工師",
+    "itemLevel": 90,
+    "japanese": "神代木",
+    "english": "Ancient Lumber",
+    "chineseSimplified": "古树木材",
+    "chineseTraditional": "古神木材"
+  },
+  "60": {
+    "id": 60,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "雪松原木": 5
+    },
+    "job": "木工師",
+    "itemLevel": 115,
+    "japanese": "シーダー材",
+    "english": "Cedar Lumber",
+    "chineseSimplified": "雪松木材",
+    "chineseTraditional": "雪松木材"
+  },
+  "61": {
+    "id": 61,
+    "level": 2,
+    "category": "木材",
+    "recipe": {
+      "雪松木材": 1,
+      "聖水": 2
+    },
+    "job": "木工師",
+    "itemLevel": 130,
+    "japanese": "ホーリーシーダー材",
+    "english": "Holy Cedar Lumber",
+    "chineseSimplified": "圣雪松材",
+    "chineseTraditional": "聖雪松材"
+  },
+  "62": {
+    "id": 62,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "暗栗木原木": 5
+    },
+    "job": "木工師",
+    "itemLevel": 136,
+    "japanese": "ダークチェスナット材",
+    "english": "Dark Chestnut Lumber",
+    "chineseSimplified": "暗栗木木材",
+    "chineseTraditional": "暗栗木木材"
+  },
+  "63": {
+    "id": 63,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "鐵刀木": 3,
+      "樹汁塊": 9
+    },
+    "job": "木工師",
+    "itemLevel": 139,
+    "japanese": "タレイサン材",
+    "english": "Cassia Lumber",
+    "chineseSimplified": "铁刀木木材",
+    "chineseTraditional": "鐵刀木木材"
+  },
+  "64": {
+    "id": 64,
+    "level": 2,
+    "category": "木材",
+    "recipe": {
+      "暗栗木木材": 1,
+      "祝聖水": 2
+    },
+    "job": "木工師",
+    "itemLevel": 142,
+    "japanese": "ハローチェスナット材",
+    "english": "Hallowed Chestnut Lumber",
+    "chineseSimplified": "祝圣栗木木材",
+    "chineseTraditional": "祝聖栗木木材"
+  },
+  "65": {
+    "id": 65,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "樺木原木": 5
+    },
+    "job": "木工師",
+    "itemLevel": 148,
+    "japanese": "バーチ材",
+    "english": "Birch Lumber",
+    "chineseSimplified": "桦木木材",
+    "chineseTraditional": "樺木木材"
+  },
+  "66": {
+    "id": 66,
+    "level": 2,
+    "category": "木材",
+    "recipe": {
+      "鐵刀木木材": 1,
+      "星極油": 1,
+      "曉光靈砂": 1
+    },
+    "job": "木工師",
+    "itemLevel": 160,
+    "japanese": "タレイサン角木",
+    "english": "Cassia Block",
+    "chineseSimplified": "铁刀木角材",
+    "chineseTraditional": "鐵刀木角材"
+  },
+  "67": {
+    "id": 67,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "山毛櫸原木": 4
+    },
+    "job": "木工師",
+    "itemLevel": 255,
+    "japanese": "ビーチ材",
+    "english": "Beech Lumber",
+    "chineseSimplified": "山毛榉木材",
+    "chineseTraditional": "山毛櫸木材"
+  },
+  "68": {
+    "id": 68,
+    "level": 1,
+    "category": "木材",
+    "recipe": {
+      "柳杉原木": 3,
+      "樹汁塊": 9
+    },
+    "job": "木工師",
+    "itemLevel": 300,
+    "japanese": "クリプトメリア材",
+    "english": "Cryptomeria Lumber",
+    "chineseSimplified": "柳杉木材",
+    "chineseTraditional": "柳杉木材"
+  },
+  "69": {
+    "id": 69,
     "level": 1,
     "category": "布料",
-    "materials": { "紅莫柯草": 3, "灰汁":9 },
+    "recipe": {
+      "紅莫柯草": 3,
+      "灰汁": 9
+    },
     "job": "裁縫師",
-    "Japanese": "ファーミーカンバス",
-    "English": "Farreach Canvas",
-    "ChineseSimplified": "致远帆布"
+    "itemLevel": 130,
+    "japanese": "ファーミーカンバス",
+    "english": "Farreach Canvas",
+    "chineseSimplified": "致远帆布",
+    "chineseTraditional": "致遠帆布"
   },
-  "鐵刀木木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "鐵刀木": 3, "樹汁塊": 9 },
-    "job": "木工師",
-    "Japanese": "タレイサン材",
-    "English": "Cassia Lumber",
-    "ChineseSimplified": "铁刀木木材"
-  },
-  "靈銀塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "靈銀沙": 5, "秘銀礦": 1 },
-    "job": "鍛造師",
-    "Japanese": "ミスライトナゲット",
-    "English": "Mythrite Nugget",
-    "ChineseSimplified": "灵银块"
-  },
-  "靈銀錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "靈銀礦": 4, "靈銀塊": 1 },
-    "job": "鍛造師",
-    "Japanese": "ミスライトインゴット",
-    "English": "Mythrite Ingot",
-    "ChineseSimplified": "灵银锭"
-  },
-  "硬銀塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "硬銀沙": 5, "銀礦": 1 },
-    "job": "金工師",
-    "Japanese": "ハードシルバーナゲット",
-    "English": "Hardsilver Nugget",
-    "ChineseSimplified": "硬银块"
-  },
-  "硬銀錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "硬銀礦": 4, "硬銀塊": 1},
-    "job": "金工師",
-    "Japanese": "ハードシルバーインゴット",
-    "English": "Hardsilver Ingot",
-    "ChineseSimplified": "硬银锭"
-  },
-  "皇金塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "皇金沙": 5, "金礦": 1 },
-    "job": "金工師",
-    "Japanese": "オーラムレギスナゲット",
-    "English": "Aurum Regis Nugget",
-    "ChineseSimplified": "皇金块"
-  },
-  "皇金錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "皇金礦": 2, "皇金塊": 1, "青紫石英": 1, "拉吉克硬化觸媒": 5 },
-    "job": "金工師",
-    "Japanese": "オーラムレギスインゴット",
-    "English": "Aurum Regis Ingot",
-    "ChineseSimplified": "皇金锭"
-  },
-  "白鐵錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "炸彈的灰": 1 , "鐵礦": 2 },
-    "job": "鍛造師",
-    "Japanese": "チタンインゴット",
-    "English": "Titanium Ingot",
-    "ChineseSimplified": "白铁锭"
-  },
-  "堅鋼塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "堅鋼礦": 5, "玄鐵礦": 1 },
-    "job": "鍛造師",
-    "Japanese": "アダマンナゲット",
-    "English": "Adamantite Nugget",
-    "ChineseSimplified": "精金块"
-  },
-  "靈銀鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "靈銀塊": 1 },
-    "job": "鍛造師",
-    "Japanese": "ミスライトリベット",
-    "English": "Mythrite Rivets",
-    "ChineseSimplified": "精灵银铆钉"
-  },
-  "堅鋼鉚釘": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "堅鋼塊": 1 },
-    "job": "鍛造師",
-    "Japanese": "アダマンリベット",
-    "English": "Adamantite Rivets",
-    "ChineseSimplified": "精金铆钉"
-  },
-  "水淙石": {
-    "level": 1,
-    "category": "石材",
-    "materials": { "水淙石原石": 3, "蛋殼磨刀石": 1 },
-    "job": "金工師",
-    "Japanese": "ラリマール",
-    "English": "Larimar",
-    "ChineseSimplified": "水淙石"
-  },
-  "飛龍革": {
+  "70": {
+    "id": 70,
     "level": 1,
     "category": "皮革",
-    "materials": { "飛龍的粗皮": 3, "庫爾札斯茶葉": 1},
+    "recipe": {
+      "聖蜥蜴的粗皮": 1,
+      "黑明礬": 1
+    },
     "job": "皮革師",
-    "Japanese": "ワイバーンレザー",
-    "English": "Wyvern Leather",
-    "ChineseSimplified": "飞龙革"
+    "itemLevel": 55,
+    "japanese": "ウラエウスレザー",
+    "english": "Uraeus Leather",
+    "chineseSimplified": "圣蜥蜴革",
+    "chineseTraditional": "聖蜥蜴革"
   },
-  "巨龍革": {
+  "71": {
+    "id": 71,
     "level": 1,
     "category": "皮革",
-    "materials": { "巨龍的粗皮": 3, "暗栗木原木": 1 },
+    "recipe": {
+      "飛龍的粗皮": 3,
+      "庫爾札斯茶葉": 1
+    },
     "job": "皮革師",
-    "Japanese": "ドラゴンレザー",
-    "English": "Dragon Leather",
-    "ChineseSimplified": "巨龙革"
+    "itemLevel": 130,
+    "japanese": "ワイバーンレザー",
+    "english": "Wyvern Leather",
+    "chineseSimplified": "飞龙革",
+    "chineseTraditional": "飛龍革"
   },
-  "聖雪松材": {
-    "level": 2,
-    "category": "木材",
-    "materials": { "雪松木材": 1, "聖水": 2 },
-    "job": "木工師",
-    "Japanese": "ホーリーシーダー材",
-    "English": "Holy Cedar Lumber",
-    "ChineseSimplified": "圣雪松材"
-  },
-  "暗栗木木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "暗栗木原木": 5 },
-    "job": "木工師",
-    "Japanese": "ダークチェスナット材",
-    "English": "Dark Chestnut Lumber",
-    "ChineseSimplified": "暗栗木木材"
-  },
-  "祝聖栗木木材": {
-    "level": 2,
-    "category": "木材",
-    "materials": { "暗栗木木材": 1, "祝聖水": 2 },
-    "job": "木工師",
-    "Japanese": "ハローチェスナット材",
-    "English": "Hallowed Chestnut Lumber",
-    "ChineseSimplified": "祝圣栗木木材"
-  },
-  "樺木木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "樺木原木": 5 },
-    "job": "木工師",
-    "Japanese": "バーチ材",
-    "English": "Birch Lumber",
-    "ChineseSimplified": "桦木木材"
-  },
-  "聖水": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "德拉瓦尼亞天然水": 2, "德拉瓦尼亞槲寄生": 2 },
-    "job": "煉金術師",
-    "Japanese": "聖水",
-    "English": "Holy Water",
-    "ChineseSimplified": "圣水"
-  },
-  "祝聖水": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "阿巴拉提亞天然水": 2, "阿巴拉提亞槲寄生": 2 },
-    "job": "煉金術師",
-    "Japanese": "祝聖水",
-    "English": "Hallowed Water",
-    "ChineseSimplified": "祝圣水"
-  },
-  "硬銀附魔墨水": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "硬銀沙": 4, "長頸駝的唾液": 2, "德拉瓦尼亞天然水": 1 },
-    "job": "煉金術師",
-    "Japanese": "ハードシルバー・エンチャントインク",
-    "English": "Enchanted Hardsilver Ink",
-    "ChineseSimplified": "硬银附魔墨水"
-  },
-  "蒼天石": {
-    "level": 1,
-    "category": "石材",
-    "materials": { "蒼天石原石":3 , "沉積岩磨刀石": 9 },
-    "job": "金工師",
-    "Japanese": "セレスタイン",
-    "English": "Celestine",
-    "ChineseSimplified": "苍天石"
-  },
-  "加隆德鋼": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "藍鐵礦": 3, "焦炭": 9, "鈷鐵礦": 3 },
-    "job": "鍛造師",
-    "Japanese": "ガーロンド鋼",
-    "English": "Garlond Steel",
-    "ChineseSimplified": "加隆德钢"
-  },
-  "鐵刀木角材": {
-    "level": 2,
-    "category": "木材",
-    "materials": { "鐵刀木木材": 1, "星極油": 1, "曉光靈砂": 1},
-    "job": "木工師",
-    "Japanese": "タレイサン角木",
-    "English": "Cassia Block",
-    "ChineseSimplified": "铁刀木角材"
-  },
-  "光銀錠": {
-    "level": 2,
-    "category": "金屬",
-    "materials": { "荒神靈銀": 2, "光銀礦": 3, "靈銀礦": 2 },
-    "job": "鍛造師",
-    "Japanese": "ハイミスライトインゴット",
-    "English": "High Mythrite Ingot",
-    "ChineseSimplified": "光银锭"
-  },
-  "荒神鋼錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "荒神合金": 2, "菱鋅礦": 3, "鐵礦": 3 },
-    "job": "金工師",
-    "Japanese": "イコンアイアンインゴット",
-    "English": "Eikon Iron Ingot",
-    "ChineseSimplified": "荒神钢锭"
-  },
-  "超硬加隆德鋼": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "藍鐵礦": 3, "閃鋅礦":2, "鈷鐵礦": 2, "焦炭": 9},
-    "job": "鍛造師",
-    "Japanese": "超硬ガーロンド鋼",
-    "English": "Galvanized Garlond Steel",
-    "ChineseSimplified": "超硬加隆德钢"
-  },
-  "強化玻璃板": {
-    "level": 1,
-    "category": "煉金原料",
-    "materials": { "玻璃纖維": 1, "碳纖維": 1, "矽砂": 3, "泡鹼": 1},
-    "job": "煉金術師",
-    "Japanese": "強化ガラス板",
-    "English": "Tempered Glass",
-    "ChineseSimplified": "强化玻璃板"
-  },
-  "山毛櫸木材": {
-    "level": 1,
-    "category": "木材",
-    "materials": { "山毛櫸原木": 4 },
-    "job": "木工師",
-    "Japanese": "ビーチ材",
-    "English": "Beech Lumber",
-    "ChineseSimplified": "山毛榉木材"
-  },
-  "白銅塊": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "魔銅沙": 4, "銅礦": 1 },
-    "job": "金工師",
-    "Japanese": "キュプロニッケルナゲット",
-    "English": "Koppranickel Nugget",
-    "ChineseSimplified": "白铜块"
-  },
-  "鉬鋼錠": {
-    "level": 1,
-    "category": "金屬",
-    "materials": { "輝鉬礦": 4, "鈷鐵礦": 1 },
-    "job": "鍛造師",
-    "Japanese": "モリブデンインゴット",
-    "English": "Molybdenum Ingot",
-    "ChineseSimplified": "钼钢锭"
-  },
-  "鋰輝石": {
-    "level": 1,
-    "category": "石材",
-    "materials": { "鋰輝石原石": 3, "矽岩": 1 },
-    "job": "金工師",
-    "Japanese": "トリフェーン",
-    "English": "Triphane",
-    "ChineseSimplified": "锂辉石"
-  },
-  "薔薇輝石": {
-    "level": 1,
-    "category": "石材",
-    "materials": { "薔薇輝石原石": 3, "矽岩": 1},
-    "job": "金工師",
-    "Japanese": "ロードナイト",
-    "English": "Rhodonite",
-    "ChineseSimplified": "玫瑰辉石"
-  },
-  "迦迦納怪鳥革": {
+  "72": {
+    "id": 72,
     "level": 1,
     "category": "皮革",
-    "materials": { "迦迦納怪鳥的粗皮": 3, "基拉巴尼亞明礬": 1},
+    "recipe": {
+      "巨龍的粗皮": 3,
+      "暗栗木原木": 1
+    },
     "job": "皮革師",
-    "Japanese": "ガガナレザー",
-    "English": "Gagana Leather",
-    "ChineseSimplified": "迦迦纳未鸟皮"
+    "itemLevel": 142,
+    "japanese": "ドラゴンレザー",
+    "english": "Dragon Leather",
+    "chineseSimplified": "巨龙革",
+    "chineseTraditional": "巨龍革"
   },
-  "鐵紋鋼": {
+  "73": {
+    "id": 73,
     "level": 1,
-    "category": "金屬",
-    "materials": { "鐵紋礦石": 3, "焦炭": 9, "鈷鐵礦": 3},
-    "job": "鍛造師",
-    "Japanese": "カマサイト鋼",
-    "English": "Kamacite",
-    "ChineseSimplified": "铜纹钢"
+    "category": "皮革",
+    "recipe": {
+      "迦迦納怪鳥的粗皮": 3,
+      "基拉巴尼亞明礬": 1
+    },
+    "job": "皮革師",
+    "itemLevel": 255,
+    "japanese": "ガガナレザー",
+    "english": "Gagana Leather",
+    "chineseSimplified": "迦迦纳未鸟皮",
+    "chineseTraditional": "迦迦納怪鳥革"
   },
-  "柳杉木材": {
+  "74": {
+    "id": 74,
     "level": 1,
-    "category": "木材",
-    "materials": { "柳杉原木": 3, "樹汁塊": 9 },
-    "job": "木工師",
-    "Japanese": "クリプトメリア材",
-    "English": "Cryptomeria Lumber",
-    "ChineseSimplified": "柳杉木材"
+    "category": "鍊金原料",
+    "recipe": {
+      "矽砂": 1,
+      "泡鹼": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 13,
+    "japanese": "ガラス板",
+    "english": "Clear Glass Lens",
+    "chineseSimplified": "玻璃板",
+    "chineseTraditional": "玻璃板"
   },
-  "純鈦板": {
+  "75": {
+    "id": 75,
     "level": 1,
-    "category": "金屬",
-    "materials": { "純鈦礦": 3, "焦炭": 9 },
-    "job": "鍛造師",
-    "Japanese": "ピュアチタンプレート",
-    "English": "Pure Titanium Plate",
-    "ChineseSimplified": "纯钛板"
+    "category": "鍊金原料",
+    "recipe": {
+      "山羊角": 2
+    },
+    "job": "鍊金術師",
+    "itemLevel": 30,
+    "japanese": "鬼にかわ",
+    "english": "Horn Glue",
+    "chineseSimplified": "鬼胶",
+    "chineseTraditional": "鬼膠"
   },
-  "鯊魚級船首骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シャーク級艦首フレーム",
-    "English": "Shark-class Bow Frame",
-    "ChineseSimplified": "鲨鱼级船首骨架"
+  "76": {
+    "id": 76,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "亞麻": 2
+    },
+    "job": "鍊金術師",
+    "itemLevel": 30,
+    "japanese": "リンシードオイル",
+    "english": "Linseed Oil",
+    "chineseSimplified": "亚麻油",
+    "chineseTraditional": "亞麻油"
   },
-  "鯊魚級艦橋骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シャーク級艦橋フレーム",
-    "English": "Shark-class Bridge Frame",
-    "ChineseSimplified": "鲨鱼级舰桥骨架"
+  "77": {
+    "id": 77,
+    "level": 2,
+    "category": "鍊金原料",
+    "recipe": {
+      "琥珀原石": 2,
+      "亞麻油": 1,
+      "松節油": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 43,
+    "japanese": "ワニス",
+    "english": "Varnish",
+    "chineseSimplified": "清漆",
+    "chineseTraditional": "清漆"
   },
-  "鯊魚級船體骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シャーク級船体フレーム",
-    "English": "Shark-class Pressure Hull Frame",
-    "ChineseSimplified": "鲨鱼级船体骨架"
+  "78": {
+    "id": 78,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "明膠怪的肉": 3,
+      "布丁的肉": 2
+    },
+    "job": "鍊金術師",
+    "itemLevel": 120,
+    "japanese": "黒にかわ",
+    "english": "Void Glue",
+    "chineseSimplified": "虚胶",
+    "chineseTraditional": "黑膠"
   },
-  "鯊魚級船尾骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シャーク級船尾フレーム",
-    "English": "Shark-class Stern Frame",
-    "ChineseSimplified": "鲨鱼级船尾骨架"
+  "79": {
+    "id": 79,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "德拉瓦尼亞天然水": 2,
+      "德拉瓦尼亞槲寄生": 2
+    },
+    "job": "鍊金術師",
+    "itemLevel": 130,
+    "japanese": "聖水",
+    "english": "Holy Water",
+    "chineseSimplified": "圣水",
+    "chineseTraditional": "聖水"
   },
-  "甲鱉級船首骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ウンキウ級艦首フレーム",
-    "English": "Unkiu-class Bow Frame",
-    "ChineseSimplified": "甲鳖级船首骨架"
+  "80": {
+    "id": 80,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "雙足飛龍的翼膜": 3,
+      "惡精靈的翅膀": 2,
+      "長頸駝的唾液": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 136,
+    "japanese": "笑いにかわ",
+    "english": "Wing Glue",
+    "chineseSimplified": "翼胶",
+    "chineseTraditional": "翼膠"
   },
-  "甲鱉級艦橋骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ウンキウ級艦橋フレーム",
-    "English": "Unkiu-class Bridge Frame",
-    "ChineseSimplified": "甲鳖级舰桥骨架"
+  "81": {
+    "id": 81,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "硬銀沙": 4,
+      "長頸駝的唾液": 2,
+      "德拉瓦尼亞天然水": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 136,
+    "japanese": "ハードシルバー・エンチャントインク",
+    "english": "Enchanted Hardsilver Ink",
+    "chineseSimplified": "硬银附魔墨水",
+    "chineseTraditional": "硬銀附魔墨水"
   },
-  "甲鱉級船體骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ウンキウ級船体フレーム",
-    "English": "Unkiu-class Pressure Hull Frame",
-    "ChineseSimplified": "甲鳖级船体骨架"
+  "82": {
+    "id": 82,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "阿巴拉提亞天然水": 2,
+      "阿巴拉提亞槲寄生": 2
+    },
+    "job": "鍊金術師",
+    "itemLevel": 142,
+    "japanese": "祝聖水",
+    "english": "Hallowed Water",
+    "chineseSimplified": "祝圣水",
+    "chineseTraditional": "祝聖水"
   },
-  "甲鱉級船尾骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ウンキウ級船尾フレーム",
-    "English": "Unkiu-class Stern Frame",
-    "ChineseSimplified": "甲鳖级船尾骨架"
-  },
-  "須鯨級船首骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ホエール級艦首フレーム",
-    "English": "Whale-class Bow Frame",
-    "ChineseSimplified": "须鲸级船首骨架"
-  },
-  "須鯨級艦橋骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ホエール級艦橋フレーム",
-    "English": "Whale-class Bridge Frame",
-    "ChineseSimplified": "须鲸级舰桥骨架"
-  },
-  "須鯨級船體骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ホエール級船体フレーム",
-    "English": "Whale-class Pressure Hull Frame",
-    "ChineseSimplified": "须鲸级船体骨架"
-  },
-  "須鯨級船尾骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "ホエール級船尾フレーム",
-    "English": "Whale-class Stern Frame",
-    "ChineseSimplified": "须鲸级船尾骨架"
-  },
-  "腔棘魚級船首骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シーラカンス級艦首フレーム",
-    "English": "Coelacanth-class Bow Frame",
-    "ChineseSimplified": "腔棘鱼级船首骨架"
-  },
-  "腔棘魚級艦橋骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シーラカンス級艦橋フレーム",
-    "English": "Coelacanth-class Bridge Frame",
-    "ChineseSimplified": "腔棘鱼级舰桥骨架"
-  },
-  "腔棘魚級船體骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シーラカンス級船体フレーム",
-    "English": "Coelacanth-class Pressure Hull Frame",
-    "ChineseSimplified": "腔棘鱼级船体骨架"
-  },
-  "腔棘魚級船尾骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シーラカンス級船尾フレーム",
-    "English": "Coelacanth-class Stern Frame",
-    "ChineseSimplified": "腔棘鱼级船尾骨架"
-  },
-  "希爾德拉級船首骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シルドラ級艦首フレーム",
-    "English": "Syldra-class Bow Frame",
-    "ChineseSimplified": "希尔德拉级船首骨架"
-  },
-  "希爾德拉級艦橋骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シルドラ級艦橋フレーム",
-    "English": "Syldra-class Bridge Frame",
-    "ChineseSimplified": "希尔德拉级舰桥骨架"
-  },
-  "希爾德拉級船體骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シルドラ級船体フレーム",
-    "English": "Syldra-class Pressure Hull Frame",
-    "ChineseSimplified": "希尔德拉级船体骨架"
-  },
-  "希爾德拉級船尾骨架": {
-    "level": 0,
-    "category": "部件",
-    "materials": {},
-    "Japanese": "シルドラ級船尾フレーム",
-    "English": "Syldra-class Stern Frame",
-    "ChineseSimplified": "希尔德拉级船尾骨架"
+  "83": {
+    "id": 83,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "玻璃纖維": 1,
+      "碳纖維": 1,
+      "矽砂": 3,
+      "泡鹼": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 180,
+    "japanese": "強化ガラス板",
+    "english": "Tempered Glass",
+    "chineseSimplified": "强化玻璃板",
+    "chineseTraditional": "強化玻璃板"
   }
 }
