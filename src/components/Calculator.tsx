@@ -44,17 +44,17 @@ function resolveToRaw(item: string, qty: number, acc: Record<string, number>): v
   }
 }
 
-function computeRequired(selected: Set<string>): Record<string, number> {
+function computeRequired(selected: Record<string, number>): Record<string, number> {
   const acc: Record<string, number> = {}
-  for (const name of selected) {
+  for (const [name, selectedQty] of Object.entries(selected)) {
     for (const [mat, qty] of Object.entries(getProductMaterials(name))) {
-      resolveToRaw(mat, qty, acc)
+      resolveToRaw(mat, qty * selectedQty, acc)
     }
   }
   return acc
 }
 
-function computeRequiredSemi(selected: Set<string>): Record<string, number> {
+function computeRequiredSemi(selected: Record<string, number>): Record<string, number> {
   const acc: Record<string, number> = {}
   function resolve(item: string, qty: number) {
     if (basicMaterials.has(item)) return
@@ -64,22 +64,22 @@ function computeRequiredSemi(selected: Set<string>): Record<string, number> {
       for (const [mat, amount] of Object.entries(recipe)) resolve(mat, amount * qty)
     }
   }
-  for (const name of selected) {
+  for (const [name, selectedQty] of Object.entries(selected)) {
     for (const [partName, qty] of Object.entries(getProductParts(name))) {
       if (submarineParts[partName]) {
-        acc[partName] = (acc[partName] ?? 0) + qty
-        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty)
+        acc[partName] = (acc[partName] ?? 0) + qty * selectedQty
+        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty * selectedQty)
       }
     }
-    for (const [mat, qty] of Object.entries(getProductMaterials(name))) resolve(mat, qty)
+    for (const [mat, qty] of Object.entries(getProductMaterials(name))) resolve(mat, qty * selectedQty)
   }
   return acc
 }
 
 // 成品直接列出的半成品（非子材料）
-function getDirectRequiredSemi(selected: Set<string>): Set<string> {
+function getDirectRequiredSemi(selected: Record<string, number>): Set<string> {
   const direct = new Set<string>()
-  for (const name of selected) {
+  for (const name of Object.keys(selected)) {
     for (const mat of Object.keys(getProductMaterials(name))) {
       if (!basicMaterials.has(mat) && getItemRecipe(mat)) direct.add(mat)
     }
@@ -103,7 +103,7 @@ function computeEquivalent(
   return acc
 }
 
-function getRelevantItems(selected: Set<string>): { parts: string[]; semi: string[]; raw: string[] } {
+function getRelevantItems(selected: Record<string, number>): { parts: string[]; semi: string[]; raw: string[] } {
   const parts = new Set<string>()
   const semi = new Set<string>()
   const raw = new Set<string>()
@@ -115,7 +115,7 @@ function getRelevantItems(selected: Set<string>): { parts: string[]; semi: strin
       for (const mat of Object.keys(recipes[item].recipe)) traverse(mat)
     }
   }
-  for (const name of selected) {
+  for (const name of Object.keys(selected)) {
     for (const partName of Object.keys(getProductParts(name))) {
       if (submarineParts[partName]) {
         parts.add(partName)
@@ -154,8 +154,8 @@ const sortedClasses = Object.keys(productsByClass)
 // ── 元件 ─────────────────────────────────────────────────
 
 export default function Calculator() {
-  const [selected, setSelected] = useState<Set<string>>(() =>
-    new Set(loadJson<string[]>('calc_selected', [])),
+  const [selected, setSelected] = useState<Record<string, number>>(() =>
+    loadJson<Record<string, number>>('calc_selected', {}),
   )
   const [semiInventory, setSemiInventory] = useState<Record<string, number>>(() =>
     loadJson('calc_semi', Object.fromEntries(allSemiNames.map((n) => [n, 0]))),
@@ -164,22 +164,26 @@ export default function Calculator() {
     loadJson('calc_raw', Object.fromEntries(allRawNames.map((n) => [n, 0]))),
   )
 
-  useEffect(() => { setCookie('calc_selected', JSON.stringify([...selected])) }, [selected])
+  useEffect(() => { setCookie('calc_selected', JSON.stringify(selected)) }, [selected])
   useEffect(() => { setCookie('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
   useEffect(() => { setCookie('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
 
   function addProduct(name: string) {
-    setSelected((prev) => new Set([...prev, name]))
+    setSelected((prev) => ({ ...prev, [name]: 1 }))
   }
   function removeProduct(name: string) {
-    setSelected((prev) => { const next = new Set(prev); next.delete(name); return next })
+    setSelected((prev) => { const next = { ...prev }; delete next[name]; return next })
+  }
+  function setProductQty(name: string, value: string) {
+    const num = Math.min(9, Math.max(1, parseInt(value) || 1))
+    setSelected((prev) => ({ ...prev, [name]: num }))
   }
   function handleInventory(
     setter: React.Dispatch<React.SetStateAction<Record<string, number>>>,
     name: string,
     value: string,
   ) {
-    const num = Math.min(9999, Math.max(0, parseInt(value) || 0))
+    const num = Math.min(99999, Math.max(0, parseInt(value) || 0))
     setter((prev) => ({ ...prev, [name]: num }))
   }
   function blockDecimal(e: React.KeyboardEvent<HTMLInputElement>) {
@@ -191,7 +195,7 @@ export default function Calculator() {
   const requiredSemi = computeRequiredSemi(selected)
   const directSemi = getDirectRequiredSemi(selected)
   const equivalent = computeEquivalent(semiInventory, rawInventory, requiredSemi)
-  const hasTarget = selected.size > 0
+  const hasTarget = Object.keys(selected).length > 0
 
   return (
     <div className="calc-layout">
@@ -200,7 +204,7 @@ export default function Calculator() {
       <section className="panel">
         <h2>成品</h2>
 
-        <button className="clear-btn" onClick={() => setSelected(new Set())} disabled={!hasTarget}>清空</button>
+        <button className="clear-btn" onClick={() => setSelected({})} disabled={!hasTarget}>清空</button>
 
         {/* 依艦級分組顯示部位按鈕 */}
         <div className="product-groups">
@@ -211,8 +215,8 @@ export default function Calculator() {
                 {productsByClass[cls].map((name) => (
                   <button
                     key={name}
-                    className={`product-add-btn${selected.has(name) ? ' selected' : ''}`}
-                    onClick={() => selected.has(name) ? removeProduct(name) : addProduct(name)}
+                    className={`product-add-btn${name in selected ? ' selected' : ''}`}
+                    onClick={() => name in selected ? removeProduct(name) : addProduct(name)}
                   >
                     {products[name].displayName}
                   </button>
@@ -224,11 +228,21 @@ export default function Calculator() {
 
         {hasTarget ? (
           <ul className="selected-list">
-            {[...selected].map((name) => {
+            {Object.keys(selected).map((name) => {
               const cls = getClass(name)
               return (
                 <li key={name} className="selected-item">
                   <span className="item-name">{cls} {products[name].displayName}</span>
+                  <input
+                    className="selected-qty"
+                    type="number"
+                    min={1}
+                    max={9}
+                    step={1}
+                    value={selected[name]}
+                    onChange={(e) => setProductQty(name, e.target.value)}
+                    onKeyDown={blockDecimal}
+                  />
                   <button className="remove-btn" onClick={() => removeProduct(name)} aria-label={`移除 ${name}`}>
                     ×
                   </button>
@@ -275,7 +289,7 @@ export default function Calculator() {
                               <input
                                 type="number"
                                 min={0}
-                                max={9999}
+                                max={99999}
                                 step={1}
                                 value={have === 0 ? '' : have}
                                 placeholder="0"
@@ -327,7 +341,7 @@ export default function Calculator() {
                               <input
                                 type="number"
                                 min={0}
-                                max={9999}
+                                max={99999}
                                 step={1}
                                 value={have === 0 ? '' : have}
                                 placeholder="0"
@@ -336,9 +350,9 @@ export default function Calculator() {
                                 className="qty-input"
                               />
                             </td>
-                            <td className="num">{isDirect ? target : '-'}</td>
+                            <td className="num">{isDirect ? (target > 99999 ? 99999 : target) : '-'}</td>
                             <td className={`num ${done ? 'text-done' : isDirect ? 'text-remain' : ''}`}>
-                              {isDirect ? (done ? '✓' : remaining) : '-'}
+                              {isDirect ? (done ? '✓' : (remaining > 99999 ? 99999 : remaining)) : '-'}
                             </td>
                           </tr>
                         )
@@ -366,7 +380,7 @@ export default function Calculator() {
                     <td><input
                         type="number"
                         min={0}
-                        max={9999}
+                        max={99999}
                         step={1}
                         value={rawInventory[name] === 0 ? '' : rawInventory[name]}
                         placeholder="0"
@@ -411,10 +425,10 @@ export default function Calculator() {
                 return (
                   <tr key={mat} className={done ? 'row-done' : ''}>
                     <td>{mat}</td>
-                    <td className="num">{have > 9999 ? '9999+' : have}</td>
-                    <td className="num">{req > 9999 ? '9999+' : req}</td>
+                    <td className="num">{have > 99999 ? 99999 : have}</td>
+                    <td className="num">{req > 99999 ? 99999 : req}</td>
                     <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
-                      {done ? '✓' : remaining > 9999 ? '9999+' : remaining}
+                      {done ? '✓' : remaining > 99999 ? 99999 : remaining}
                     </td>
                     <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
                       {pct}%
