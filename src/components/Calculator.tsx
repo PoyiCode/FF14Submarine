@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import LZString from 'lz-string'
 import { getProductMaterials, getProductParts, products, basicMaterials, basicMaterialsData, recipes, submarineParts } from '../data/handler'
 import './Calculator.css'
 
@@ -21,6 +22,34 @@ function loadJson<T>(key: string, fallback: T): T {
   } catch {
     return fallback
   }
+}
+
+// ── URL 狀態 ──────────────────────────────────────────────
+
+interface UrlState {
+  s: Record<string, number>
+  si: Record<string, number>
+  ri: Record<string, number>
+}
+
+function encodeState(state: UrlState): string {
+  return LZString.compressToEncodedURIComponent(JSON.stringify(state))
+}
+
+function decodeState(hash: string): UrlState | null {
+  try {
+    const raw = LZString.decompressFromEncodedURIComponent(hash.replace(/^#/, ''))
+    if (!raw) return null
+    return JSON.parse(raw) as UrlState
+  } catch {
+    return null
+  }
+}
+
+function readUrlState(): UrlState | null {
+  const hash = window.location.hash
+  if (!hash || hash === '#') return null
+  return decodeState(hash)
 }
 
 // ── 計算函式 ────────────────────────────────────────────
@@ -188,19 +217,38 @@ const sortedClasses = Object.keys(productsByClass)
 // ── 元件 ─────────────────────────────────────────────────
 
 export default function Calculator() {
-  const [selected, setSelected] = useState<Record<string, number>>(() =>
-    loadJson<Record<string, number>>('calc_selected', {}),
-  )
-  const [semiInventory, setSemiInventory] = useState<Record<string, number>>(() =>
-    loadJson('calc_semi', Object.fromEntries(allSemiNames.map((n) => [n, 0]))),
-  )
-  const [rawInventory, setRawInventory] = useState<Record<string, number>>(() =>
-    loadJson('calc_raw', Object.fromEntries(allRawNames.map((n) => [n, 0]))),
-  )
+  const [selected, setSelected] = useState<Record<string, number>>(() => {
+    const url = readUrlState()
+    return url ? url.s : loadJson<Record<string, number>>('calc_selected', {})
+  })
+  const [semiInventory, setSemiInventory] = useState<Record<string, number>>(() => {
+    const url = readUrlState()
+    const base = Object.fromEntries(allSemiNames.map((n) => [n, 0]))
+    if (url) return { ...base, ...url.si }
+    return loadJson('calc_semi', base)
+  })
+  const [rawInventory, setRawInventory] = useState<Record<string, number>>(() => {
+    const url = readUrlState()
+    const base = Object.fromEntries(allRawNames.map((n) => [n, 0]))
+    if (url) return { ...base, ...url.ri }
+    return loadJson('calc_raw', base)
+  })
 
   useEffect(() => { setCookie('calc_selected', JSON.stringify(selected)) }, [selected])
   useEffect(() => { setCookie('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
   useEffect(() => { setCookie('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
+
+  const [copied, setCopied] = useState(false)
+  function shareUrl() {
+    const si = Object.fromEntries(Object.entries(semiInventory).filter(([, v]) => v > 0))
+    const ri = Object.fromEntries(Object.entries(rawInventory).filter(([, v]) => v > 0))
+    const hash = encodeState({ s: selected, si, ri })
+    const url = `${window.location.origin}${window.location.pathname}#${hash}`
+    navigator.clipboard.writeText(url).then(() => {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    })
+  }
 
   function addProduct(name: string) {
     setSelected((prev) => ({ ...prev, [name]: 1 }))
@@ -232,7 +280,12 @@ export default function Calculator() {
   const hasTarget = Object.keys(selected).length > 0
 
   return (
-    <div className="calc-layout">
+    <div className="calc-wrapper">
+      <div className="calc-toolbar">
+        <button className="share-btn" onClick={shareUrl}>{copied ? '已複製網址！' : '按此分享數據'}</button>
+      </div>
+
+      <div className="calc-layout">
 
       {/* 第一欄：成品 */}
       <section className="panel">
@@ -350,6 +403,7 @@ export default function Calculator() {
               const items = sortSemi(relevantSemi.filter((n) => recipes[n].level === lv))
               if (items.length === 0) return null
               const hasIndirect = lv === 1 && items.some((n) => !directSemi.has(n))
+              const lv2Items = lv === 1 ? relevantSemi.filter((n) => recipes[n].level === 2) : []
               return (
                 <div key={lv}>
                   <table className="semi-table">
@@ -364,10 +418,36 @@ export default function Calculator() {
                     <tbody>
                       {items.map((name) => {
                         const isDirect = directSemi.has(name)
-                        const target = requiredSemi[name] ?? 0
+                        const directTarget = requiredSemi[name] ?? 0
                         const have = semiInventory[name] ?? 0
-                        const remaining = Math.max(0, target - have)
-                        const done = isDirect && have >= target
+
+                        let displayTarget: number | string
+                        let displayRemaining: number | string
+                        let done: boolean
+
+                        if (lv === 1) {
+                          // indirect items have directTarget=0; only direct items use requiredSemi
+                          const trueDirectTarget = isDirect ? directTarget : 0
+                          // remaining = Σ(lv2_remaining × lv1_per_lv2) + (direct_target − have)
+                          let lv2Need = 0
+                          for (const lv2Name of lv2Items) {
+                            const r = recipes[lv2Name]?.recipe
+                            if (!r || !(name in r)) continue
+                            const lv2Rem = Math.max(0, (requiredSemi[lv2Name] ?? 0) - (semiInventory[lv2Name] ?? 0))
+                            lv2Need += lv2Rem * r[name]
+                          }
+                          const rawRemaining = lv2Need + (trueDirectTarget - have)
+                          const remaining = Math.max(0, rawRemaining)
+                          done = rawRemaining <= 0
+                          displayTarget = trueDirectTarget > 0 ? Math.min(trueDirectTarget, 99999) : '-'
+                          displayRemaining = done ? '✓' : Math.min(remaining, 99999)
+                        } else {
+                          const remaining = Math.max(0, directTarget - have)
+                          done = have >= directTarget
+                          displayTarget = Math.min(directTarget, 99999)
+                          displayRemaining = done ? '✓' : Math.min(remaining, 99999)
+                        }
+
                         return (
                           <tr key={name} className={done ? 'row-done' : ''}>
                             <td className="semi-name">{isDirect ? name : name + '*'}</td>
@@ -384,9 +464,9 @@ export default function Calculator() {
                                 className="qty-input"
                               />
                             </td>
-                            <td className="num">{isDirect ? (target > 99999 ? 99999 : target) : '-'}</td>
-                            <td className={`num ${done ? 'text-done' : isDirect ? 'text-remain' : ''}`}>
-                              {isDirect ? (done ? '✓' : (remaining > 99999 ? 99999 : remaining)) : '-'}
+                            <td className="num">{displayTarget}</td>
+                            <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
+                              {displayRemaining}
                             </td>
                           </tr>
                         )
@@ -477,6 +557,7 @@ export default function Calculator() {
         )}
       </section>
 
+    </div>
     </div>
   )
 }
