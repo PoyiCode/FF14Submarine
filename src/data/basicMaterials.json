@@ -30,6 +30,26 @@
     "type": "item"
   },
   "4": {
+    "id": 5,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "土之碎晶",
+    "english": "Earth Shard",
+    "chineseSimplified": "土之碎晶",
+    "japanese": "アースシャード",
+    "type": "item"
+  },
+  "5": {
+    "id": 6,
+    "category": "水晶",
+    "itemLevel": 1,
+    "chineseTraditional": "雷之碎晶",
+    "english": "Lightning Shard",
+    "chineseSimplified": "雷之碎晶",
+    "japanese": "ライトニングシャード",
+    "type": "item"
+  },
+  "6": {
     "id": 7,
     "category": "水晶",
     "itemLevel": 1,
@@ -39,7 +59,7 @@
     "japanese": "ウォーターシャード",
     "type": "item"
   },
-  "5": {
+  "7": {
     "id": 8,
     "category": "水晶",
     "itemLevel": 25,
@@ -49,7 +69,7 @@
     "japanese": "ファイアクリスタル",
     "type": "item"
   },
-  "6": {
+  "8": {
     "id": 9,
     "category": "水晶",
     "itemLevel": 25,
@@ -59,7 +79,7 @@
     "japanese": "アイスクリスタル",
     "type": "item"
   },
-  "7": {
+  "9": {
     "id": 10,
     "category": "水晶",
     "itemLevel": 25,
@@ -69,7 +89,7 @@
     "japanese": "ウィンドクリスタル",
     "type": "item"
   },
-  "8": {
+  "10": {
     "id": 11,
     "category": "水晶",
     "itemLevel": 25,
@@ -79,7 +99,7 @@
     "japanese": "アースクリスタル",
     "type": "item"
   },
-  "9": {
+  "11": {
     "id": 12,
     "category": "水晶",
     "itemLevel": 25,
@@ -89,7 +109,7 @@
     "japanese": "ライトニングクリスタル",
     "type": "item"
   },
-  "10": {
+  "12": {
     "id": 13,
     "category": "水晶",
     "itemLevel": 25,
@@ -99,7 +119,7 @@
     "japanese": "ウォータークリスタル",
     "type": "item"
   },
-  "11": {
+  "13": {
     "id": 14,
     "category": "水晶",
     "itemLevel": 50,
@@ -109,7 +129,7 @@
     "japanese": "ファイアクラスター",
     "type": "item"
   },
-  "12": {
+  "14": {
     "id": 15,
     "category": "水晶",
     "itemLevel": 50,
@@ -119,7 +139,7 @@
     "japanese": "アイスクラスター",
     "type": "item"
   },
-  "13": {
+  "15": {
     "id": 16,
     "category": "水晶",
     "itemLevel": 50,
@@ -129,7 +149,7 @@
     "japanese": "ウィンドクラスター",
     "type": "item"
   },
-  "14": {
+  "16": {
     "id": 17,
     "category": "水晶",
     "itemLevel": 50,
@@ -139,7 +159,7 @@
     "japanese": "アースクラスター",
     "type": "item"
   },
-  "15": {
+  "17": {
     "id": 18,
     "category": "水晶",
     "itemLevel": 50,
@@ -149,7 +169,7 @@
     "japanese": "ライトニングクラスター",
     "type": "item"
   },
-  "16": {
+  "18": {
     "id": 19,
     "category": "水晶",
     "itemLevel": 50,
@@ -159,7 +179,7 @@
     "japanese": "ウォータークラスター",
     "type": "item"
   },
-  "17": {
+  "19": {
     "id": 5106,
     "category": "石材",
     "itemLevel": 1,
@@ -169,7 +189,7 @@
     "japanese": "銅鉱",
     "type": "item"
   },
-  "18": {
+  "20": {
     "id": 5111,
     "category": "石材",
     "itemLevel": 13,
@@ -179,7 +199,7 @@
     "japanese": "鉄鉱",
     "type": "item"
   },
-  "19": {
+  "21": {
     "id": 5113,
     "category": "石材",
     "itemLevel": 23,
@@ -189,7 +209,7 @@
     "japanese": "銀鉱",
     "type": "item"
   },
-  "20": {
+  "22": {
     "id": 5114,
     "category": "石材",
     "itemLevel": 34,
@@ -199,17 +219,7 @@
     "japanese": "霊銀鉱",
     "type": "item"
   },
-  "21": {
-    "id": 5263,
-    "category": "石材",
-    "itemLevel": 40,
-    "chineseTraditional": "石蜥蜴的蛋",
-    "english": "Basilisk Egg",
-    "chineseSimplified": "石蜥蜴的蛋",
-    "japanese": "バジリスクの卵",
-    "type": "item"
-  },
-  "22": {
+  "23": {
     "id": 5143,
     "category": "石材",
     "itemLevel": 40,
@@ -219,7 +229,17 @@
     "japanese": "アンバー原石",
     "type": "item"
   },
-  "23": {
+  "24": {
+    "id": 5263,
+    "category": "石材",
+    "itemLevel": 40,
+    "chineseTraditional": "石蜥蜴的蛋",
+    "english": "Basilisk Egg",
+    "chineseSimplified": "石蜥蜴的蛋",
+    "japanese": "バジリスクの卵",
+    "type": "item"
+  },
+  "25": {
     "id": 5115,
     "category": "石材",
     "itemLevel": 42,
@@ -229,7 +249,7 @@
     "japanese": "青金鉱",
     "type": "item"
   },
-  "24": {
+  "26": {
     "id": 5116,
     "category": "石材",
     "itemLevel": 43,
@@ -239,7 +259,7 @@
     "japanese": "鏡鉄鉱",
     "type": "item"
   },
-  "25": {
+  "27": {
     "id": 5118,
     "category": "石材",
     "itemLevel": 55,
@@ -249,7 +269,7 @@
     "japanese": "金鉱",
     "type": "item"
   },
-  "26": {
+  "28": {
     "id": 5121,
     "category": "石材",
     "itemLevel": 55,
@@ -259,7 +279,7 @@
     "japanese": "闇鉄鉱",
     "type": "item"
   },
-  "27": {
+  "29": {
     "id": 5119,
     "category": "石材",
     "itemLevel": 70,
@@ -269,37 +289,7 @@
     "japanese": "斑銅鉱",
     "type": "item"
   },
-  "28": {
-    "id": 7588,
-    "category": "石材",
-    "itemLevel": 70,
-    "chineseTraditional": "鎢鐵礦",
-    "english": "Ferberite",
-    "chineseSimplified": "钨铁矿",
-    "japanese": "鉄重石",
-    "type": "item"
-  },
-  "29": {
-    "id": 7589,
-    "category": "石材",
-    "itemLevel": 70,
-    "chineseTraditional": "自然金",
-    "english": "Native Gold",
-    "chineseSimplified": "自然金",
-    "japanese": "自然金",
-    "type": "item"
-  },
   "30": {
-    "id": 5261,
-    "category": "石材",
-    "itemLevel": 70,
-    "chineseTraditional": "沉積岩磨刀石",
-    "english": "Aqueous Whetstone",
-    "chineseSimplified": "沉积岩磨刀石",
-    "japanese": "水成岩砥石",
-    "type": "item"
-  },
-  "31": {
     "id": 5149,
     "category": "石材",
     "itemLevel": 70,
@@ -309,7 +299,37 @@
     "japanese": "トパーズ原石",
     "type": "item"
   },
+  "31": {
+    "id": 5261,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "沉積岩磨刀石",
+    "english": "Aqueous Whetstone",
+    "chineseSimplified": "沉积岩磨刀石",
+    "japanese": "水成岩砥石",
+    "type": "item"
+  },
   "32": {
+    "id": 7588,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "鎢鐵礦",
+    "english": "Ferberite",
+    "chineseSimplified": "钨铁矿",
+    "japanese": "鉄重石",
+    "type": "item"
+  },
+  "33": {
+    "id": 7589,
+    "category": "石材",
+    "itemLevel": 70,
+    "chineseTraditional": "自然金",
+    "english": "Native Gold",
+    "chineseSimplified": "自然金",
+    "japanese": "自然金",
+    "type": "item"
+  },
+  "34": {
     "id": 5120,
     "category": "石材",
     "itemLevel": 80,
@@ -319,7 +339,7 @@
     "japanese": "白金鉱",
     "type": "item"
   },
-  "33": {
+  "35": {
     "id": 7597,
     "category": "石材",
     "itemLevel": 90,
@@ -329,7 +349,7 @@
     "japanese": "灰重石",
     "type": "item"
   },
-  "34": {
+  "36": {
     "id": 7601,
     "category": "石材",
     "itemLevel": 90,
@@ -339,7 +359,7 @@
     "japanese": "金剛砂",
     "type": "item"
   },
-  "35": {
+  "37": {
     "id": 12531,
     "category": "石材",
     "itemLevel": 115,
@@ -349,7 +369,7 @@
     "japanese": "精霊銀砂",
     "type": "item"
   },
-  "36": {
+  "38": {
     "id": 12224,
     "category": "石材",
     "itemLevel": 125,
@@ -359,7 +379,7 @@
     "japanese": "藍鉄鉱",
     "type": "item"
   },
-  "37": {
+  "39": {
     "id": 12534,
     "category": "石材",
     "itemLevel": 130,
@@ -369,7 +389,7 @@
     "japanese": "精霊銀鉱",
     "type": "item"
   },
-  "38": {
+  "40": {
     "id": 12551,
     "category": "石材",
     "itemLevel": 130,
@@ -379,7 +399,7 @@
     "japanese": "ラリマール原石",
     "type": "item"
   },
-  "39": {
+  "41": {
     "id": 12223,
     "category": "石材",
     "itemLevel": 133,
@@ -389,17 +409,7 @@
     "japanese": "天青石",
     "type": "item"
   },
-  "40": {
-    "id": 12537,
-    "category": "石材",
-    "itemLevel": 136,
-    "chineseTraditional": "白鈦礦",
-    "english": "Titanium Ore",
-    "chineseSimplified": "白钛矿",
-    "japanese": "チタン鉱",
-    "type": "item"
-  },
-  "41": {
+  "42": {
     "id": 12532,
     "category": "石材",
     "itemLevel": 136,
@@ -409,7 +419,17 @@
     "japanese": "硬銀砂",
     "type": "item"
   },
-  "42": {
+  "43": {
+    "id": 12537,
+    "category": "石材",
+    "itemLevel": 136,
+    "chineseTraditional": "白鈦礦",
+    "english": "Titanium Ore",
+    "chineseSimplified": "白钛矿",
+    "japanese": "チタン鉱",
+    "type": "item"
+  },
+  "44": {
     "id": 12535,
     "category": "石材",
     "itemLevel": 142,
@@ -419,7 +439,7 @@
     "japanese": "硬銀鉱",
     "type": "item"
   },
-  "43": {
+  "45": {
     "id": 12539,
     "category": "石材",
     "itemLevel": 142,
@@ -429,7 +449,7 @@
     "japanese": "白雲母",
     "type": "item"
   },
-  "44": {
+  "46": {
     "id": 5163,
     "category": "石材",
     "itemLevel": 160,
@@ -439,7 +459,7 @@
     "japanese": "バイオレットクォーツ",
     "type": "item"
   },
-  "45": {
+  "47": {
     "id": 5226,
     "category": "石材",
     "itemLevel": 160,
@@ -449,17 +469,7 @@
     "japanese": "アストラルグラベル",
     "type": "item"
   },
-  "46": {
-    "id": 25008,
-    "category": "石材",
-    "itemLevel": 180,
-    "chineseTraditional": "鐵紋礦石",
-    "english": "Kamacite Ore",
-    "chineseSimplified": "铁纹矿石",
-    "japanese": "カマサイト鉱石",
-    "type": "item"
-  },
-  "47": {
+  "48": {
     "id": 13750,
     "category": "石材",
     "itemLevel": 180,
@@ -469,7 +479,17 @@
     "japanese": "閃亜鉛鉱",
     "type": "item"
   },
-  "48": {
+  "49": {
+    "id": 25008,
+    "category": "石材",
+    "itemLevel": 180,
+    "chineseTraditional": "鐵紋礦石",
+    "english": "Kamacite Ore",
+    "chineseSimplified": "铁纹矿石",
+    "japanese": "カマサイト鉱石",
+    "type": "item"
+  },
+  "50": {
     "id": 14148,
     "category": "石材",
     "itemLevel": 210,
@@ -479,7 +499,7 @@
     "japanese": "光霊銀鉱",
     "type": "item"
   },
-  "49": {
+  "51": {
     "id": 14151,
     "category": "石材",
     "itemLevel": 210,
@@ -489,7 +509,7 @@
     "japanese": "菱亜鉛鉱",
     "type": "item"
   },
-  "50": {
+  "52": {
     "id": 19950,
     "category": "石材",
     "itemLevel": 255,
@@ -499,7 +519,7 @@
     "japanese": "魔銅砂",
     "type": "item"
   },
-  "51": {
+  "53": {
     "id": 19968,
     "category": "石材",
     "itemLevel": 255,
@@ -509,15 +529,15 @@
     "japanese": "トリフェーン原石",
     "type": "item"
   },
-  "52": {
+  "54": {
     "id": 5232,
     "category": "石材",
     "itemLevel": 260,
     "chineseTraditional": "矽岩",
-    "english": "Silica",
+    "english": "Stiperstone",
     "type": "item"
   },
-  "53": {
+  "55": {
     "id": 19957,
     "category": "石材",
     "itemLevel": 285,
@@ -527,7 +547,7 @@
     "japanese": "輝水鉛鉱",
     "type": "item"
   },
-  "54": {
+  "56": {
     "id": 19973,
     "category": "石材",
     "itemLevel": 290,
@@ -537,7 +557,7 @@
     "japanese": "ロードナイト原石",
     "type": "item"
   },
-  "55": {
+  "57": {
     "id": 26531,
     "category": "石材",
     "itemLevel": 300,
@@ -547,7 +567,7 @@
     "japanese": "ピュアチタン鉱",
     "type": "item"
   },
-  "56": {
+  "58": {
     "id": 14147,
     "category": "金屬",
     "itemLevel": 210,
@@ -557,17 +577,17 @@
     "japanese": "イコンミスライト",
     "type": "item"
   },
-  "57": {
+  "59": {
     "id": 14150,
     "category": "金屬",
     "itemLevel": 210,
     "chineseTraditional": "荒神合金",
     "english": "Eikon Metal",
     "chineseSimplified": "荒神合金",
-    "japanese": "イコンメタ��",
+    "japanese": "イコンメタル",
     "type": "item"
   },
-  "58": {
+  "60": {
     "id": 5388,
     "category": "木材",
     "itemLevel": 25,
@@ -577,7 +597,7 @@
     "japanese": "ウォルナット原木",
     "type": "item"
   },
-  "59": {
+  "61": {
     "id": 5390,
     "category": "木材",
     "itemLevel": 32,
@@ -587,7 +607,7 @@
     "japanese": "オーク原木",
     "type": "item"
   },
-  "60": {
+  "62": {
     "id": 5395,
     "category": "木材",
     "itemLevel": 55,
@@ -597,7 +617,7 @@
     "japanese": "スプルース原木",
     "type": "item"
   },
-  "61": {
+  "63": {
     "id": 7596,
     "category": "木材",
     "itemLevel": 90,
@@ -607,7 +627,7 @@
     "japanese": "珪化木",
     "type": "item"
   },
-  "62": {
+  "64": {
     "id": 5384,
     "category": "木材",
     "itemLevel": 115,
@@ -617,7 +637,7 @@
     "japanese": "シーダー原木",
     "type": "item"
   },
-  "63": {
+  "65": {
     "id": 12578,
     "category": "木材",
     "itemLevel": 136,
@@ -627,7 +647,7 @@
     "japanese": "ダークチェスナット原木",
     "type": "item"
   },
-  "64": {
+  "66": {
     "id": 12221,
     "category": "木材",
     "itemLevel": 139,
@@ -637,7 +657,7 @@
     "japanese": "鉄刀木",
     "type": "item"
   },
-  "65": {
+  "67": {
     "id": 12579,
     "category": "木材",
     "itemLevel": 148,
@@ -647,7 +667,7 @@
     "japanese": "バーチ原木",
     "type": "item"
   },
-  "66": {
+  "68": {
     "id": 19930,
     "category": "木材",
     "itemLevel": 255,
@@ -657,7 +677,7 @@
     "japanese": "ビーチ原木",
     "type": "item"
   },
-  "67": {
+  "69": {
     "id": 26529,
     "category": "木材",
     "itemLevel": 300,
@@ -667,7 +687,7 @@
     "japanese": "クリプトメリア原木",
     "type": "item"
   },
-  "68": {
+  "70": {
     "id": 5346,
     "category": "布料",
     "itemLevel": 32,
@@ -677,7 +697,7 @@
     "japanese": "亜麻",
     "type": "item"
   },
-  "69": {
+  "71": {
     "id": 12220,
     "category": "布料",
     "itemLevel": 130,
@@ -687,7 +707,7 @@
     "japanese": "赤モコ草",
     "type": "item"
   },
-  "70": {
+  "72": {
     "id": 5339,
     "category": "布料",
     "itemLevel": 180,
@@ -697,7 +717,7 @@
     "japanese": "カーボンファイバー",
     "type": "item"
   },
-  "71": {
+  "73": {
     "id": 15649,
     "category": "布料",
     "itemLevel": 180,
@@ -707,7 +727,7 @@
     "japanese": "グラスファイバー",
     "type": "item"
   },
-  "72": {
+  "74": {
     "id": 5314,
     "category": "皮革",
     "itemLevel": 55,
@@ -717,7 +737,7 @@
     "japanese": "ウラエウスの粗皮",
     "type": "item"
   },
-  "73": {
+  "75": {
     "id": 12569,
     "category": "皮革",
     "itemLevel": 130,
@@ -727,7 +747,7 @@
     "japanese": "ワイバーンの粗皮",
     "type": "item"
   },
-  "74": {
+  "76": {
     "id": 12571,
     "category": "皮革",
     "itemLevel": 142,
@@ -737,7 +757,7 @@
     "japanese": "ドラゴンの粗皮",
     "type": "item"
   },
-  "75": {
+  "77": {
     "id": 19999,
     "category": "皮革",
     "itemLevel": 255,
@@ -747,7 +767,7 @@
     "japanese": "ガガナの粗皮",
     "type": "item"
   },
-  "76": {
+  "78": {
     "id": 5436,
     "category": "骨材",
     "itemLevel": 25,
@@ -757,7 +777,7 @@
     "japanese": "アルドゴートの角",
     "type": "item"
   },
-  "77": {
+  "79": {
     "id": 5518,
     "category": "鍊金原料",
     "itemLevel": 1,
@@ -767,7 +787,7 @@
     "japanese": "岩塩",
     "type": "item"
   },
-  "78": {
+  "80": {
     "id": 5491,
     "category": "鍊金原料",
     "itemLevel": 11,
@@ -777,7 +797,7 @@
     "japanese": "ソーダ水",
     "type": "item"
   },
-  "79": {
+  "81": {
     "id": 5522,
     "category": "鍊金原料",
     "itemLevel": 25,
@@ -787,15 +807,15 @@
     "japanese": "重曹",
     "type": "item"
   },
-  "80": {
+  "82": {
     "id": 5523,
     "category": "鍊金原料",
     "itemLevel": 25,
     "chineseTraditional": "矽砂",
-    "english": "Silica Sand",
+    "english": "Silex",
     "type": "item"
   },
-  "81": {
+  "83": {
     "id": 5528,
     "category": "鍊金原料",
     "itemLevel": 26,
@@ -805,7 +825,7 @@
     "japanese": "ボムの灰",
     "type": "item"
   },
-  "82": {
+  "84": {
     "id": 5525,
     "category": "鍊金原料",
     "itemLevel": 37,
@@ -815,7 +835,7 @@
     "japanese": "ブラックアルメン",
     "type": "item"
   },
-  "83": {
+  "85": {
     "id": 5526,
     "category": "鍊金原料",
     "itemLevel": 40,
@@ -825,7 +845,7 @@
     "japanese": "グレネードの灰",
     "type": "item"
   },
-  "84": {
+  "86": {
     "id": 5558,
     "category": "鍊金原料",
     "itemLevel": 40,
@@ -835,7 +855,7 @@
     "japanese": "プリンの肉",
     "type": "item"
   },
-  "85": {
+  "87": {
     "id": 5553,
     "category": "鍊金原料",
     "itemLevel": 43,
@@ -845,17 +865,7 @@
     "japanese": "アーリマンの翼",
     "type": "item"
   },
-  "86": {
-    "id": 5530,
-    "category": "鍊金原料",
-    "itemLevel": 70,
-    "chineseTraditional": "焦炭",
-    "english": "Coke",
-    "chineseSimplified": "焦炭",
-    "japanese": "コークス",
-    "type": "item"
-  },
-  "87": {
+  "88": {
     "id": 5501,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -865,7 +875,17 @@
     "japanese": "灰汁",
     "type": "item"
   },
-  "88": {
+  "89": {
+    "id": 5530,
+    "category": "鍊金原料",
+    "itemLevel": 70,
+    "chineseTraditional": "焦炭",
+    "english": "Coke",
+    "chineseSimplified": "焦炭",
+    "japanese": "コークス",
+    "type": "item"
+  },
+  "90": {
     "id": 5532,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -875,7 +895,7 @@
     "japanese": "樹液塊",
     "type": "item"
   },
-  "89": {
+  "91": {
     "id": 7590,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -885,7 +905,7 @@
     "japanese": "緋樹液",
     "type": "item"
   },
-  "90": {
+  "92": {
     "id": 7598,
     "category": "鍊金原料",
     "itemLevel": 90,
@@ -895,7 +915,7 @@
     "japanese": "アブダルラジクの霊砂",
     "type": "item"
   },
-  "91": {
+  "93": {
     "id": 9369,
     "category": "鍊金原料",
     "itemLevel": 110,
@@ -905,7 +925,7 @@
     "japanese": "アブダルラジクの霊薬",
     "type": "item"
   },
-  "92": {
+  "94": {
     "id": 12635,
     "category": "鍊金原料",
     "itemLevel": 120,
@@ -915,7 +935,7 @@
     "japanese": "ジェラートの肉",
     "type": "item"
   },
-  "93": {
+  "95": {
     "id": 12609,
     "category": "鍊金原料",
     "itemLevel": 125,
@@ -923,26 +943,6 @@
     "english": "Bear Fat",
     "chineseSimplified": "熊脂",
     "japanese": "熊脂",
-    "type": "item"
-  },
-  "94": {
-    "id": 12631,
-    "category": "鍊金原料",
-    "itemLevel": 130,
-    "chineseTraditional": "德拉瓦尼亞天然水",
-    "english": "Dravanian Spring Water",
-    "chineseSimplified": "龙堡天然水",
-    "japanese": "ドラヴァニア天然水",
-    "type": "item"
-  },
-  "95": {
-    "id": 12636,
-    "category": "鍊金原料",
-    "itemLevel": 130,
-    "chineseTraditional": "雙足飛龍的翼膜",
-    "english": "Wyvern Wing",
-    "chineseSimplified": "双足飞龙的翼膜",
-    "japanese": "ワイバーンの翼膜",
     "type": "item"
   },
   "96": {
@@ -956,6 +956,26 @@
     "type": "item"
   },
   "97": {
+    "id": 12631,
+    "category": "鍊金原料",
+    "itemLevel": 130,
+    "chineseTraditional": "德拉瓦尼亞天然水",
+    "english": "Dravanian Spring Water",
+    "chineseSimplified": "龙堡天然水",
+    "japanese": "ドラヴァニア天然水",
+    "type": "item"
+  },
+  "98": {
+    "id": 12636,
+    "category": "鍊金原料",
+    "itemLevel": 130,
+    "chineseTraditional": "雙足飛龍的翼膜",
+    "english": "Wyvern Wing",
+    "chineseSimplified": "双足飞龙的翼膜",
+    "japanese": "ワイバーンの翼膜",
+    "type": "item"
+  },
+  "99": {
     "id": 12943,
     "category": "鍊金原料",
     "itemLevel": 133,
@@ -965,7 +985,7 @@
     "japanese": "ドラヴァニアミスルトゥ",
     "type": "item"
   },
-  "98": {
+  "100": {
     "id": 12629,
     "category": "鍊金原料",
     "itemLevel": 139,
@@ -975,7 +995,7 @@
     "japanese": "ダルメルの唾液",
     "type": "item"
   },
-  "99": {
+  "101": {
     "id": 12632,
     "category": "鍊金原料",
     "itemLevel": 142,
@@ -985,7 +1005,7 @@
     "japanese": "アバラシア天然水",
     "type": "item"
   },
-  "100": {
+  "102": {
     "id": 12944,
     "category": "鍊金原料",
     "itemLevel": 142,
@@ -995,7 +1015,7 @@
     "japanese": "アバラシアミスルトゥ",
     "type": "item"
   },
-  "101": {
+  "103": {
     "id": 12533,
     "category": "鍊金原料",
     "itemLevel": 148,
@@ -1005,7 +1025,7 @@
     "japanese": "皇金砂",
     "type": "item"
   },
-  "102": {
+  "104": {
     "id": 12538,
     "category": "鍊金原料",
     "itemLevel": 148,
@@ -1015,7 +1035,7 @@
     "japanese": "アダマン鉱",
     "type": "item"
   },
-  "103": {
+  "105": {
     "id": 12937,
     "category": "鍊金原料",
     "itemLevel": 150,
@@ -1025,7 +1045,7 @@
     "japanese": "暁光の霊砂",
     "type": "item"
   },
-  "104": {
+  "106": {
     "id": 12937,
     "category": "鍊金原料",
     "itemLevel": 150,
@@ -1035,17 +1055,7 @@
     "japanese": "暁光の霊砂",
     "type": "item"
   },
-  "105": {
-    "id": 12634,
-    "category": "鍊金原料",
-    "itemLevel": 160,
-    "chineseTraditional": "星極花",
-    "english": "Seventh Heaven",
-    "chineseSimplified": "星极花",
-    "japanese": "アストラルフラワー",
-    "type": "item"
-  },
-  "106": {
+  "107": {
     "id": 12536,
     "category": "鍊金原料",
     "itemLevel": 160,
@@ -1055,7 +1065,7 @@
     "japanese": "皇金鉱",
     "type": "item"
   },
-  "107": {
+  "108": {
     "id": 12606,
     "category": "鍊金原料",
     "itemLevel": 160,
@@ -1065,7 +1075,17 @@
     "japanese": "アストラルオイル",
     "type": "item"
   },
-  "108": {
+  "109": {
+    "id": 12634,
+    "category": "鍊金原料",
+    "itemLevel": 160,
+    "chineseTraditional": "星極花",
+    "english": "Seventh Heaven",
+    "chineseSimplified": "星极花",
+    "japanese": "アストラルフラワー",
+    "type": "item"
+  },
+  "110": {
     "id": 12932,
     "category": "鍊金原料",
     "itemLevel": 180,
@@ -1075,7 +1095,7 @@
     "japanese": "アブダルラジクの硬化触媒",
     "type": "item"
   },
-  "109": {
+  "111": {
     "id": 19910,
     "category": "鍊金原料",
     "itemLevel": 255,
@@ -1085,7 +1105,7 @@
     "japanese": "ギラバニアアルメン",
     "type": "item"
   },
-  "110": {
+  "112": {
     "id": 5728,
     "category": "染料",
     "itemLevel": 1,
@@ -1095,7 +1115,7 @@
     "japanese": "テレビン油",
     "type": "item"
   },
-  "111": {
+  "113": {
     "id": 12882,
     "category": "食材",
     "itemLevel": 125,

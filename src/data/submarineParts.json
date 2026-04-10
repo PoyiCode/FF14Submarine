@@ -32,7 +32,7 @@
       "鯊魚級船體": 1
     },
     "itemLevel": 180,
-    "japanese": "シャーク級船体フレーム",
+    "japanese": "シャーク級艦体フレーム",
     "english": "Shark-class Pressure Hull Frame",
     "chineseSimplified": "鲨鱼级船体骨架",
     "chineseTraditional": "鯊魚級船體骨架",
@@ -45,7 +45,7 @@
       "鯊魚級船尾": 1
     },
     "itemLevel": 180,
-    "japanese": "シャーク級船尾フレーム",
+    "japanese": "シャーク級艦尾フレーム",
     "english": "Shark-class Stern Frame",
     "chineseSimplified": "鲨鱼级船尾骨架",
     "chineseTraditional": "鯊魚級船尾骨架",
@@ -84,7 +84,7 @@
       "甲鱉級船體": 1
     },
     "itemLevel": 180,
-    "japanese": "ウンキウ級船体フレーム",
+    "japanese": "ウンキウ級艦体フレーム",
     "english": "Unkiu-class Pressure Hull Frame",
     "chineseSimplified": "甲鳖级船体骨架",
     "chineseTraditional": "甲鱉級船體骨架",
@@ -97,7 +97,7 @@
       "甲鱉級船尾": 1
     },
     "itemLevel": 180,
-    "japanese": "ウンキウ級船尾フレーム",
+    "japanese": "ウンキウ級艦尾フレーム",
     "english": "Unkiu-class Stern Frame",
     "chineseSimplified": "甲鳖级船尾骨架",
     "chineseTraditional": "甲鱉級船尾骨架",
@@ -136,7 +136,7 @@
       "鬚鯨級船體": 1
     },
     "itemLevel": 180,
-    "japanese": "ホエール級船体フレーム",
+    "japanese": "ホエール級艦体フレーム",
     "english": "Whale-class Pressure Hull Frame",
     "chineseSimplified": "须鲸级船体骨架",
     "chineseTraditional": "鬚鯨級船體骨架",
@@ -149,7 +149,7 @@
       "鬚鯨級船尾": 1
     },
     "itemLevel": 180,
-    "japanese": "ホエール級船尾フレーム",
+    "japanese": "ホエール級艦尾フレーム",
     "english": "Whale-class Stern Frame",
     "chineseSimplified": "须鲸级船尾骨架",
     "chineseTraditional": "鬚鯨級船尾骨架",
@@ -188,7 +188,7 @@
       "腔棘魚級船體": 1
     },
     "itemLevel": 180,
-    "japanese": "シーラカンス級船体フレーム",
+    "japanese": "シーラカンス級艦体フレーム",
     "english": "Coelacanth-class Pressure Hull Frame",
     "chineseSimplified": "腔棘鱼级船体骨架",
     "chineseTraditional": "腔棘魚級船體骨架",
@@ -201,7 +201,7 @@
       "腔棘魚級船尾": 1
     },
     "itemLevel": 180,
-    "japanese": "シーラカンス級船尾フレーム",
+    "japanese": "シーラカンス級艦尾フレーム",
     "english": "Coelacanth-class Stern Frame",
     "chineseSimplified": "腔棘鱼级船尾骨架",
     "chineseTraditional": "腔棘魚級船尾骨架",
@@ -240,7 +240,7 @@
       "希爾德拉級船體": 1
     },
     "itemLevel": 180,
-    "japanese": "シルドラ級船体フレーム",
+    "japanese": "シルドラ級艦体フレーム",
     "english": "Syldra-class Pressure Hull Frame",
     "chineseSimplified": "希尔德拉级船体骨架",
     "chineseTraditional": "希爾德拉級船體骨架",
@@ -253,7 +253,7 @@
       "希爾德拉級船尾": 1
     },
     "itemLevel": 180,
-    "japanese": "シルドラ級船尾フレーム",
+    "japanese": "シルドラ級艦尾フレーム",
     "english": "Syldra-class Stern Frame",
     "chineseSimplified": "希尔德拉级船尾骨架",
     "chineseTraditional": "希爾德拉級船尾骨架",
