@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getProductMaterials, getProductParts, products, basicMaterials, recipes, submarineParts } from '../data'
+import { getProductMaterials, getProductParts, products, basicMaterials, recipes, submarineParts } from '../data/handler'
 import './Calculator.css'
 
 // ── Cookie 工具 ───────────────────────────────────────────
