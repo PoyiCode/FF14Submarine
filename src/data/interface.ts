@@ -16,6 +16,7 @@ export interface Recipe {
   id: number
   level: number
   category: string
+  itemLevel: number
   recipe: Record<string, number>
   job?: string
   japanese?: string

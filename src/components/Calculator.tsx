@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getProductMaterials, getProductParts, products, basicMaterials, recipes, submarineParts } from '../data/handler'
+import { getProductMaterials, getProductParts, products, basicMaterials, basicMaterialsData, recipes, submarineParts } from '../data/handler'
 import './Calculator.css'
 
 // ── Cookie 工具 ───────────────────────────────────────────
@@ -56,22 +56,30 @@ function computeRequired(selected: Record<string, number>): Record<string, numbe
 
 function computeRequiredSemi(selected: Record<string, number>): Record<string, number> {
   const acc: Record<string, number> = {}
-  function resolve(item: string, qty: number) {
+  // directMats: lv1 items that appear directly in the current product's recipe.
+  // When expanding lv2 sub-ingredients, skip these to avoid double-counting.
+  function resolve(item: string, qty: number, directMats: Set<string>) {
     if (basicMaterials.has(item)) return
     const recipe = getItemRecipe(item)
     if (recipe) {
       acc[item] = (acc[item] ?? 0) + qty
-      for (const [mat, amount] of Object.entries(recipe)) resolve(mat, amount * qty)
+      for (const [mat, amount] of Object.entries(recipe)) {
+        if (directMats.has(mat) && recipes[mat]?.level === 1) continue
+        resolve(mat, amount * qty, directMats)
+      }
     }
   }
   for (const [name, selectedQty] of Object.entries(selected)) {
+    const directMats = new Set(
+      Object.keys(getProductMaterials(name)).filter((m) => recipes[m]?.level === 1)
+    )
     for (const [partName, qty] of Object.entries(getProductParts(name))) {
       if (submarineParts[partName]) {
         acc[partName] = (acc[partName] ?? 0) + qty * selectedQty
-        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty * selectedQty)
+        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty * selectedQty, directMats)
       }
     }
-    for (const [mat, qty] of Object.entries(getProductMaterials(name))) resolve(mat, qty * selectedQty)
+    for (const [mat, qty] of Object.entries(getProductMaterials(name))) resolve(mat, qty * selectedQty, directMats)
   }
   return acc
 }
@@ -135,6 +143,30 @@ function getRelevantItems(selected: Record<string, number>): { parts: string[]; 
 
 const allSemiNames = [...Object.keys(submarineParts), ...Object.keys(recipes)]
 const allRawNames = [...basicMaterials]
+
+const CATEGORY_ORDER = ['水晶','石材','金屬','木材','布料','皮革','骨材','鍊金原料','染料','食材','組件']
+
+const rawByName = Object.fromEntries(
+  Object.values(basicMaterialsData).map((m) => [m.chineseTraditional, m]),
+)
+
+function sortRaw(names: string[]): string[] {
+  return [...names].sort((a, b) => {
+    const ma = rawByName[a], mb = rawByName[b]
+    const ca = CATEGORY_ORDER.indexOf(ma?.category ?? ''), cb = CATEGORY_ORDER.indexOf(mb?.category ?? '')
+    if (ca !== cb) return (ca === -1 ? 999 : ca) - (cb === -1 ? 999 : cb)
+    return (ma?.itemLevel ?? 0) - (mb?.itemLevel ?? 0)
+  })
+}
+
+function sortSemi(names: string[]): string[] {
+  return [...names].sort((a, b) => {
+    const ra = recipes[a], rb = recipes[b]
+    const ca = CATEGORY_ORDER.indexOf(ra?.category ?? ''), cb = CATEGORY_ORDER.indexOf(rb?.category ?? '')
+    if (ca !== cb) return (ca === -1 ? 999 : ca) - (cb === -1 ? 999 : cb)
+    return (ra?.itemLevel ?? 0) - (rb?.itemLevel ?? 0)
+  })
+}
 
 function getClass(key: string): string {
   return products[key].className ?? ''
@@ -313,7 +345,7 @@ export default function Calculator() {
 
             <div className="inventory-grid">
             {[2, 1].map((lv) => {
-              const items = relevantSemi.filter((n) => recipes[n].level === lv)
+              const items = sortSemi(relevantSemi.filter((n) => recipes[n].level === lv))
               if (items.length === 0) return null
               const hasIndirect = lv === 1 && items.some((n) => !directSemi.has(n))
               return (
@@ -374,7 +406,7 @@ export default function Calculator() {
                 </tr>
               </thead>
               <tbody>
-                {relevantRaw.map((name) => (
+                {sortRaw(relevantRaw).map((name) => (
                   <tr key={name}>
                     <td className="semi-name">{name}</td>
                     <td><input
@@ -417,7 +449,7 @@ export default function Calculator() {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(required).map(([mat, req]) => {
+              {sortRaw(Object.keys(required)).map((mat) => { const req = required[mat]
                 const have = equivalent[mat] ?? 0
                 const remaining = Math.max(0, req - have)
                 const done = have >= req
