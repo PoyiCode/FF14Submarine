@@ -20,8 +20,9 @@
     },
     "itemLevel": 115,
     "chineseTraditional": "鯊魚級船體",
-    "id": 1,
-    "english": "Shark-class Pressure Hull"
+    "id": 21794,
+    "english": "Shark-class Pressure Hull",
+    "type": "item"
   },
   "2": {
     "sort": 2,
@@ -41,8 +42,9 @@
     },
     "itemLevel": 115,
     "chineseTraditional": "鯊魚級船尾",
-    "id": 2,
-    "english": "Shark-class Stern"
+    "id": 21795,
+    "english": "Shark-class Stern",
+    "type": "item"
   },
   "3": {
     "sort": 3,
@@ -62,8 +64,9 @@
     },
     "itemLevel": 115,
     "chineseTraditional": "鯊魚級船首",
-    "id": 3,
-    "english": "Shark-class Bow"
+    "id": 21792,
+    "english": "Shark-class Bow",
+    "type": "item"
   },
   "4": {
     "sort": 4,
@@ -84,8 +87,9 @@
     },
     "itemLevel": 115,
     "chineseTraditional": "鯊魚級艦橋",
-    "id": 4,
-    "english": "Shark-class Bridge"
+    "id": 21793,
+    "english": "Shark-class Bridge",
+    "type": "item"
   },
   "5": {
     "sort": 1,
@@ -110,8 +114,9 @@
     },
     "itemLevel": 125,
     "chineseTraditional": "甲鱉級船體",
-    "id": 5,
-    "english": "Unkiu-class Pressure Hull"
+    "id": 21798,
+    "english": "Unkiu-class Pressure Hull",
+    "type": "item"
   },
   "6": {
     "sort": 2,
@@ -134,8 +139,9 @@
     },
     "itemLevel": 125,
     "chineseTraditional": "甲鱉級船尾",
-    "id": 6,
-    "english": "Unkiu-class Stern"
+    "id": 21799,
+    "english": "Unkiu-class Stern",
+    "type": "item"
   },
   "7": {
     "sort": 3,
@@ -159,8 +165,9 @@
     },
     "itemLevel": 125,
     "chineseTraditional": "甲鱉級船首",
-    "id": 7,
-    "english": "Unkiu-class Bow"
+    "id": 21796,
+    "english": "Unkiu-class Bow",
+    "type": "item"
   },
   "8": {
     "sort": 4,
@@ -182,8 +189,9 @@
     },
     "itemLevel": 125,
     "chineseTraditional": "甲鱉級艦橋",
-    "id": 8,
-    "english": "Unkiu-class Bridge"
+    "id": 21797,
+    "english": "Unkiu-class Bridge",
+    "type": "item"
   },
   "9": {
     "sort": 1,
@@ -206,8 +214,9 @@
     },
     "itemLevel": 0,
     "chineseTraditional": "鬚鯨級船體",
-    "id": 9,
-    "english": "Whale-class Pressure Hull"
+    "id": 22528,
+    "english": "Whale-class Pressure Hull",
+    "type": "item"
   },
   "10": {
     "sort": 2,
@@ -230,8 +239,9 @@
     },
     "itemLevel": 133,
     "chineseTraditional": "鬚鯨級船尾",
-    "id": 10,
-    "english": "Whale-class Stern"
+    "id": 22529,
+    "english": "Whale-class Stern",
+    "type": "item"
   },
   "11": {
     "sort": 3,
@@ -252,8 +262,9 @@
     },
     "itemLevel": 133,
     "chineseTraditional": "鬚鯨級船首",
-    "id": 11,
-    "english": "Whale-class Bow"
+    "id": 22526,
+    "english": "Whale-class Bow",
+    "type": "item"
   },
   "12": {
     "sort": 4,
@@ -274,8 +285,9 @@
     },
     "itemLevel": 133,
     "chineseTraditional": "鬚鯨級艦橋",
-    "id": 12,
-    "english": "Whale-class Bridge"
+    "id": 22527,
+    "english": "Whale-class Bridge",
+    "type": "item"
   },
   "13": {
     "sort": 1,
@@ -297,8 +309,9 @@
     },
     "itemLevel": 145,
     "chineseTraditional": "腔棘魚級船體",
-    "id": 13,
-    "english": "Coelacanth-class Pressure Hull"
+    "id": 23905,
+    "english": "Coelacanth-class Pressure Hull",
+    "type": "item"
   },
   "14": {
     "sort": 2,
@@ -318,8 +331,9 @@
     },
     "itemLevel": 145,
     "chineseTraditional": "腔棘魚級船尾",
-    "id": 14,
-    "english": "Coelacanth-class Stern"
+    "id": 23906,
+    "english": "Coelacanth-class Stern",
+    "type": "item"
   },
   "15": {
     "sort": 3,
@@ -340,8 +354,9 @@
     },
     "itemLevel": 145,
     "chineseTraditional": "腔棘魚級船首",
-    "id": 15,
-    "english": "Coelacanth-class Bow"
+    "id": 23903,
+    "english": "Coelacanth-class Bow",
+    "type": "item"
   },
   "16": {
     "sort": 4,
@@ -363,8 +378,9 @@
     },
     "itemLevel": 145,
     "chineseTraditional": "腔棘魚級艦橋",
-    "id": 16,
-    "english": "Coelacanth-class Bridge"
+    "id": 23904,
+    "english": "Coelacanth-class Bridge",
+    "type": "item"
   },
   "17": {
     "sort": 1,
@@ -387,8 +403,9 @@
     },
     "itemLevel": 150,
     "chineseTraditional": "希爾德拉級船體",
-    "id": 17,
-    "english": "Syldra-class Pressure Hull"
+    "id": 24346,
+    "english": "Syldra-class Pressure Hull",
+    "type": "item"
   },
   "18": {
     "sort": 2,
@@ -411,8 +428,9 @@
     },
     "itemLevel": 150,
     "chineseTraditional": "希爾德拉級船尾",
-    "id": 18,
-    "english": "Syldra-class Stern"
+    "id": 24347,
+    "english": "Syldra-class Stern",
+    "type": "item"
   },
   "19": {
     "sort": 3,
@@ -433,8 +451,9 @@
     },
     "itemLevel": 150,
     "chineseTraditional": "希爾德拉級船首",
-    "id": 19,
-    "english": "Syldra-class Bow"
+    "id": 24344,
+    "english": "Syldra-class Bow",
+    "type": "item"
   },
   "20": {
     "sort": 4,
@@ -456,8 +475,9 @@
     },
     "itemLevel": 150,
     "chineseTraditional": "希爾德拉級艦橋",
-    "id": 20,
-    "english": "Syldra-class Bridge"
+    "id": 24345,
+    "english": "Syldra-class Bridge",
+    "type": "item"
   },
   "21": {
     "sort": 1,
@@ -482,8 +502,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鯊魚改級船體",
-    "id": 21,
-    "english": "Modified Shark-class Pressure Hull"
+    "id": 24350,
+    "english": "Modified Shark-class Pressure Hull",
+    "type": "item"
   },
   "22": {
     "sort": 2,
@@ -506,8 +527,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鯊魚改級船尾",
-    "id": 22,
-    "english": "Modified Shark-class Stern"
+    "id": 24351,
+    "english": "Modified Shark-class Stern",
+    "type": "item"
   },
   "23": {
     "sort": 3,
@@ -529,8 +551,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鯊魚改級船首",
-    "id": 23,
-    "english": "Modified Shark-class Bow"
+    "id": 24348,
+    "english": "Modified Shark-class Bow",
+    "type": "item"
   },
   "24": {
     "sort": 4,
@@ -553,8 +576,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鯊魚改級艦橋",
-    "id": 24,
-    "english": "Modified Shark-class Bridge"
+    "id": 24349,
+    "english": "Modified Shark-class Bridge",
+    "type": "item"
   },
   "25": {
     "sort": 1,
@@ -580,8 +604,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "甲鱉改級船體",
-    "id": 25,
-    "english": "Modified Unkiu-class Pressure Hull"
+    "id": 24354,
+    "english": "Modified Unkiu-class Pressure Hull",
+    "type": "item"
   },
   "26": {
     "sort": 2,
@@ -606,8 +631,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "甲鱉改級船尾",
-    "id": 26,
-    "english": "Modified Unkiu-class Stern"
+    "id": 24355,
+    "english": "Modified Unkiu-class Stern",
+    "type": "item"
   },
   "27": {
     "sort": 3,
@@ -632,8 +658,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "甲鱉改級船首",
-    "id": 27,
-    "english": "Modified Unkiu-class Bow"
+    "id": 24352,
+    "english": "Modified Unkiu-class Bow",
+    "type": "item"
   },
   "28": {
     "sort": 4,
@@ -657,8 +684,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "甲鱉改級艦橋",
-    "id": 28,
-    "english": "Modified Unkiu-class Bridge"
+    "id": 24353,
+    "english": "Modified Unkiu-class Bridge",
+    "type": "item"
   },
   "29": {
     "sort": 1,
@@ -683,8 +711,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鬚鯨改級船體",
-    "id": 29,
-    "english": "Modified Whale-class Pressure Hull"
+    "id": 24358,
+    "english": "Modified Whale-class Pressure Hull",
+    "type": "item"
   },
   "30": {
     "sort": 2,
@@ -708,8 +737,9 @@
     },
     "itemLevel": 133,
     "chineseTraditional": "鬚鯨改級船尾",
-    "id": 30,
-    "english": "Modified Whale-class Stern"
+    "id": 24359,
+    "english": "Modified Whale-class Stern",
+    "type": "item"
   },
   "31": {
     "sort": 3,
@@ -733,8 +763,9 @@
     },
     "itemLevel": 133,
     "chineseTraditional": "鬚鯨改級船首",
-    "id": 31,
-    "english": "Modified Whale-class Bow"
+    "id": 24356,
+    "english": "Modified Whale-class Bow",
+    "type": "item"
   },
   "32": {
     "sort": 4,
@@ -758,8 +789,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "鬚鯨改級艦橋",
-    "id": 32,
-    "english": "Modified Whale-class Bridge"
+    "id": 24357,
+    "english": "Modified Whale-class Bridge",
+    "type": "item"
   },
   "33": {
     "sort": 1,
@@ -783,8 +815,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "腔棘魚改級船體",
-    "id": 33,
-    "english": "Modified Coelacanth-class Pressure Hull"
+    "id": 24362,
+    "english": "Modified Coelacanth-class Pressure Hull",
+    "type": "item"
   },
   "34": {
     "sort": 2,
@@ -808,8 +841,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "腔棘魚改級船尾",
-    "id": 34,
-    "english": "Modified Coelacanth-class Stern"
+    "id": 24363,
+    "english": "Modified Coelacanth-class Stern",
+    "type": "item"
   },
   "35": {
     "sort": 3,
@@ -832,8 +866,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "腔棘魚改級船首",
-    "id": 35,
-    "english": "Modified Coelacanth-class Bow"
+    "id": 24360,
+    "english": "Modified Coelacanth-class Bow",
+    "type": "item"
   },
   "36": {
     "sort": 4,
@@ -857,8 +892,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "腔棘魚改級艦橋",
-    "id": 36,
-    "english": "Modified Coelacanth-class Bridge"
+    "id": 24361,
+    "english": "Modified Coelacanth-class Bridge",
+    "type": "item"
   },
   "37": {
     "sort": 1,
@@ -882,8 +918,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "希爾德拉改級船體",
-    "id": 37,
-    "english": "Modified Syldra-class Pressure Hull"
+    "id": 24366,
+    "english": "Modified Syldra-class Pressure Hull",
+    "type": "item"
   },
   "38": {
     "sort": 2,
@@ -907,8 +944,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "希爾德拉改級船尾",
-    "id": 38,
-    "english": "Modified Syldra-class Stern"
+    "id": 24367,
+    "english": "Modified Syldra-class Stern",
+    "type": "item"
   },
   "39": {
     "sort": 3,
@@ -932,8 +970,9 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "希爾德拉改級船首",
-    "id": 39,
-    "english": "Modified Syldra-class Bow"
+    "id": 24364,
+    "english": "Modified Syldra-class Bow",
+    "type": "item"
   },
   "40": {
     "sort": 4,
@@ -957,7 +996,8 @@
     },
     "itemLevel": 180,
     "chineseTraditional": "希爾德拉改級艦橋",
-    "id": 40,
-    "english": "Modified Syldra-class Bridge"
+    "id": 24365,
+    "english": "Modified Syldra-class Bridge",
+    "type": "item"
   }
 }

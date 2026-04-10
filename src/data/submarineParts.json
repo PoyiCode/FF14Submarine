@@ -1,6 +1,6 @@
 {
   "1": {
-    "id": 1,
+    "id": 26508,
     "category": "潛水艇組件",
     "recipe": {
       "鯊魚級船首": 1
@@ -9,10 +9,11 @@
     "japanese": "シャーク級艦首フレーム",
     "english": "Shark-class Bow Frame",
     "chineseSimplified": "鲨鱼级船首骨架",
-    "chineseTraditional": "鯊魚級船首骨架"
+    "chineseTraditional": "鯊魚級船首骨架",
+    "type": "item"
   },
   "2": {
-    "id": 2,
+    "id": 26509,
     "category": "潛水艇組件",
     "recipe": {
       "鯊魚級艦橋": 1
@@ -21,10 +22,11 @@
     "japanese": "シャーク級艦橋フレーム",
     "english": "Shark-class Bridge Frame",
     "chineseSimplified": "鲨鱼级舰桥骨架",
-    "chineseTraditional": "鯊魚級艦橋骨架"
+    "chineseTraditional": "鯊魚級艦橋骨架",
+    "type": "item"
   },
   "3": {
-    "id": 3,
+    "id": 26510,
     "category": "潛水艇組件",
     "recipe": {
       "鯊魚級船體": 1
@@ -33,10 +35,11 @@
     "japanese": "シャーク級船体フレーム",
     "english": "Shark-class Pressure Hull Frame",
     "chineseSimplified": "鲨鱼级船体骨架",
-    "chineseTraditional": "鯊魚級船體骨架"
+    "chineseTraditional": "鯊魚級船體骨架",
+    "type": "item"
   },
   "4": {
-    "id": 4,
+    "id": 26511,
     "category": "潛水艇組件",
     "recipe": {
       "鯊魚級船尾": 1
@@ -45,10 +48,11 @@
     "japanese": "シャーク級船尾フレーム",
     "english": "Shark-class Stern Frame",
     "chineseSimplified": "鲨鱼级船尾骨架",
-    "chineseTraditional": "鯊魚級船尾骨架"
+    "chineseTraditional": "鯊魚級船尾骨架",
+    "type": "item"
   },
   "5": {
-    "id": 5,
+    "id": 26512,
     "category": "潛水艇組件",
     "recipe": {
       "甲鱉級船首": 1
@@ -57,10 +61,11 @@
     "japanese": "ウンキウ級艦首フレーム",
     "english": "Unkiu-class Bow Frame",
     "chineseSimplified": "甲鳖级船首骨架",
-    "chineseTraditional": "甲鱉級船首骨架"
+    "chineseTraditional": "甲鱉級船首骨架",
+    "type": "item"
   },
   "6": {
-    "id": 6,
+    "id": 26513,
     "category": "潛水艇組件",
     "recipe": {
       "甲鱉級艦橋": 1
@@ -69,10 +74,11 @@
     "japanese": "ウンキウ級艦橋フレーム",
     "english": "Unkiu-class Bridge Frame",
     "chineseSimplified": "甲鳖级舰桥骨架",
-    "chineseTraditional": "甲鱉級艦橋骨架"
+    "chineseTraditional": "甲鱉級艦橋骨架",
+    "type": "item"
   },
   "7": {
-    "id": 7,
+    "id": 26514,
     "category": "潛水艇組件",
     "recipe": {
       "甲鱉級船體": 1
@@ -81,10 +87,11 @@
     "japanese": "ウンキウ級船体フレーム",
     "english": "Unkiu-class Pressure Hull Frame",
     "chineseSimplified": "甲鳖级船体骨架",
-    "chineseTraditional": "甲鱉級船體骨架"
+    "chineseTraditional": "甲鱉級船體骨架",
+    "type": "item"
   },
   "8": {
-    "id": 8,
+    "id": 26515,
     "category": "潛水艇組件",
     "recipe": {
       "甲鱉級船尾": 1
@@ -93,10 +100,11 @@
     "japanese": "ウンキウ級船尾フレーム",
     "english": "Unkiu-class Stern Frame",
     "chineseSimplified": "甲鳖级船尾骨架",
-    "chineseTraditional": "甲鱉級船尾骨架"
+    "chineseTraditional": "甲鱉級船尾骨架",
+    "type": "item"
   },
   "9": {
-    "id": 9,
+    "id": 26516,
     "category": "潛水艇組件",
     "recipe": {
       "鬚鯨級船首": 1
@@ -105,10 +113,11 @@
     "japanese": "ホエール級艦首フレーム",
     "english": "Whale-class Bow Frame",
     "chineseSimplified": "须鲸级船首骨架",
-    "chineseTraditional": "鬚鯨級船首骨架"
+    "chineseTraditional": "鬚鯨級船首骨架",
+    "type": "item"
   },
   "10": {
-    "id": 10,
+    "id": 26517,
     "category": "潛水艇組件",
     "recipe": {
       "鬚鯨級艦橋": 1
@@ -117,10 +126,11 @@
     "japanese": "ホエール級艦橋フレーム",
     "english": "Whale-class Bridge Frame",
     "chineseSimplified": "须鲸级舰桥骨架",
-    "chineseTraditional": "鬚鯨級艦橋骨架"
+    "chineseTraditional": "鬚鯨級艦橋骨架",
+    "type": "item"
   },
   "11": {
-    "id": 11,
+    "id": 26518,
     "category": "潛水艇組件",
     "recipe": {
       "鬚鯨級船體": 1
@@ -129,10 +139,11 @@
     "japanese": "ホエール級船体フレーム",
     "english": "Whale-class Pressure Hull Frame",
     "chineseSimplified": "须鲸级船体骨架",
-    "chineseTraditional": "鬚鯨級船體骨架"
+    "chineseTraditional": "鬚鯨級船體骨架",
+    "type": "item"
   },
   "12": {
-    "id": 12,
+    "id": 26519,
     "category": "潛水艇組件",
     "recipe": {
       "鬚鯨級船尾": 1
@@ -141,10 +152,11 @@
     "japanese": "ホエール級船尾フレーム",
     "english": "Whale-class Stern Frame",
     "chineseSimplified": "须鲸级船尾骨架",
-    "chineseTraditional": "鬚鯨級船尾骨架"
+    "chineseTraditional": "鬚鯨級船尾骨架",
+    "type": "item"
   },
   "13": {
-    "id": 13,
+    "id": 26520,
     "category": "潛水艇組件",
     "recipe": {
       "腔棘魚級船首": 1
@@ -153,10 +165,11 @@
     "japanese": "シーラカンス級艦首フレーム",
     "english": "Coelacanth-class Bow Frame",
     "chineseSimplified": "腔棘鱼级船首骨架",
-    "chineseTraditional": "腔棘魚級船首骨架"
+    "chineseTraditional": "腔棘魚級船首骨架",
+    "type": "item"
   },
   "14": {
-    "id": 14,
+    "id": 26521,
     "category": "潛水艇組件",
     "recipe": {
       "腔棘魚級艦橋": 1
@@ -165,10 +178,11 @@
     "japanese": "シーラカンス級艦橋フレーム",
     "english": "Coelacanth-class Bridge Frame",
     "chineseSimplified": "腔棘鱼级舰桥骨架",
-    "chineseTraditional": "腔棘魚級艦橋骨架"
+    "chineseTraditional": "腔棘魚級艦橋骨架",
+    "type": "item"
   },
   "15": {
-    "id": 15,
+    "id": 26522,
     "category": "潛水艇組件",
     "recipe": {
       "腔棘魚級船體": 1
@@ -177,10 +191,11 @@
     "japanese": "シーラカンス級船体フレーム",
     "english": "Coelacanth-class Pressure Hull Frame",
     "chineseSimplified": "腔棘鱼级船体骨架",
-    "chineseTraditional": "腔棘魚級船體骨架"
+    "chineseTraditional": "腔棘魚級船體骨架",
+    "type": "item"
   },
   "16": {
-    "id": 16,
+    "id": 26523,
     "category": "潛水艇組件",
     "recipe": {
       "腔棘魚級船尾": 1
@@ -189,10 +204,11 @@
     "japanese": "シーラカンス級船尾フレーム",
     "english": "Coelacanth-class Stern Frame",
     "chineseSimplified": "腔棘鱼级船尾骨架",
-    "chineseTraditional": "腔棘魚級船尾骨架"
+    "chineseTraditional": "腔棘魚級船尾骨架",
+    "type": "item"
   },
   "17": {
-    "id": 17,
+    "id": 26524,
     "category": "潛水艇組件",
     "recipe": {
       "希爾德拉級船首": 1
@@ -201,10 +217,11 @@
     "japanese": "シルドラ級艦首フレーム",
     "english": "Syldra-class Bow Frame",
     "chineseSimplified": "希尔德拉级船首骨架",
-    "chineseTraditional": "希爾德拉級船首骨架"
+    "chineseTraditional": "希爾德拉級船首骨架",
+    "type": "item"
   },
   "18": {
-    "id": 18,
+    "id": 26525,
     "category": "潛水艇組件",
     "recipe": {
       "希爾德拉級艦橋": 1
@@ -213,10 +230,11 @@
     "japanese": "シルドラ級艦橋フレーム",
     "english": "Syldra-class Bridge Frame",
     "chineseSimplified": "希尔德拉级舰桥骨架",
-    "chineseTraditional": "希爾德拉級艦橋骨架"
+    "chineseTraditional": "希爾德拉級艦橋骨架",
+    "type": "item"
   },
   "19": {
-    "id": 19,
+    "id": 26526,
     "category": "潛水艇組件",
     "recipe": {
       "希爾德拉級船體": 1
@@ -225,10 +243,11 @@
     "japanese": "シルドラ級船体フレーム",
     "english": "Syldra-class Pressure Hull Frame",
     "chineseSimplified": "希尔德拉级船体骨架",
-    "chineseTraditional": "希爾德拉級船體骨架"
+    "chineseTraditional": "希爾德拉級船體骨架",
+    "type": "item"
   },
   "20": {
-    "id": 20,
+    "id": 26527,
     "category": "潛水艇組件",
     "recipe": {
       "希爾德拉級船尾": 1
@@ -237,6 +256,7 @@
     "japanese": "シルドラ級船尾フレーム",
     "english": "Syldra-class Stern Frame",
     "chineseSimplified": "希尔德拉级船尾骨架",
-    "chineseTraditional": "希爾德拉級船尾骨架"
+    "chineseTraditional": "希爾德拉級船尾骨架",
+    "type": "item"
   }
 }

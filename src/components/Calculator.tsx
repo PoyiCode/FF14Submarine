@@ -155,7 +155,8 @@ function sortRaw(names: string[]): string[] {
     const ma = rawByName[a], mb = rawByName[b]
     const ca = CATEGORY_ORDER.indexOf(ma?.category ?? ''), cb = CATEGORY_ORDER.indexOf(mb?.category ?? '')
     if (ca !== cb) return (ca === -1 ? 999 : ca) - (cb === -1 ? 999 : cb)
-    return (ma?.itemLevel ?? 0) - (mb?.itemLevel ?? 0)
+    if ((ma?.itemLevel ?? 0) !== (mb?.itemLevel ?? 0)) return (ma?.itemLevel ?? 0) - (mb?.itemLevel ?? 0)
+    return (ma?.id ?? 0) - (mb?.id ?? 0)
   })
 }
 
@@ -164,7 +165,8 @@ function sortSemi(names: string[]): string[] {
     const ra = recipes[a], rb = recipes[b]
     const ca = CATEGORY_ORDER.indexOf(ra?.category ?? ''), cb = CATEGORY_ORDER.indexOf(rb?.category ?? '')
     if (ca !== cb) return (ca === -1 ? 999 : ca) - (cb === -1 ? 999 : cb)
-    return (ra?.itemLevel ?? 0) - (rb?.itemLevel ?? 0)
+    if ((ra?.itemLevel ?? 0) !== (rb?.itemLevel ?? 0)) return (ra?.itemLevel ?? 0) - (rb?.itemLevel ?? 0)
+    return (ra?.id ?? 0) - (rb?.id ?? 0)
   })
 }
 

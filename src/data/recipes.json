@@ -1,6 +1,6 @@
 {
   "1": {
-    "id": 1,
+    "id": 5262,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -12,10 +12,11 @@
     "japanese": "卵砥石",
     "english": "Basilisk Whetstone",
     "chineseSimplified": "蛋壳磨刀石",
-    "chineseTraditional": "蛋殼磨刀石"
+    "chineseTraditional": "蛋殼磨刀石",
+    "type": "item"
   },
   "2": {
-    "id": 2,
+    "id": 5190,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -29,10 +30,11 @@
     "japanese": "トパーズ",
     "english": "Topaz",
     "chineseSimplified": "黄玉",
-    "chineseTraditional": "黃玉"
+    "chineseTraditional": "黃玉",
+    "type": "item"
   },
   "3": {
-    "id": 3,
+    "id": 12541,
     "level": 2,
     "category": "石材",
     "recipe": {
@@ -45,10 +47,11 @@
     "japanese": "ラリマール",
     "english": "Larimar",
     "chineseSimplified": "水淙石",
-    "chineseTraditional": "水淙石"
+    "chineseTraditional": "水淙石",
+    "type": "item"
   },
   "4": {
-    "id": 4,
+    "id": 12912,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -62,10 +65,11 @@
     "japanese": "セレスタイン",
     "english": "Celestine",
     "chineseSimplified": "苍天石",
-    "chineseTraditional": "蒼天石"
+    "chineseTraditional": "蒼天石",
+    "type": "item"
   },
   "5": {
-    "id": 5,
+    "id": 12524,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -79,10 +83,11 @@
     "japanese": "チタンナゲット",
     "english": "Titanium Nugget",
     "chineseSimplified": "白钛块",
-    "chineseTraditional": "白鈦塊"
+    "chineseTraditional": "白鈦塊",
+    "type": "item"
   },
   "6": {
-    "id": 6,
+    "id": 19962,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -95,10 +100,11 @@
     "japanese": "トリフェーン",
     "english": "Triphane",
     "chineseSimplified": "锂辉石",
-    "chineseTraditional": "鋰輝石"
+    "chineseTraditional": "鋰輝石",
+    "type": "item"
   },
   "7": {
-    "id": 7,
+    "id": 19967,
     "level": 1,
     "category": "石材",
     "recipe": {
@@ -111,10 +117,11 @@
     "japanese": "ロードナイト",
     "english": "Rhodonite",
     "chineseSimplified": "玫瑰辉石",
-    "chineseTraditional": "薔薇輝石"
+    "chineseTraditional": "薔薇輝石",
+    "type": "item"
   },
   "8": {
-    "id": 8,
+    "id": 5057,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -126,10 +133,11 @@
     "japanese": "アイアンインゴット",
     "english": "Iron Ingot",
     "chineseSimplified": "黑铁锭",
-    "chineseTraditional": "黑鐵錠"
+    "chineseTraditional": "黑鐵錠",
+    "type": "item"
   },
   "9": {
-    "id": 9,
+    "id": 5092,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -141,10 +149,11 @@
     "japanese": "アイアンリベット",
     "english": "Iron Rivets",
     "chineseSimplified": "黑铁铆钉",
-    "chineseTraditional": "黑鐵鉚釘"
+    "chineseTraditional": "黑鐵鉚釘",
+    "type": "item"
   },
   "10": {
-    "id": 10,
+    "id": 7018,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -156,10 +165,11 @@
     "japanese": "アイアンネイル",
     "english": "Iron Nails",
     "chineseSimplified": "黑铁钉",
-    "chineseTraditional": "黑鐵釘"
+    "chineseTraditional": "黑鐵釘",
+    "type": "item"
   },
   "11": {
-    "id": 11,
+    "id": 5064,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -171,10 +181,11 @@
     "japanese": "シルバーインゴット",
     "english": "Silver Ingot",
     "chineseSimplified": "白银锭",
-    "chineseTraditional": "白銀錠"
+    "chineseTraditional": "白銀錠",
+    "type": "item"
   },
   "12": {
-    "id": 12,
+    "id": 5058,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -187,10 +198,11 @@
     "japanese": "スチールインゴット",
     "english": "Steel Ingot",
     "chineseSimplified": "白钢锭",
-    "chineseTraditional": "白鋼錠"
+    "chineseTraditional": "白鋼錠",
+    "type": "item"
   },
   "13": {
-    "id": 13,
+    "id": 5093,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -202,10 +214,11 @@
     "japanese": "スチールリベット",
     "english": "Steel Rivets",
     "chineseSimplified": "白钢铆钉",
-    "chineseTraditional": "白鋼鉚釘"
+    "chineseTraditional": "白鋼鉚釘",
+    "type": "item"
   },
   "14": {
-    "id": 14,
+    "id": 5073,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -217,10 +230,11 @@
     "japanese": "スチールプレート",
     "english": "Steel Plate",
     "chineseSimplified": "白钢板",
-    "chineseTraditional": "白鋼板"
+    "chineseTraditional": "白鋼板",
+    "type": "item"
   },
   "15": {
-    "id": 15,
+    "id": 7019,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -232,10 +246,11 @@
     "japanese": "スチールネイル",
     "english": "Steel Nails",
     "chineseSimplified": "白钢钉",
-    "chineseTraditional": "白鋼釘"
+    "chineseTraditional": "白鋼釘",
+    "type": "item"
   },
   "16": {
-    "id": 16,
+    "id": 7022,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -247,10 +262,11 @@
     "japanese": "スチールフィッチング",
     "english": "Steel Joint Plate",
     "chineseSimplified": "白钢连接板",
-    "chineseTraditional": "白鋼連接板"
+    "chineseTraditional": "白鋼連接板",
+    "type": "item"
   },
   "17": {
-    "id": 17,
+    "id": 5065,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -262,10 +278,11 @@
     "japanese": "ミスリルインゴット",
     "english": "Mythril Ingot",
     "chineseSimplified": "秘银锭",
-    "chineseTraditional": "秘銀錠"
+    "chineseTraditional": "秘銀錠",
+    "type": "item"
   },
   "18": {
-    "id": 18,
+    "id": 5099,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -277,10 +294,11 @@
     "japanese": "ミスリルリベット",
     "english": "Mythril Rivets",
     "chineseSimplified": "秘银铆钉",
-    "chineseTraditional": "秘銀鉚釘"
+    "chineseTraditional": "秘銀鉚釘",
+    "type": "item"
   },
   "19": {
-    "id": 19,
+    "id": 5066,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -292,10 +310,11 @@
     "japanese": "エレクトラムインゴット",
     "english": "Electrum Ingot",
     "chineseSimplified": "绿金锭",
-    "chineseTraditional": "綠金錠"
+    "chineseTraditional": "綠金錠",
+    "type": "item"
   },
   "20": {
-    "id": 20,
+    "id": 5079,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -307,10 +326,11 @@
     "japanese": "ミスリルプレート",
     "english": "Mythril Plate",
     "chineseSimplified": "秘银板",
-    "chineseTraditional": "秘銀板"
+    "chineseTraditional": "秘銀板",
+    "type": "item"
   },
   "21": {
-    "id": 21,
+    "id": 5059,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -323,10 +343,11 @@
     "japanese": "コバルトインゴット",
     "english": "Cobalt Ingot",
     "chineseSimplified": "钴铁锭",
-    "chineseTraditional": "鈷鐵錠"
+    "chineseTraditional": "鈷鐵錠",
+    "type": "item"
   },
   "22": {
-    "id": 22,
+    "id": 5074,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -338,10 +359,11 @@
     "japanese": "コバルトプレート",
     "english": "Cobalt Plate",
     "chineseSimplified": "钴铁板",
-    "chineseTraditional": "鈷鐵板"
+    "chineseTraditional": "鈷鐵板",
+    "type": "item"
   },
   "23": {
-    "id": 23,
+    "id": 5094,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -353,10 +375,11 @@
     "japanese": "コバルトリベット",
     "english": "Cobalt Rivets",
     "chineseSimplified": "钴铁铆钉",
-    "chineseTraditional": "鈷鐵鉚釘"
+    "chineseTraditional": "鈷鐵鉚釘",
+    "type": "item"
   },
   "24": {
-    "id": 24,
+    "id": 7023,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -368,10 +391,11 @@
     "japanese": "コバルトフィッチング",
     "english": "Cobalt Joint Plate",
     "chineseSimplified": "钴铁连接板",
-    "chineseTraditional": "鈷鐵連接板"
+    "chineseTraditional": "鈷鐵連接板",
+    "type": "item"
   },
   "25": {
-    "id": 25,
+    "id": 5061,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -383,10 +407,11 @@
     "japanese": "ダークスチールナゲット",
     "english": "Darksteel Nugget",
     "chineseSimplified": "玄钢锭",
-    "chineseTraditional": "玄鋼塊"
+    "chineseTraditional": "玄鋼塊",
+    "type": "item"
   },
   "26": {
-    "id": 26,
+    "id": 5068,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -399,10 +424,11 @@
     "japanese": "ローズゴールドナゲット",
     "english": "Rose Gold Nugget",
     "chineseSimplified": "玫瑰金块",
-    "chineseTraditional": "玫瑰金塊"
+    "chineseTraditional": "玫瑰金塊",
+    "type": "item"
   },
   "27": {
-    "id": 27,
+    "id": 5075,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -414,10 +440,11 @@
     "japanese": "ダークスチールプレート",
     "english": "Darksteel Plate",
     "chineseSimplified": "玄钢锭",
-    "chineseTraditional": "玄鋼板"
+    "chineseTraditional": "玄鋼板",
+    "type": "item"
   },
   "28": {
-    "id": 28,
+    "id": 5095,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -429,10 +456,11 @@
     "japanese": "ダークスチールリベット",
     "english": "Darksteel Rivets",
     "chineseSimplified": "玄钢铆钉",
-    "chineseTraditional": "玄鋼鉚釘"
+    "chineseTraditional": "玄鋼鉚釘",
+    "type": "item"
   },
   "29": {
-    "id": 29,
+    "id": 5060,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -445,10 +473,11 @@
     "japanese": "ダークスチールインゴット",
     "english": "Darksteel Ingot",
     "chineseSimplified": "玄钢锭",
-    "chineseTraditional": "玄鋼錠"
+    "chineseTraditional": "玄鋼錠",
+    "type": "item"
   },
   "30": {
-    "id": 30,
+    "id": 5067,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -461,10 +490,11 @@
     "japanese": "ローズゴールドインゴット",
     "english": "Rose Gold Ingot",
     "chineseSimplified": "玫瑰金锭",
-    "chineseTraditional": "玫瑰金錠"
+    "chineseTraditional": "玫瑰金錠",
+    "type": "item"
   },
   "31": {
-    "id": 31,
+    "id": 5069,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -479,10 +509,11 @@
     "japanese": "ゴールドインゴット",
     "english": "Gold Ingot",
     "chineseSimplified": "黄金锭",
-    "chineseTraditional": "黃金錠"
+    "chineseTraditional": "黃金錠",
+    "type": "item"
   },
   "32": {
-    "id": 32,
+    "id": 7607,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -497,10 +528,11 @@
     "japanese": "ウォルフラムインゴット",
     "english": "Wolfram Ingot",
     "chineseSimplified": "钨铁锭",
-    "chineseTraditional": "鎢鋼錠"
+    "chineseTraditional": "鎢鋼錠",
+    "type": "item"
   },
   "33": {
-    "id": 33,
+    "id": 8029,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -515,10 +547,11 @@
     "japanese": "ウォルフラムプレートレット",
     "english": "Wolfram Square",
     "chineseSimplified": "钨铁方板",
-    "chineseTraditional": "鎢鋼方板"
+    "chineseTraditional": "鎢鋼方板",
+    "type": "item"
   },
   "34": {
-    "id": 34,
+    "id": 9359,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -531,10 +564,11 @@
     "japanese": "プラチナナゲット",
     "english": "Platinum Nugget",
     "chineseSimplified": "白金块",
-    "chineseTraditional": "白金塊"
+    "chineseTraditional": "白金塊",
+    "type": "item"
   },
   "35": {
-    "id": 35,
+    "id": 9360,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -548,10 +582,11 @@
     "japanese": "プラチナインゴット",
     "english": "Platinum Ingot",
     "chineseSimplified": "白金锭",
-    "chineseTraditional": "白金錠"
+    "chineseTraditional": "白金錠",
+    "type": "item"
   },
   "36": {
-    "id": 36,
+    "id": 12518,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -564,10 +599,11 @@
     "japanese": "ミスライトナゲット",
     "english": "Mythrite Nugget",
     "chineseSimplified": "灵银块",
-    "chineseTraditional": "靈銀塊"
+    "chineseTraditional": "靈銀塊",
+    "type": "item"
   },
   "37": {
-    "id": 37,
+    "id": 12528,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -579,10 +615,11 @@
     "japanese": "ミスライトリベット",
     "english": "Mythrite Rivets",
     "chineseSimplified": "精灵银铆钉",
-    "chineseTraditional": "靈銀鉚釘"
+    "chineseTraditional": "靈銀鉚釘",
+    "type": "item"
   },
   "38": {
-    "id": 38,
+    "id": 12913,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -597,10 +634,11 @@
     "japanese": "ガーロンド鋼",
     "english": "Garlond Steel",
     "chineseSimplified": "加隆德钢",
-    "chineseTraditional": "加隆德鋼"
+    "chineseTraditional": "加隆德鋼",
+    "type": "item"
   },
   "39": {
-    "id": 39,
+    "id": 12519,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -613,10 +651,11 @@
     "japanese": "ミスライトインゴット",
     "english": "Mythrite Ingot",
     "chineseSimplified": "灵银锭",
-    "chineseTraditional": "靈銀錠"
+    "chineseTraditional": "靈銀錠",
+    "type": "item"
   },
   "40": {
-    "id": 40,
+    "id": 12520,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -629,10 +668,11 @@
     "japanese": "ハードシルバーナゲット",
     "english": "Hardsilver Nugget",
     "chineseSimplified": "硬银块",
-    "chineseTraditional": "硬銀塊"
+    "chineseTraditional": "硬銀塊",
+    "type": "item"
   },
   "41": {
-    "id": 41,
+    "id": 12521,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -645,10 +685,11 @@
     "japanese": "ハードシルバーインゴット",
     "english": "Hardsilver Ingot",
     "chineseSimplified": "硬银锭",
-    "chineseTraditional": "硬銀錠"
+    "chineseTraditional": "硬銀錠",
+    "type": "item"
   },
   "42": {
-    "id": 42,
+    "id": 5058,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -661,10 +702,11 @@
     "japanese": "スチールインゴット",
     "english": "Steel Ingot",
     "chineseSimplified": "白钢锭",
-    "chineseTraditional": "白鋼錠"
+    "chineseTraditional": "白鋼錠",
+    "type": "item"
   },
   "43": {
-    "id": 43,
+    "id": 12525,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -677,10 +719,11 @@
     "japanese": "チタンインゴット",
     "english": "Titanium Ingot",
     "chineseSimplified": "白钛锭",
-    "chineseTraditional": "白鈦錠"
+    "chineseTraditional": "白鈦錠",
+    "type": "item"
   },
   "44": {
-    "id": 44,
+    "id": 12522,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -693,10 +736,11 @@
     "japanese": "オーラムレギスナゲット",
     "english": "Aurum Regis Nugget",
     "chineseSimplified": "皇金块",
-    "chineseTraditional": "皇金塊"
+    "chineseTraditional": "皇金塊",
+    "type": "item"
   },
   "45": {
-    "id": 45,
+    "id": 12526,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -709,10 +753,11 @@
     "japanese": "アダマンナゲット",
     "english": "Adamantite Nugget",
     "chineseSimplified": "精金块",
-    "chineseTraditional": "堅鋼塊"
+    "chineseTraditional": "堅鋼塊",
+    "type": "item"
   },
   "46": {
-    "id": 46,
+    "id": 12530,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -724,10 +769,11 @@
     "japanese": "アダマンリベット",
     "english": "Adamantite Rivets",
     "chineseSimplified": "精金铆钉",
-    "chineseTraditional": "堅鋼鉚釘"
+    "chineseTraditional": "堅鋼鉚釘",
+    "type": "item"
   },
   "47": {
-    "id": 47,
+    "id": 14935,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -743,10 +789,11 @@
     "japanese": "超硬ガーロンド鋼",
     "english": "Galvanized Garlond Steel",
     "chineseSimplified": "超硬加隆德钢",
-    "chineseTraditional": "超硬加隆德鋼"
+    "chineseTraditional": "超硬加隆德鋼",
+    "type": "item"
   },
   "48": {
-    "id": 48,
+    "id": 12523,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -762,10 +809,11 @@
     "japanese": "オーラムレギスインゴット",
     "english": "Aurum Regis Ingot",
     "chineseSimplified": "皇金锭",
-    "chineseTraditional": "皇金錠"
+    "chineseTraditional": "皇金錠",
+    "type": "item"
   },
   "49": {
-    "id": 49,
+    "id": 25009,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -780,10 +828,11 @@
     "japanese": "カマサイト鋼",
     "english": "Kamacite",
     "chineseSimplified": "铜纹钢",
-    "chineseTraditional": "鐵紋鋼"
+    "chineseTraditional": "鐵紋鋼",
+    "type": "item"
   },
   "50": {
-    "id": 50,
+    "id": 14146,
     "level": 2,
     "category": "金屬",
     "recipe": {
@@ -798,10 +847,11 @@
     "japanese": "ハイミスライトインゴット",
     "english": "High Mythrite Ingot",
     "chineseSimplified": "光银锭",
-    "chineseTraditional": "光銀錠"
+    "chineseTraditional": "光銀錠",
+    "type": "item"
   },
   "51": {
-    "id": 51,
+    "id": 14149,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -816,10 +866,11 @@
     "japanese": "イコンアイアンインゴット",
     "english": "Eikon Iron Ingot",
     "chineseSimplified": "荒神钢锭",
-    "chineseTraditional": "荒神鋼錠"
+    "chineseTraditional": "荒神鋼錠",
+    "type": "item"
   },
   "52": {
-    "id": 52,
+    "id": 19938,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -832,10 +883,11 @@
     "japanese": "キュプロニッケルナゲット",
     "english": "Koppranickel Nugget",
     "chineseSimplified": "白铜块",
-    "chineseTraditional": "白銅塊"
+    "chineseTraditional": "白銅塊",
+    "type": "item"
   },
   "53": {
-    "id": 53,
+    "id": 19947,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -848,10 +900,11 @@
     "japanese": "モリブデンインゴット",
     "english": "Molybdenum Ingot",
     "chineseSimplified": "钼钢锭",
-    "chineseTraditional": "鉬鋼錠"
+    "chineseTraditional": "鉬鋼錠",
+    "type": "item"
   },
   "54": {
-    "id": 54,
+    "id": 26532,
     "level": 1,
     "category": "金屬",
     "recipe": {
@@ -865,10 +918,11 @@
     "japanese": "ピュアチタンプレート",
     "english": "Pure Titanium Plate",
     "chineseSimplified": "纯钛板",
-    "chineseTraditional": "純鈦板"
+    "chineseTraditional": "純鈦板",
+    "type": "item"
   },
   "55": {
-    "id": 55,
+    "id": 5371,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -880,10 +934,11 @@
     "japanese": "ウォールナット材",
     "english": "Walnut Lumber",
     "chineseSimplified": "胡桃木材",
-    "chineseTraditional": "胡桃木材"
+    "chineseTraditional": "胡桃木材",
+    "type": "item"
   },
   "56": {
-    "id": 56,
+    "id": 5373,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -895,10 +950,11 @@
     "japanese": "オーク材",
     "english": "Oak Lumber",
     "chineseSimplified": "橡木木材",
-    "chineseTraditional": "橡木木材"
+    "chineseTraditional": "橡木木材",
+    "type": "item"
   },
   "57": {
-    "id": 57,
+    "id": 5378,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -910,10 +966,11 @@
     "japanese": "スプルース材",
     "english": "Spruce Lumber",
     "chineseSimplified": "云杉木材",
-    "chineseTraditional": "雲杉木材"
+    "chineseTraditional": "雲杉木材",
+    "type": "item"
   },
   "58": {
-    "id": 58,
+    "id": 5379,
     "level": 2,
     "category": "木材",
     "recipe": {
@@ -926,10 +983,11 @@
     "japanese": "硬化スプルース材",
     "english": "Treated Spruce Lumber",
     "chineseSimplified": "硬化云杉木材",
-    "chineseTraditional": "硬化雲杉木材"
+    "chineseTraditional": "硬化雲杉木材",
+    "type": "item"
   },
   "59": {
-    "id": 59,
+    "id": 7606,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -943,10 +1001,11 @@
     "japanese": "神代木",
     "english": "Ancient Lumber",
     "chineseSimplified": "古树木材",
-    "chineseTraditional": "古神木材"
+    "chineseTraditional": "古神木材",
+    "type": "item"
   },
   "60": {
-    "id": 60,
+    "id": 5366,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -958,10 +1017,11 @@
     "japanese": "シーダー材",
     "english": "Cedar Lumber",
     "chineseSimplified": "雪松木材",
-    "chineseTraditional": "雪松木材"
+    "chineseTraditional": "雪松木材",
+    "type": "item"
   },
   "61": {
-    "id": 61,
+    "id": 12580,
     "level": 2,
     "category": "木材",
     "recipe": {
@@ -974,10 +1034,11 @@
     "japanese": "ホーリーシーダー材",
     "english": "Holy Cedar Lumber",
     "chineseSimplified": "圣雪松材",
-    "chineseTraditional": "聖雪松材"
+    "chineseTraditional": "聖雪松材",
+    "type": "item"
   },
   "62": {
-    "id": 62,
+    "id": 12581,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -989,10 +1050,11 @@
     "japanese": "ダークチェスナット材",
     "english": "Dark Chestnut Lumber",
     "chineseSimplified": "暗栗木木材",
-    "chineseTraditional": "暗栗木木材"
+    "chineseTraditional": "暗栗木木材",
+    "type": "item"
   },
   "63": {
-    "id": 63,
+    "id": 12232,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -1006,10 +1068,11 @@
     "japanese": "タレイサン材",
     "english": "Cassia Lumber",
     "chineseSimplified": "铁刀木木材",
-    "chineseTraditional": "鐵刀木木材"
+    "chineseTraditional": "鐵刀木木材",
+    "type": "item"
   },
   "64": {
-    "id": 64,
+    "id": 12582,
     "level": 2,
     "category": "木材",
     "recipe": {
@@ -1022,10 +1085,11 @@
     "japanese": "ハローチェスナット材",
     "english": "Hallowed Chestnut Lumber",
     "chineseSimplified": "祝圣栗木木材",
-    "chineseTraditional": "祝聖栗木木材"
+    "chineseTraditional": "祝聖栗木木材",
+    "type": "item"
   },
   "65": {
-    "id": 65,
+    "id": 12583,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -1037,10 +1101,11 @@
     "japanese": "バーチ材",
     "english": "Birch Lumber",
     "chineseSimplified": "桦木木材",
-    "chineseTraditional": "樺木木材"
+    "chineseTraditional": "樺木木材",
+    "type": "item"
   },
   "66": {
-    "id": 66,
+    "id": 13758,
     "level": 2,
     "category": "木材",
     "recipe": {
@@ -1055,10 +1120,11 @@
     "japanese": "タレイサン角木",
     "english": "Cassia Block",
     "chineseSimplified": "铁刀木角材",
-    "chineseTraditional": "鐵刀木角材"
+    "chineseTraditional": "鐵刀木角材",
+    "type": "item"
   },
   "67": {
-    "id": 67,
+    "id": 19925,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -1070,10 +1136,11 @@
     "japanese": "ビーチ材",
     "english": "Beech Lumber",
     "chineseSimplified": "山毛榉木材",
-    "chineseTraditional": "山毛櫸木材"
+    "chineseTraditional": "山毛櫸木材",
+    "type": "item"
   },
   "68": {
-    "id": 68,
+    "id": 26530,
     "level": 1,
     "category": "木材",
     "recipe": {
@@ -1087,10 +1154,11 @@
     "japanese": "クリプトメリア材",
     "english": "Cryptomeria Lumber",
     "chineseSimplified": "柳杉木材",
-    "chineseTraditional": "柳杉木材"
+    "chineseTraditional": "柳杉木材",
+    "type": "item"
   },
   "69": {
-    "id": 69,
+    "id": 12231,
     "level": 1,
     "category": "布料",
     "recipe": {
@@ -1104,10 +1172,11 @@
     "japanese": "ファーミーカンバス",
     "english": "Farreach Canvas",
     "chineseSimplified": "致远帆布",
-    "chineseTraditional": "致遠帆布"
+    "chineseTraditional": "致遠帆布",
+    "type": "item"
   },
   "70": {
-    "id": 70,
+    "id": 5287,
     "level": 1,
     "category": "皮革",
     "recipe": {
@@ -1120,10 +1189,11 @@
     "japanese": "ウラエウスレザー",
     "english": "Uraeus Leather",
     "chineseSimplified": "圣蜥蜴革",
-    "chineseTraditional": "聖蜥蜴革"
+    "chineseTraditional": "聖蜥蜴革",
+    "type": "item"
   },
   "71": {
-    "id": 71,
+    "id": 12563,
     "level": 1,
     "category": "皮革",
     "recipe": {
@@ -1136,10 +1206,11 @@
     "japanese": "ワイバーンレザー",
     "english": "Wyvern Leather",
     "chineseSimplified": "飞龙革",
-    "chineseTraditional": "飛龍革"
+    "chineseTraditional": "飛龍革",
+    "type": "item"
   },
   "72": {
-    "id": 72,
+    "id": 12565,
     "level": 1,
     "category": "皮革",
     "recipe": {
@@ -1152,10 +1223,11 @@
     "japanese": "ドラゴンレザー",
     "english": "Dragon Leather",
     "chineseSimplified": "巨龙革",
-    "chineseTraditional": "巨龍革"
+    "chineseTraditional": "巨龍革",
+    "type": "item"
   },
   "73": {
-    "id": 73,
+    "id": 19993,
     "level": 1,
     "category": "皮革",
     "recipe": {
@@ -1168,10 +1240,11 @@
     "japanese": "ガガナレザー",
     "english": "Gagana Leather",
     "chineseSimplified": "迦迦纳未鸟皮",
-    "chineseTraditional": "迦迦納怪鳥革"
+    "chineseTraditional": "迦迦納怪鳥革",
+    "type": "item"
   },
   "74": {
-    "id": 74,
+    "id": 5512,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1184,10 +1257,11 @@
     "japanese": "ガラス板",
     "english": "Clear Glass Lens",
     "chineseSimplified": "玻璃板",
-    "chineseTraditional": "玻璃板"
+    "chineseTraditional": "玻璃板",
+    "type": "item"
   },
   "75": {
-    "id": 75,
+    "id": 5505,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1199,10 +1273,11 @@
     "japanese": "鬼にかわ",
     "english": "Horn Glue",
     "chineseSimplified": "鬼胶",
-    "chineseTraditional": "鬼膠"
+    "chineseTraditional": "鬼膠",
+    "type": "item"
   },
   "76": {
-    "id": 76,
+    "id": 5485,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1214,10 +1289,11 @@
     "japanese": "リンシードオイル",
     "english": "Linseed Oil",
     "chineseSimplified": "亚麻油",
-    "chineseTraditional": "亞麻油"
+    "chineseTraditional": "亞麻油",
+    "type": "item"
   },
   "77": {
-    "id": 77,
+    "id": 7017,
     "level": 2,
     "category": "鍊金原料",
     "recipe": {
@@ -1231,10 +1307,11 @@
     "japanese": "ワニス",
     "english": "Varnish",
     "chineseSimplified": "清漆",
-    "chineseTraditional": "清漆"
+    "chineseTraditional": "清漆",
+    "type": "item"
   },
   "78": {
-    "id": 78,
+    "id": 5506,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1247,10 +1324,11 @@
     "japanese": "黒にかわ",
     "english": "Void Glue",
     "chineseSimplified": "虚胶",
-    "chineseTraditional": "黑膠"
+    "chineseTraditional": "黑膠",
+    "type": "item"
   },
   "79": {
-    "id": 79,
+    "id": 12604,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1263,10 +1341,11 @@
     "japanese": "聖水",
     "english": "Holy Water",
     "chineseSimplified": "圣水",
-    "chineseTraditional": "聖水"
+    "chineseTraditional": "聖水",
+    "type": "item"
   },
   "80": {
-    "id": 80,
+    "id": 5507,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1280,10 +1359,11 @@
     "japanese": "笑いにかわ",
     "english": "Wing Glue",
     "chineseSimplified": "翼胶",
-    "chineseTraditional": "翼膠"
+    "chineseTraditional": "翼膠",
+    "type": "item"
   },
   "81": {
-    "id": 81,
+    "id": 12602,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1297,10 +1377,11 @@
     "japanese": "ハードシルバー・エンチャントインク",
     "english": "Enchanted Hardsilver Ink",
     "chineseSimplified": "硬银附魔墨水",
-    "chineseTraditional": "硬銀附魔墨水"
+    "chineseTraditional": "硬銀附魔墨水",
+    "type": "item"
   },
   "82": {
-    "id": 82,
+    "id": 12605,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1313,10 +1394,11 @@
     "japanese": "祝聖水",
     "english": "Hallowed Water",
     "chineseSimplified": "祝圣水",
-    "chineseTraditional": "祝聖水"
+    "chineseTraditional": "祝聖水",
+    "type": "item"
   },
   "83": {
-    "id": 83,
+    "id": 16908,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
@@ -1332,6 +1414,7 @@
     "japanese": "強化ガラス板",
     "english": "Tempered Glass",
     "chineseSimplified": "强化玻璃板",
-    "chineseTraditional": "強化玻璃板"
+    "chineseTraditional": "強化玻璃板",
+    "type": "item"
   }
 }
