@@ -234,6 +234,12 @@ export default function Calculator() {
     return loadJson('calc_raw', base)
   })
 
+  useEffect(() => {
+    if (window.location.hash && window.location.hash !== '#') {
+      history.replaceState(null, '', window.location.pathname)
+    }
+  }, [])
+
   useEffect(() => { setCookie('calc_selected', JSON.stringify(selected)) }, [selected])
   useEffect(() => { setCookie('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
   useEffect(() => { setCookie('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
