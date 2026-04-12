@@ -202,22 +202,6 @@
     "type": "item"
   },
   "13": {
-    "id": 5093,
-    "level": 2,
-    "category": "金屬",
-    "recipe": {
-      "白鋼錠": 1,
-      "火之碎晶": 3
-    },
-    "job": "鍛造師",
-    "itemLevel": 27,
-    "japanese": "スチールリベット",
-    "english": "Steel Rivets",
-    "chineseSimplified": "白钢铆钉",
-    "chineseTraditional": "白鋼鉚釘",
-    "type": "item"
-  },
-  "14": {
     "id": 5073,
     "level": 2,
     "category": "金屬",
@@ -231,6 +215,22 @@
     "english": "Steel Plate",
     "chineseSimplified": "白钢板",
     "chineseTraditional": "白鋼板",
+    "type": "item"
+  },
+  "14": {
+    "id": 5093,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "白鋼錠": 1,
+      "火之碎晶": 3
+    },
+    "job": "鍛造師",
+    "itemLevel": 27,
+    "japanese": "スチールリベット",
+    "english": "Steel Rivets",
+    "chineseSimplified": "白钢铆钉",
+    "chineseTraditional": "白鋼鉚釘",
     "type": "item"
   },
   "15": {
@@ -672,23 +672,6 @@
     "type": "item"
   },
   "41": {
-    "id": 12521,
-    "level": 2,
-    "category": "金屬",
-    "recipe": {
-      "硬銀礦": 4,
-      "硬銀塊": 1,
-      "風之水晶": 5
-    },
-    "job": "金工師",
-    "itemLevel": 142,
-    "japanese": "ハードシルバーインゴット",
-    "english": "Hardsilver Ingot",
-    "chineseSimplified": "硬银锭",
-    "chineseTraditional": "硬銀錠",
-    "type": "item"
-  },
-  "42": {
     "id": 5058,
     "level": 1,
     "category": "金屬",
@@ -703,6 +686,23 @@
     "english": "Steel Ingot",
     "chineseSimplified": "白钢锭",
     "chineseTraditional": "白鋼錠",
+    "type": "item"
+  },
+  "42": {
+    "id": 12521,
+    "level": 2,
+    "category": "金屬",
+    "recipe": {
+      "硬銀礦": 4,
+      "硬銀塊": 1,
+      "風之水晶": 5
+    },
+    "job": "金工師",
+    "itemLevel": 142,
+    "japanese": "ハードシルバーインゴット",
+    "english": "Hardsilver Ingot",
+    "chineseSimplified": "硬银锭",
+    "chineseTraditional": "硬銀錠",
     "type": "item"
   },
   "43": {
@@ -1261,19 +1261,20 @@
     "type": "item"
   },
   "75": {
-    "id": 5505,
+    "id": 5522,
     "level": 1,
     "category": "鍊金原料",
     "recipe": {
-      "山羊角": 2,
-      "水之碎晶": 3
+      "水之碎晶": 2,
+      "發泡水": 1,
+      "岩鹽": 1
     },
     "job": "鍊金術師",
-    "itemLevel": 30,
-    "japanese": "鬼にかわ",
-    "english": "Horn Glue",
-    "chineseSimplified": "鬼胶",
-    "chineseTraditional": "鬼膠",
+    "itemLevel": 13,
+    "japanese": "重曹",
+    "english": "Natron",
+    "chineseSimplified": "泡碱",
+    "chineseTraditional": "泡鹼",
     "type": "item"
   },
   "76": {
@@ -1293,6 +1294,22 @@
     "type": "item"
   },
   "77": {
+    "id": 5505,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "山羊角": 2,
+      "水之碎晶": 3
+    },
+    "job": "鍊金術師",
+    "itemLevel": 30,
+    "japanese": "鬼にかわ",
+    "english": "Horn Glue",
+    "chineseSimplified": "鬼胶",
+    "chineseTraditional": "鬼膠",
+    "type": "item"
+  },
+  "78": {
     "id": 7017,
     "level": 2,
     "category": "鍊金原料",
@@ -1310,7 +1327,7 @@
     "chineseTraditional": "清漆",
     "type": "item"
   },
-  "78": {
+  "79": {
     "id": 5506,
     "level": 1,
     "category": "鍊金原料",
@@ -1327,7 +1344,7 @@
     "chineseTraditional": "黑膠",
     "type": "item"
   },
-  "79": {
+  "80": {
     "id": 12604,
     "level": 1,
     "category": "鍊金原料",
@@ -1344,7 +1361,7 @@
     "chineseTraditional": "聖水",
     "type": "item"
   },
-  "80": {
+  "81": {
     "id": 5507,
     "level": 1,
     "category": "鍊金原料",
@@ -1362,7 +1379,7 @@
     "chineseTraditional": "翼膠",
     "type": "item"
   },
-  "81": {
+  "82": {
     "id": 12602,
     "level": 1,
     "category": "鍊金原料",
@@ -1380,7 +1397,7 @@
     "chineseTraditional": "硬銀附魔墨水",
     "type": "item"
   },
-  "82": {
+  "83": {
     "id": 12605,
     "level": 1,
     "category": "鍊金原料",
@@ -1397,7 +1414,7 @@
     "chineseTraditional": "祝聖水",
     "type": "item"
   },
-  "83": {
+  "84": {
     "id": 16908,
     "level": 1,
     "category": "鍊金原料",
