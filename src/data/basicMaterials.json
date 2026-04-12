@@ -697,7 +697,7 @@
     "japanese": "亜麻",
     "type": "item"
   },
-  "72": {
+  "71": {
     "id": 5339,
     "category": "布料",
     "itemLevel": 180,
@@ -707,7 +707,7 @@
     "japanese": "カーボンファイバー",
     "type": "item"
   },
-  "73": {
+  "72": {
     "id": 15649,
     "category": "布料",
     "itemLevel": 180,
@@ -717,7 +717,7 @@
     "japanese": "グラスファイバー",
     "type": "item"
   },
-  "74": {
+  "73": {
     "id": 5314,
     "category": "皮革",
     "itemLevel": 55,
@@ -727,7 +727,7 @@
     "japanese": "ウラエウスの粗皮",
     "type": "item"
   },
-  "75": {
+  "74": {
     "id": 12569,
     "category": "皮革",
     "itemLevel": 130,
@@ -737,7 +737,7 @@
     "japanese": "ワイバーンの粗皮",
     "type": "item"
   },
-  "76": {
+  "75": {
     "id": 12571,
     "category": "皮革",
     "itemLevel": 142,
@@ -747,7 +747,7 @@
     "japanese": "ドラゴンの粗皮",
     "type": "item"
   },
-  "77": {
+  "76": {
     "id": 19999,
     "category": "皮革",
     "itemLevel": 255,
@@ -757,7 +757,7 @@
     "japanese": "ガガナの粗皮",
     "type": "item"
   },
-  "78": {
+  "77": {
     "id": 5436,
     "category": "骨材",
     "itemLevel": 25,
@@ -767,7 +767,7 @@
     "japanese": "アルドゴートの角",
     "type": "item"
   },
-  "79": {
+  "78": {
     "id": 5518,
     "category": "鍊金原料",
     "itemLevel": 1,
@@ -777,7 +777,7 @@
     "japanese": "岩塩",
     "type": "item"
   },
-  "80": {
+  "79": {
     "id": 5491,
     "category": "鍊金原料",
     "itemLevel": 11,
@@ -787,7 +787,7 @@
     "japanese": "ソーダ水",
     "type": "item"
   },
-  "82": {
+  "80": {
     "id": 5523,
     "category": "鍊金原料",
     "itemLevel": 25,
@@ -795,7 +795,7 @@
     "english": "Silex",
     "type": "item"
   },
-  "83": {
+  "81": {
     "id": 5528,
     "category": "鍊金原料",
     "itemLevel": 26,
@@ -805,7 +805,7 @@
     "japanese": "ボムの灰",
     "type": "item"
   },
-  "84": {
+  "82": {
     "id": 5525,
     "category": "鍊金原料",
     "itemLevel": 37,
@@ -815,7 +815,7 @@
     "japanese": "ブラックアルメン",
     "type": "item"
   },
-  "85": {
+  "83": {
     "id": 5526,
     "category": "鍊金原料",
     "itemLevel": 40,
@@ -825,7 +825,7 @@
     "japanese": "グレネードの灰",
     "type": "item"
   },
-  "86": {
+  "84": {
     "id": 5558,
     "category": "鍊金原料",
     "itemLevel": 40,
@@ -835,7 +835,7 @@
     "japanese": "プリンの肉",
     "type": "item"
   },
-  "87": {
+  "85": {
     "id": 5553,
     "category": "鍊金原料",
     "itemLevel": 43,
@@ -845,7 +845,7 @@
     "japanese": "アーリマンの翼",
     "type": "item"
   },
-  "88": {
+  "86": {
     "id": 5501,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -855,7 +855,7 @@
     "japanese": "灰汁",
     "type": "item"
   },
-  "89": {
+  "87": {
     "id": 5530,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -865,7 +865,7 @@
     "japanese": "コークス",
     "type": "item"
   },
-  "90": {
+  "88": {
     "id": 5532,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -875,7 +875,7 @@
     "japanese": "樹液塊",
     "type": "item"
   },
-  "91": {
+  "89": {
     "id": 7590,
     "category": "鍊金原料",
     "itemLevel": 70,
@@ -885,7 +885,7 @@
     "japanese": "緋樹液",
     "type": "item"
   },
-  "92": {
+  "90": {
     "id": 7598,
     "category": "鍊金原料",
     "itemLevel": 90,
@@ -895,7 +895,7 @@
     "japanese": "アブダルラジクの霊砂",
     "type": "item"
   },
-  "93": {
+  "91": {
     "id": 9369,
     "category": "鍊金原料",
     "itemLevel": 110,
@@ -905,7 +905,7 @@
     "japanese": "アブダルラジクの霊薬",
     "type": "item"
   },
-  "94": {
+  "92": {
     "id": 12635,
     "category": "鍊金原料",
     "itemLevel": 120,
@@ -915,7 +915,7 @@
     "japanese": "ジェラートの肉",
     "type": "item"
   },
-  "95": {
+  "93": {
     "id": 12609,
     "category": "鍊金原料",
     "itemLevel": 125,
@@ -925,7 +925,7 @@
     "japanese": "熊脂",
     "type": "item"
   },
-  "96": {
+  "94": {
     "id": 12220,
     "category": "鍊金原料",
     "itemLevel": 130,
@@ -935,7 +935,7 @@
     "japanese": "赤モコ草",
     "type": "item"
   },
-  "97": {
+  "95": {
     "id": 12631,
     "category": "鍊金原料",
     "itemLevel": 130,
@@ -945,7 +945,7 @@
     "japanese": "ドラヴァニア天然水",
     "type": "item"
   },
-  "98": {
+  "96": {
     "id": 12636,
     "category": "鍊金原料",
     "itemLevel": 130,
@@ -955,7 +955,7 @@
     "japanese": "ワイバーンの翼膜",
     "type": "item"
   },
-  "99": {
+  "97": {
     "id": 12943,
     "category": "鍊金原料",
     "itemLevel": 133,
@@ -965,7 +965,7 @@
     "japanese": "ドラヴァニアミスルトゥ",
     "type": "item"
   },
-  "100": {
+  "98": {
     "id": 12629,
     "category": "鍊金原料",
     "itemLevel": 139,
@@ -975,7 +975,7 @@
     "japanese": "ダルメルの唾液",
     "type": "item"
   },
-  "101": {
+  "99": {
     "id": 12632,
     "category": "鍊金原料",
     "itemLevel": 142,
@@ -985,7 +985,7 @@
     "japanese": "アバラシア天然水",
     "type": "item"
   },
-  "102": {
+  "100": {
     "id": 12944,
     "category": "鍊金原料",
     "itemLevel": 142,
@@ -995,7 +995,7 @@
     "japanese": "アバラシアミスルトゥ",
     "type": "item"
   },
-  "103": {
+  "101": {
     "id": 12533,
     "category": "鍊金原料",
     "itemLevel": 148,
@@ -1005,7 +1005,7 @@
     "japanese": "皇金砂",
     "type": "item"
   },
-  "104": {
+  "102": {
     "id": 12538,
     "category": "鍊金原料",
     "itemLevel": 148,
@@ -1015,7 +1015,7 @@
     "japanese": "アダマン鉱",
     "type": "item"
   },
-  "106": {
+  "103": {
     "id": 12937,
     "category": "鍊金原料",
     "itemLevel": 150,
@@ -1025,7 +1025,7 @@
     "japanese": "暁光の霊砂",
     "type": "item"
   },
-  "107": {
+  "104": {
     "id": 12536,
     "category": "鍊金原料",
     "itemLevel": 160,
@@ -1035,7 +1035,7 @@
     "japanese": "皇金鉱",
     "type": "item"
   },
-  "108": {
+  "105": {
     "id": 12606,
     "category": "鍊金原料",
     "itemLevel": 160,
@@ -1045,7 +1045,7 @@
     "japanese": "アストラルオイル",
     "type": "item"
   },
-  "109": {
+  "106": {
     "id": 12634,
     "category": "鍊金原料",
     "itemLevel": 160,
@@ -1055,7 +1055,7 @@
     "japanese": "アストラルフラワー",
     "type": "item"
   },
-  "110": {
+  "107": {
     "id": 12932,
     "category": "鍊金原料",
     "itemLevel": 180,
@@ -1065,7 +1065,7 @@
     "japanese": "アブダルラジクの硬化触媒",
     "type": "item"
   },
-  "111": {
+  "108": {
     "id": 19910,
     "category": "鍊金原料",
     "itemLevel": 255,
@@ -1075,7 +1075,7 @@
     "japanese": "ギラバニアアルメン",
     "type": "item"
   },
-  "112": {
+  "109": {
     "id": 5728,
     "category": "染料",
     "itemLevel": 1,
@@ -1085,7 +1085,7 @@
     "japanese": "テレビン油",
     "type": "item"
   },
-  "113": {
+  "110": {
     "id": 12882,
     "category": "食材",
     "itemLevel": 125,

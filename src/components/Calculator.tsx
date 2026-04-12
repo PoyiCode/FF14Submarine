@@ -335,7 +335,9 @@ export default function Calculator() {
 
   // 匯出目前所有狀態為 JSON 檔案，以物品數字 ID 為 key（方便跨語系使用）
   // 骨架庫存不匯出（骨架目標由成品計算而來，不需持久化庫存）
-  function exportJson() {
+  // 優先使用 File System Access API（showSaveFilePicker）讓使用者選擇儲存路徑；
+  // 若瀏覽器不支援則退回 <a download> 的傳統下載方式
+  async function exportJson() {
     const productsData: Record<number, { itemName: string; quantity: number }> = {}
     for (const [name, qty] of Object.entries(selected)) {
       productsData[products[name].id] = { itemName: name, quantity: qty }
@@ -354,13 +356,35 @@ export default function Calculator() {
       if (qty > 0) materialsBasic[rawByName[name].id] = { itemName: name, quantity: qty }
     }
 
-    // 建立 Blob 並觸發瀏覽器下載
     const data = { products: productsData, materialsLv2, materialsLv1, materialsBasic }
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8;' })
+    const json = JSON.stringify(data, null, 2)
+    const defaultName = 'submarine materials cht.json'
+
+    // File System Access API：支援時顯示系統另存新檔對話框
+    if ('showSaveFilePicker' in window) {
+      try {
+        const handle = await (window as Window & typeof globalThis & {
+          showSaveFilePicker: (opts?: object) => Promise<FileSystemFileHandle>
+        }).showSaveFilePicker({
+          suggestedName: defaultName,
+          types: [{ description: 'JSON 檔案', accept: { 'application/json': ['.json'] } }],
+        })
+        const writable = await handle.createWritable()
+        await writable.write(json)
+        await writable.close()
+        return
+      } catch (e) {
+        // 使用者取消選擇（AbortError）時直接返回，其他錯誤退回傳統下載
+        if (e instanceof DOMException && e.name === 'AbortError') return
+      }
+    }
+
+    // 退回方案：<a download> 觸發下載，瀏覽器自動存至預設下載資料夾
+    const blob = new Blob([json], { type: 'application/json;charset=utf-8;' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = 'submarine materials cht.json'
+    a.download = defaultName
     a.click()
     URL.revokeObjectURL(url)
   }
