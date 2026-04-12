@@ -1,9 +1,15 @@
+/* ── 全域 CSS 變數（亮色主題） ───────────────────────────
+   所有顏色、字體均以 CSS custom property 定義，
+   深色主題在下方 prefers-color-scheme: dark 區塊覆寫 */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
+  /* 文字色 */
+  --text: #6b6375;      /* 一般文字 */
+  --text-h: #08060d;    /* 標題／強調文字 */
+  /* 背景色 */
   --bg: #fff;
   --border: #e5e4e7;
-  --code-bg: #f4f3ec;
+  --code-bg: #f4f3ec;   /* 面板背景 */
+  /* 強調色（紫色系） */
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
@@ -11,9 +17,10 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
+  /* 字體系列 */
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --mono: ui-monospace, Consolas, monospace;  /* 數字欄位使用等寬字體 */
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -30,6 +37,7 @@
   }
 }
 
+/* ── 深色主題：覆寫亮色主題的 CSS 變數 ─────────────────── */
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
@@ -37,7 +45,7 @@
     --bg: #16171d;
     --border: #2e303a;
     --code-bg: #1f2028;
-    --accent: #c084fc;
+    --accent: #c084fc;   /* 深色下使用較淺的紫色以維持對比度 */
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);

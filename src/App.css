@@ -1,3 +1,4 @@
+/* 根容器：縱向 flex 排列，≥1401px 時鎖定視窗高度（讓三欄各自獨立捲動） */
 .app {
   width: 100%;
   min-height: 100dvh;
@@ -17,7 +18,7 @@
   margin-bottom: 8px;
 }
 
-/* 分頁列 */
+/* 分頁內容區：flex: 1 讓其填滿剩餘高度；≥1401px 時 min-height: 0 允許子元素縮小以觸發各欄捲軸 */
 .tab-content {
   flex: 1;
 
