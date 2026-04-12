@@ -697,16 +697,6 @@
     "japanese": "亜麻",
     "type": "item"
   },
-  "71": {
-    "id": 12220,
-    "category": "布料",
-    "itemLevel": 130,
-    "chineseTraditional": "紅摩可草",
-    "english": "Red Moko Grass",
-    "chineseSimplified": "红莫柯草",
-    "japanese": "赤モコ草",
-    "type": "item"
-  },
   "72": {
     "id": 5339,
     "category": "布料",
@@ -795,16 +785,6 @@
     "english": "Effervescent Water",
     "chineseSimplified": "发泡水",
     "japanese": "ソーダ水",
-    "type": "item"
-  },
-  "81": {
-    "id": 5522,
-    "category": "鍊金原料",
-    "itemLevel": 25,
-    "chineseTraditional": "泡鹼",
-    "english": "Natron",
-    "chineseSimplified": "泡碱",
-    "japanese": "重曹",
     "type": "item"
   },
   "82": {
@@ -1033,16 +1013,6 @@
     "english": "Adamantite Ore",
     "chineseSimplified": "精金矿",
     "japanese": "アダマン鉱",
-    "type": "item"
-  },
-  "105": {
-    "id": 12937,
-    "category": "鍊金原料",
-    "itemLevel": 150,
-    "chineseTraditional": "曉光靈沙",
-    "english": "Dawnborne Aethersand",
-    "chineseSimplified": "晓光灵砂",
-    "japanese": "暁光の霊砂",
     "type": "item"
   },
   "106": {
