@@ -179,6 +179,35 @@ const rawByName = Object.fromEntries(
   Object.values(basicMaterialsData).map((m) => [m.chineseTraditional, m]),
 )
 
+const productIdToName = Object.fromEntries(Object.entries(products).map(([name, p]) => [p.id, name]))
+const recipeIdToName = Object.fromEntries(Object.entries(recipes).map(([name, r]) => [r.id, name]))
+const basicIdToName = Object.fromEntries(Object.values(basicMaterialsData).map((m) => [m.id, m.chineseTraditional]))
+
+const IMPORT_SECTIONS = ['products', 'materialsLv2', 'materialsLv1', 'materialsBasic'] as const
+
+function validateImportData(data: unknown): string | null {
+  if (typeof data !== 'object' || data === null || Array.isArray(data))
+    return '根層級必須為物件'
+  for (const section of IMPORT_SECTIONS) {
+    const val = (data as Record<string, unknown>)[section]
+    if (val === undefined) continue
+    if (typeof val !== 'object' || val === null || Array.isArray(val))
+      return `"${section}" 必須為物件`
+    for (const [key, entry] of Object.entries(val as object)) {
+      if (isNaN(Number(key)))
+        return `"${section}" 的 key "${key}" 必須為數字 id`
+      if (section === 'products' && !productIdToName[Number(key)])
+        return `"products" 包含未知的 item id"`
+      if (typeof entry !== 'object' || entry === null || Array.isArray(entry))
+        return `"${section}[${key}]" 必須為物件`
+      const qty = (entry as Record<string, unknown>).quantity
+      if (typeof qty !== 'number' || !Number.isInteger(qty) || qty < 0)
+        return `"${section}[${key}].quantity" 必須為非負整數`
+    }
+  }
+  return null
+}
+
 function sortRaw(names: string[]): string[] {
   return [...names].sort((a, b) => {
     const ma = rawByName[a], mb = rawByName[b]
@@ -244,6 +273,91 @@ export default function Calculator() {
   useEffect(() => { setCookie('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
   useEffect(() => { setCookie('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
 
+  function exportJson() {
+    const productsData: Record<number, { itemName: string; quantity: number }> = {}
+    for (const [name, qty] of Object.entries(selected)) {
+      productsData[products[name].id] = { itemName: name, quantity: qty }
+    }
+
+    const materialsLv2: Record<number, { itemName: string; quantity: number }> = {}
+    const materialsLv1: Record<number, { itemName: string; quantity: number }> = {}
+    for (const [name, qty] of Object.entries(semiInventory)) {
+      if (qty <= 0 || submarineParts[name]) continue
+      if (recipes[name]?.level === 2) materialsLv2[recipes[name].id] = { itemName: name, quantity: qty }
+      else if (recipes[name]?.level === 1) materialsLv1[recipes[name].id] = { itemName: name, quantity: qty }
+    }
+
+    const materialsBasic: Record<number, { itemName: string; quantity: number }> = {}
+    for (const [name, qty] of Object.entries(rawInventory)) {
+      if (qty > 0) materialsBasic[rawByName[name].id] = { itemName: name, quantity: qty }
+    }
+
+    const data = { products: productsData, materialsLv2, materialsLv1, materialsBasic }
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = 'submarine materials cht.json'
+    a.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const [importError, setImportError] = useState<string | null>(null)
+  function showImportError(msg: string) {
+    setImportError(msg)
+    setTimeout(() => setImportError(null), 4000)
+  }
+
+  function importJson() {
+    const input = document.createElement('input')
+    input.type = 'file'
+    input.accept = '.json'
+    input.onchange = () => {
+      const file = input.files?.[0]
+      if (!file) return
+      const reader = new FileReader()
+      reader.onload = (e) => {
+        let data: unknown
+        try {
+          data = JSON.parse(e.target?.result as string)
+        } catch {
+          showImportError('JSON 解析失敗：檔案格式不正確')
+          return
+        }
+
+        const err = validateImportData(data)
+        if (err) { showImportError(`格式錯誤：${err}`); return }
+
+        const d = data as Record<string, Record<string, { quantity: number }>>
+
+        const newSelected: Record<string, number> = {}
+        for (const [idStr, val] of Object.entries(d.products ?? {})) {
+          const name = productIdToName[Number(idStr)]
+          if (name) newSelected[name] = Math.min(9, Math.max(1, val.quantity))
+        }
+        setSelected(newSelected)
+
+        const newSemi = Object.fromEntries(allSemiNames.map((n) => [n, 0]))
+        for (const section of [d.materialsLv2, d.materialsLv1]) {
+          for (const [idStr, val] of Object.entries(section ?? {})) {
+            const name = recipeIdToName[Number(idStr)]
+            if (name) newSemi[name] = Math.min(99999, val.quantity)
+          }
+        }
+        setSemiInventory(newSemi)
+
+        const newRaw = Object.fromEntries(allRawNames.map((n) => [n, 0]))
+        for (const [idStr, val] of Object.entries(d.materialsBasic ?? {})) {
+          const name = basicIdToName[Number(idStr)]
+          if (name) newRaw[name] = Math.min(99999, val.quantity)
+        }
+        setRawInventory(newRaw)
+      }
+      reader.readAsText(file)
+    }
+    input.click()
+  }
+
   const [copied, setCopied] = useState(false)
   function shareUrl() {
     const si = Object.fromEntries(Object.entries(semiInventory).filter(([, v]) => v > 0))
@@ -288,6 +402,9 @@ export default function Calculator() {
   return (
     <div className="calc-wrapper">
       <div className="calc-toolbar">
+        {importError && <span className="toolbar-error">{importError}</span>}
+        <button className="export-btn" onClick={importJson}>匯入當前庫存</button>
+        <button className="export-btn" onClick={exportJson}>匯出當前庫存</button>
         <button className="share-btn" onClick={shareUrl}>{copied ? '已複製網址！' : '按此分享數據'}</button>
       </div>
 

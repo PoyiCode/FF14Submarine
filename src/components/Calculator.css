@@ -91,6 +91,7 @@
 .calc-toolbar {
   display: flex;
   justify-content: flex-end;
+  gap: 8px;
   margin-bottom: 8px;
   flex-shrink: 0;
 }
@@ -121,6 +122,29 @@
   &:disabled {
     opacity: 0.4;
     cursor: default;
+  }
+}
+
+.toolbar-error {
+  font-size: 13px;
+  color: #ef4444;
+  align-self: center;
+}
+
+.export-btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: var(--code-bg);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.75;
   }
 }
 
