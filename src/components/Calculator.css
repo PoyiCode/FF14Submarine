@@ -123,13 +123,6 @@
   }
 }
 
-.clear-btn {
-  &:disabled {
-    opacity: 0.4;
-    cursor: default;
-  }
-}
-
 .toolbar-error {
   font-size: 13px;
   color: #ef4444;
@@ -385,7 +378,7 @@
   }
 
   .text-done {
-    color: #22c55e;
+    color: var(--success);
     opacity: 1 !important;
   }
 
@@ -475,7 +468,7 @@
   }
 
   .text-done {
-    color: #22c55e;
+    color: var(--success);
     opacity: 1 !important;
   }
 
