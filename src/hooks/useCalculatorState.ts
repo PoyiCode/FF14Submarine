@@ -1,7 +1,7 @@
 // 管理計算器的三個核心 state，並處理初始值的優先順序：
-// URL hash > cookie > 預設空值
+// URL hash > localStorage > 預設空值
 import { useState, useEffect } from 'react'
-import { loadJson } from '../utils/cookie'
+import { loadJson } from '../utils/storage'
 import { readUrlState } from '../utils/urlState'
 import { allSemiNames, allRawNames } from '../data/calculations'
 

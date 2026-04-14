@@ -19,7 +19,7 @@ export default function Calculator() {
   const { selected, setSelected, semiInventory, setSemiInventory, rawInventory, setRawInventory } =
     useCalculatorState()
 
-  // ── 持久化：state 變動時同步寫入 cookie ──
+  // ── 持久化：state 變動時同步寫入 localStorage ──
   usePersistence(selected, semiInventory, rawInventory)
 
   // ── 匯入 / 匯出 / 分享 ──

@@ -1,13 +1,13 @@
-// 每當三個核心 state 變動時，同步寫入 cookie 以持久化
+// 每當三個核心 state 變動時，同步寫入 localStorage 以持久化
 import { useEffect } from 'react'
-import { setCookie } from '../utils/cookie'
+import { setStorage } from '../utils/storage'
 
 export function usePersistence(
   selected: Record<string, number>,
   semiInventory: Record<string, number>,
   rawInventory: Record<string, number>,
 ): void {
-  useEffect(() => { setCookie('calc_selected', JSON.stringify(selected)) }, [selected])
-  useEffect(() => { setCookie('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
-  useEffect(() => { setCookie('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
+  useEffect(() => { setStorage('calc_selected', JSON.stringify(selected)) }, [selected])
+  useEffect(() => { setStorage('calc_semi', JSON.stringify(semiInventory)) }, [semiInventory])
+  useEffect(() => { setStorage('calc_raw', JSON.stringify(rawInventory)) }, [rawInventory])
 }
