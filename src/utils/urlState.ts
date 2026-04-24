@@ -23,7 +23,7 @@ export function decodeState(hash: string): UrlState | null {
   }
 }
 
-// 嘗試從目前頁面的 URL hash 讀取狀態；無 hash 時回傳 null（改用 cookie）
+// 嘗試從目前頁面的 URL hash 讀取狀態；無 hash 時回傳 null（改用 localStorage）
 export function readUrlState(): UrlState | null {
   const hash = window.location.hash
   if (!hash || hash === '#') return null
