@@ -1,13 +1,15 @@
 // 第一欄：成品選取面板
 // 依艦級分組顯示所有成品按鈕，並列出已選取的成品與數量輸入
 import { products } from '../data/handler'
-import { productsByClass, sortedClasses, getClass } from '../data/calculations'
+import { productsByClass, sortedClasses, getClass, computeDirectSemi } from '../data/calculations'
 
 interface Props {
   selected: Record<string, number>
+  semiInventory: Record<string, number>
   onAdd: (name: string) => void
   onRemove: (name: string) => void
   onQtyChange: (name: string, value: string) => void
+  onComplete: (name: string) => void
   onClear: () => void
 }
 
@@ -16,7 +18,7 @@ function blockDecimal(e: React.KeyboardEvent<HTMLInputElement>) {
   if (e.key === '.' || e.key === ',') e.preventDefault()
 }
 
-export default function ProductSelector({ selected, onAdd, onRemove, onQtyChange, onClear }: Props) {
+export default function ProductSelector({ selected, semiInventory, onAdd, onRemove, onQtyChange, onComplete, onClear }: Props) {
   const hasTarget = Object.keys(selected).length > 0
 
   return (
@@ -49,6 +51,11 @@ export default function ProductSelector({ selected, onAdd, onRemove, onQtyChange
         <ul className="selected-list">
           {Object.keys(selected).map((name) => {
             const cls = getClass(name)
+            // 只需確認有足夠材料完成 1 個，不遞迴展開（使用者持有的是已製好的骨架/Lv2）
+            const required = computeDirectSemi(name, 1)
+            const canComplete = Object.entries(required).every(
+              ([mat, needed]) => (semiInventory[mat] ?? 0) >= needed
+            )
             return (
               <li key={name} className="selected-item">
                 <span className="item-name">{cls} {products[name].displayName}</span>
@@ -62,6 +69,13 @@ export default function ProductSelector({ selected, onAdd, onRemove, onQtyChange
                   onChange={(e) => onQtyChange(name, e.target.value)}
                   onKeyDown={blockDecimal}
                 />
+                <button
+                  className="complete-btn"
+                  disabled={!canComplete}
+                  onClick={() => onComplete(name)}
+                >
+                  完成
+                </button>
                 <button className="remove-btn" onClick={() => onRemove(name)} aria-label={`移除 ${name}`}>
                   ×
                 </button>

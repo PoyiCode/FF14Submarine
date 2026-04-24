@@ -164,6 +164,23 @@ export function computeRequiredSemi(selected: Record<string, number>): Record<st
   return acc
 }
 
+// 計算單一成品直接需要的半成品數量（不遞迴展開子配方）
+// 用於「完成」按鈕的庫存驗證與扣除：使用者持有的是已製好的骨架/Lv2，
+// 不需要再向下展開確認 Lv1 庫存（Lv1 早已在製作 Lv2 時消耗）
+export function computeDirectSemi(name: string, qty: number): Record<string, number> {
+  const acc: Record<string, number> = {}
+  const product = products[name]
+  for (const [partName, partQty] of Object.entries(product.part ?? {})) {
+    if (submarineParts[partName]) acc[partName] = (acc[partName] ?? 0) + partQty * qty
+  }
+  for (const [mat, matQty] of Object.entries(product.recipe)) {
+    if (!basicMaterials.has(mat) && getItemRecipe(mat)) {
+      acc[mat] = (acc[mat] ?? 0) + matQty * qty
+    }
+  }
+  return acc
+}
+
 // 取得在成品配方中「直接列出」的半成品集合（不包含只在 Lv2 配方內出現的間接 Lv1）
 // 用於判斷 Lv1 半成品是否要顯示目標數字，以及是否在名稱後加「*」
 export function getDirectRequiredSemi(selected: Record<string, number>): Set<string> {

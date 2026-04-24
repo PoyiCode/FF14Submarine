@@ -5,6 +5,7 @@ import { useImportExport } from '../hooks/useImportExport'
 import {
   computeRequired,
   computeRequiredSemi,
+  computeDirectSemi,
   getDirectRequiredSemi,
   computeEquivalent,
   getRelevantItems,
@@ -48,6 +49,22 @@ export default function Calculator() {
     const num = Math.min(9, Math.max(1, parseInt(value) || 1))
     setSelected((prev) => ({ ...prev, [name]: num }))
   }
+  function completeProduct(name: string) {
+    const required = computeDirectSemi(name, 1)
+    setSemiInventory((prev) => {
+      const next = { ...prev }
+      for (const [mat, qty] of Object.entries(required)) {
+        next[mat] = Math.max(0, (next[mat] ?? 0) - qty)
+      }
+      return next
+    })
+    // 數量剩 1 時才移除，否則只將數量減一
+    if (selected[name] <= 1) {
+      removeProduct(name)
+    } else {
+      setSelected((prev) => ({ ...prev, [name]: prev[name] - 1 }))
+    }
+  }
 
   return (
     <div className="calc-wrapper">
@@ -62,9 +79,11 @@ export default function Calculator() {
       <div className="calc-layout">
         <ProductSelector
           selected={selected}
+          semiInventory={semiInventory}
           onAdd={addProduct}
           onRemove={removeProduct}
           onQtyChange={setProductQty}
+          onComplete={completeProduct}
           onClear={() => setSelected({})}
         />
         <InventoryPanel

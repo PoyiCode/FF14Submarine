@@ -194,6 +194,29 @@
   margin-right: 10px;
 }
 
+.complete-btn {
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--success);
+  background: none;
+  color: var(--success);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover:not(:disabled) {
+    background: var(--success);
+    color: #fff;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
 .remove-btn {
   border: none;
   background: none;
@@ -362,6 +385,20 @@
   .semi-name {
     white-space: nowrap;
     overflow: hidden;
+
+    &.copyable {
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        color: var(--accent);
+      }
+
+      &.copied {
+        color: var(--success);
+        font-size: 12px;
+      }
+    }
   }
 
   .num {

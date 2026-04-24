@@ -1,5 +1,6 @@
 // 第二欄：當前庫存面板
 // 顯示選取成品所需的骨架、Lv2/Lv1 半成品、基礎素材庫存表，並允許輸入庫存數量
+import { useState } from 'react'
 import { recipes } from '../data/handler'
 import { sortSemi, sortRaw } from '../data/calculations'
 
@@ -74,6 +75,16 @@ export default function InventoryPanel({
   relevantSemi,
   relevantRaw,
 }: Props) {
+  const [copiedName, setCopiedName] = useState<string | null>(null)
+
+  // 複製名稱至剪貼簿，並短暫顯示「已複製」視覺回饋
+  function copyName(name: string) {
+    navigator.clipboard.writeText(name).then(() => {
+      setCopiedName(name)
+      setTimeout(() => setCopiedName(null), 1500)
+    })
+  }
+
   // 通用庫存輸入處理器：解析輸入值並限制在 0–99999 的整數
   function handleInventory(
     setter: React.Dispatch<React.SetStateAction<Record<string, number>>>,
@@ -110,7 +121,13 @@ export default function InventoryPanel({
                     const done = have >= target
                     return (
                       <tr key={name} className={done ? 'row-done' : ''}>
-                        <td className="semi-name">{name}</td>
+                        <td
+                          className={`semi-name copyable${copiedName === name ? ' copied' : ''}`}
+                          onClick={() => copyName(name)}
+                          title="點擊複製名稱"
+                        >
+                          {copiedName === name ? '已複製！' : name}
+                        </td>
                         <td>
                           <input
                             type="number"
@@ -165,8 +182,14 @@ export default function InventoryPanel({
                         )
                         return (
                           <tr key={name} className={done ? 'row-done' : ''}>
-                            {/* 間接 Lv1 項目名稱後加「*」，並附頁腳說明 */}
-                            <td className="semi-name">{isDirect ? name : name + '*'}</td>
+                            {/* 間接 Lv1 項目名稱後加「*」，並附頁腳說明；複製時只複製原始名稱 */}
+                            <td
+                              className={`semi-name copyable${copiedName === name ? ' copied' : ''}`}
+                              onClick={() => copyName(name)}
+                              title="點擊複製名稱"
+                            >
+                              {copiedName === name ? '已複製！' : (isDirect ? name : name + '*')}
+                            </td>
                             <td>
                               <input
                                 type="number"
@@ -207,7 +230,13 @@ export default function InventoryPanel({
               <tbody>
                 {sortRaw(relevantRaw).map((name) => (
                   <tr key={name}>
-                    <td className="semi-name">{name}</td>
+                    <td
+                      className={`semi-name copyable${copiedName === name ? ' copied' : ''}`}
+                      onClick={() => copyName(name)}
+                      title="點擊複製名稱"
+                    >
+                      {copiedName === name ? '已複製！' : name}
+                    </td>
                     <td>
                       <input
                         type="number"
