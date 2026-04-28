@@ -38,7 +38,7 @@ export default function App() {
 
       <footer className="app-footer">
         <span>大根蘿蔔@利維坦</span>
-        <span>v0.0.4</span>
+        <span>v0.0.5</span>
       </footer>
     </main>
   )

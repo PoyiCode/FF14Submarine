@@ -137,29 +137,36 @@ export function computeRequired(selected: Record<string, number>): Record<string
 export function computeRequiredSemi(selected: Record<string, number>): Record<string, number> {
   const acc: Record<string, number> = {}
 
-  function resolve(item: string, qty: number, directMats: Set<string>) {
+  // 全域直接材料集合：所有選取成品配方中直接列出的 Lv1 半成品
+  // 必須全域計算而非逐成品計算，否則某成品的 Lv1 直接用料在展開
+  // 其他成品的 Lv2 時不會被跳過，造成 requiredSemi 重複累加
+  const directMats = new Set<string>()
+  for (const name of Object.keys(selected)) {
+    for (const mat of Object.keys(products[name].recipe)) {
+      if (recipes[mat]?.level === 1) directMats.add(mat)
+    }
+  }
+
+  function resolve(item: string, qty: number) {
     if (basicMaterials.has(item)) return
     const recipe = getItemRecipe(item)
     if (recipe) {
       acc[item] = (acc[item] ?? 0) + qty
       for (const [mat, amount] of Object.entries(recipe)) {
         if (directMats.has(mat) && recipes[mat]?.level === 1) continue
-        resolve(mat, amount * qty, directMats)
+        resolve(mat, amount * qty)
       }
     }
   }
 
   for (const [name, selectedQty] of Object.entries(selected)) {
-    const directMats = new Set(
-      Object.keys(products[name].recipe).filter((m) => recipes[m]?.level === 1)
-    )
     for (const [partName, qty] of Object.entries(products[name].part ?? {})) {
       if (submarineParts[partName]) {
         acc[partName] = (acc[partName] ?? 0) + qty * selectedQty
-        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty * selectedQty, directMats)
+        for (const [mat, amount] of Object.entries(submarineParts[partName].recipe)) resolve(mat, amount * qty * selectedQty)
       }
     }
-    for (const [mat, qty] of Object.entries(products[name].recipe)) resolve(mat, qty * selectedQty, directMats)
+    for (const [mat, qty] of Object.entries(products[name].recipe)) resolve(mat, qty * selectedQty)
   }
   return acc
 }
