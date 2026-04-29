@@ -1,9 +1,9 @@
 /* 計算器兩欄版面：20fr（成品）/ 80fr（庫存）
    ≥1401px：兩欄並排，各欄可獨立垂直捲動
-   ≤700px：單欄垂直堆疊 */
+   ≤1000px：單欄垂直堆疊（對齊 inventory-grid 的 container query 切換點） */
 .calc-layout {
   display: grid;
-  grid-template-columns: 20fr 80fr;
+  grid-template-columns: 25fr 75fr;
   gap: 16px;
   align-items: start;
 
@@ -18,7 +18,7 @@
     align-items: stretch;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
 }
