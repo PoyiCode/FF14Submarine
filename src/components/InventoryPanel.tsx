@@ -115,7 +115,7 @@ export default function InventoryPanel({
                     <th>潛水艇骨架</th>
                     <th>數量</th>
                     <th>目標</th>
-                    <th>剩餘</th>
+                    <th>缺少</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -174,7 +174,7 @@ export default function InventoryPanel({
                         <th>Lv{lv}</th>
                         <th>數量</th>
                         <th>目標</th>
-                        <th>剩餘</th>
+                        <th>缺少</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -224,13 +224,12 @@ export default function InventoryPanel({
               )
             })}
 
-            {/* 基礎素材：數量（輸入）、目標（完全展開後所需）、剩餘（含半成品等價換算） */}
+            {/* 基礎素材：數量（輸入）、剩餘（含半成品等價換算） */}
             <table className="semi-table">
               <thead>
                 <tr>
                   <th>基礎素材</th>
                   <th>數量</th>
-                  <th>目標</th>
                   <th>剩餘</th>
                 </tr>
               </thead>
@@ -262,7 +261,6 @@ export default function InventoryPanel({
                           className="qty-input"
                         />
                       </td>
-                      <td className="num">{target > 99999 ? 99999 : target}</td>
                       <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
                         {done ? '✓' : (remaining > 99999 ? 99999 : remaining)}
                       </td>
