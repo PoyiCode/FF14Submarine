@@ -1,10 +1,9 @@
-/* 計算器三欄版面：20fr（成品）/ 60fr（庫存）/ 25fr（進度）
-   ≥1401px：三欄並排，各欄可獨立垂直捲動
-   ≤1400px：兩欄，進度欄（第三欄）橫跨兩格
+/* 計算器兩欄版面：20fr（成品）/ 80fr（庫存）
+   ≥1401px：兩欄並排，各欄可獨立垂直捲動
    ≤700px：單欄垂直堆疊 */
 .calc-layout {
   display: grid;
-  grid-template-columns: 20fr 60fr 25fr;
+  grid-template-columns: 20fr 80fr;
   gap: 16px;
   align-items: start;
 
@@ -17,15 +16,6 @@
     flex: 1;
     min-height: 0;
     align-items: stretch;
-  }
-
-  @media (max-width: 1400px) {
-    grid-template-columns: 1fr 1fr;
-
-    /* 進度欄（等價基礎素材）橫跨兩欄 */
-    & > :nth-child(3) {
-      grid-column: 1 / -1;
-    }
   }
 
   @media (max-width: 700px) {

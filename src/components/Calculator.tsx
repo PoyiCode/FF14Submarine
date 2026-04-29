@@ -12,7 +12,6 @@ import {
 } from '../data/calculations'
 import ProductSelector from './ProductSelector'
 import InventoryPanel from './InventoryPanel'
-import ProgressPanel from './ProgressPanel'
 import './Calculator.css'
 
 export default function Calculator() {
@@ -50,10 +49,10 @@ export default function Calculator() {
     setSelected((prev) => ({ ...prev, [name]: num }))
   }
   function completeProduct(name: string) {
-    const required = computeDirectSemi(name, 1)
+    const req = computeDirectSemi(name, 1)
     setSemiInventory((prev) => {
       const next = { ...prev }
-      for (const [mat, qty] of Object.entries(required)) {
+      for (const [mat, qty] of Object.entries(req)) {
         next[mat] = Math.max(0, (next[mat] ?? 0) - qty)
       }
       return next
@@ -93,15 +92,12 @@ export default function Calculator() {
           setSemiInventory={setSemiInventory}
           setRawInventory={setRawInventory}
           requiredSemi={requiredSemi}
+          required={required}
+          equivalent={equivalent}
           directSemi={directSemi}
           relevantParts={relevantParts}
           relevantSemi={relevantSemi}
           relevantRaw={relevantRaw}
-        />
-        <ProgressPanel
-          hasTarget={hasTarget}
-          required={required}
-          equivalent={equivalent}
         />
       </div>
     </div>

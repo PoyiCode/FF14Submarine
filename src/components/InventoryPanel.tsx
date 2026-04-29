@@ -1,5 +1,6 @@
 // 第二欄：當前庫存面板
 // 顯示選取成品所需的骨架、Lv2/Lv1 半成品、基礎素材庫存表，並允許輸入庫存數量
+// 基礎素材欄同時顯示目標與剩餘（等價換算後）
 import { useState } from 'react'
 import { recipes } from '../data/handler'
 import { sortSemi, sortRaw } from '../data/calculations'
@@ -11,6 +12,8 @@ interface Props {
   setSemiInventory: React.Dispatch<React.SetStateAction<Record<string, number>>>
   setRawInventory: React.Dispatch<React.SetStateAction<Record<string, number>>>
   requiredSemi: Record<string, number>
+  required: Record<string, number>
+  equivalent: Record<string, number>
   directSemi: Set<string>
   relevantParts: string[]
   relevantSemi: string[]
@@ -70,6 +73,8 @@ export default function InventoryPanel({
   setSemiInventory,
   setRawInventory,
   requiredSemi,
+  required,
+  equivalent,
   directSemi,
   relevantParts,
   relevantSemi,
@@ -213,45 +218,57 @@ export default function InventoryPanel({
                     </tbody>
                   </table>
                   {hasIndirect && (
-                    <p className="semi-footnote">*：過度半成品，不計入"等價基礎素材-目標"的數量</p>
+                    <p className="semi-footnote">*：過度半成品，不列入目標計算</p>
                   )}
                 </div>
               )
             })}
 
-            {/* 基礎素材庫存（只顯示有數量欄，無目標欄） */}
+            {/* 基礎素材：數量（輸入）、目標（完全展開後所需）、剩餘（含半成品等價換算） */}
             <table className="semi-table">
               <thead>
                 <tr>
                   <th>基礎素材</th>
                   <th>數量</th>
+                  <th>目標</th>
+                  <th>剩餘</th>
                 </tr>
               </thead>
               <tbody>
-                {sortRaw(relevantRaw).map((name) => (
-                  <tr key={name}>
-                    <td
-                      className={`semi-name copyable${copiedName === name ? ' copied' : ''}`}
-                      onClick={() => copyName(name)}
-                      title="點擊複製名稱"
-                    >
-                      {copiedName === name ? '已複製！' : name}
-                    </td>
-                    <td>
-                      <input
-                        type="number"
-                        min={0}
-                        max={99999}
-                        step={1}
-                        value={rawInventory[name] === 0 ? '' : rawInventory[name]}
-                        placeholder="0"
-                        onChange={(e) => handleInventory(setRawInventory, name, e.target.value)}
-                        onKeyDown={blockDecimal}
-                        className="qty-input"
-                      />
-                    </td>
-                  </tr>
-                ))}
+                {sortRaw(relevantRaw).map((name) => {
+                  const target = required[name] ?? 0
+                  const have = equivalent[name] ?? 0
+                  const remaining = Math.max(0, target - have)
+                  const done = have >= target
+                  return (
+                    <tr key={name} className={done ? 'row-done' : ''}>
+                      <td
+                        className={`semi-name copyable${copiedName === name ? ' copied' : ''}`}
+                        onClick={() => copyName(name)}
+                        title="點擊複製名稱"
+                      >
+                        {copiedName === name ? '已複製！' : name}
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          min={0}
+                          max={99999}
+                          step={1}
+                          value={rawInventory[name] === 0 ? '' : rawInventory[name]}
+                          placeholder="0"
+                          onChange={(e) => handleInventory(setRawInventory, name, e.target.value)}
+                          onKeyDown={blockDecimal}
+                          className="qty-input"
+                        />
+                      </td>
+                      <td className="num">{target > 99999 ? 99999 : target}</td>
+                      <td className={`num ${done ? 'text-done' : 'text-remain'}`}>
+                        {done ? '✓' : (remaining > 99999 ? 99999 : remaining)}
+                      </td>
+                    </tr>
+                  )
+                })}
               </tbody>
             </table>
           </div>
