@@ -1433,5 +1433,22 @@
     "chineseSimplified": "强化玻璃板",
     "chineseTraditional": "強化玻璃板",
     "type": "item"
+  },
+  "85": {
+    "id": 12606,
+    "level": 1,
+    "category": "鍊金原料",
+    "recipe": {
+      "星極花": 2,
+      "星砂礫": 2,
+      "熊脂": 1
+    },
+    "job": "鍊金術師",
+    "itemLevel": 160,
+    "japanese": "アストラルオイル",
+    "english": "Astral Oil",
+    "chineseSimplified": "星极油",
+    "chineseTraditional": "星極油",
+    "type": "item"
   }
 }
