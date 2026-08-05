@@ -1035,16 +1035,6 @@
     "japanese": "皇金鉱",
     "type": "item"
   },
-  "105": {
-    "id": 12606,
-    "category": "鍊金原料",
-    "itemLevel": 160,
-    "chineseTraditional": "星極油",
-    "english": "Astral Oil",
-    "chineseSimplified": "星极油",
-    "japanese": "アストラルオイル",
-    "type": "item"
-  },
   "106": {
     "id": 12634,
     "category": "鍊金原料",
